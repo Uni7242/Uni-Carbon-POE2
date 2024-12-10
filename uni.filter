@@ -73,7 +73,7 @@ Show #Gold
     BaseType == "Gold"
     AreaLevel < 57
     AreaLevel >= 52
-    StackSize > 800
+    StackSize > 750
     SetFontSize 22
     SetTextColor 255 215 0
     SetBorderColor 255 215 0
@@ -84,7 +84,7 @@ Show #Gold
     BaseType == "Gold"
     AreaLevel < 57
     AreaLevel >= 52
-    StackSize > 350
+    StackSize > 300
     SetFontSize 20
     SetTextColor 255 215 0
     MinimapIcon 2 Yellow Cross
@@ -94,7 +94,7 @@ Show #Gold
     BaseType == "Gold"
     AreaLevel < 52
     AreaLevel >= 45
-    StackSize > 750
+    StackSize > 600
     SetFontSize 22
     SetTextColor 255 215 0
     SetBorderColor 255 215 0
@@ -105,7 +105,7 @@ Show #Gold
     BaseType == "Gold"
     AreaLevel < 52
     AreaLevel >= 45
-    StackSize > 250
+    StackSize > 200
     SetFontSize 20
     SetTextColor 255 215 0
     MinimapIcon 2 Yellow Cross
@@ -115,7 +115,7 @@ Show #Gold
     BaseType == "Gold"
     AreaLevel < 45
     AreaLevel >= 32
-    StackSize > 500
+    StackSize > 400
     SetFontSize 22
     SetTextColor 255 215 0
     SetBorderColor 255 215 0
@@ -126,7 +126,7 @@ Show #Gold
     BaseType == "Gold"
     AreaLevel < 45
     AreaLevel >= 32
-    StackSize > 150
+    StackSize > 100
     SetFontSize 20
     SetTextColor 255 215 0
     MinimapIcon 2 Yellow Cross
@@ -136,7 +136,7 @@ Show #Gold
     BaseType == "Gold"
     AreaLevel < 32
     AreaLevel >= 15
-    StackSize > 300
+    StackSize > 250
     SetFontSize 22
     SetTextColor 255 215 0
     SetBorderColor 255 215 0
@@ -598,7 +598,7 @@ Show #Runes T1
     Class == "Socketable"
     BaseType "Rune"
 	SetFontSize 35
-	SetTextColor 0 140 193 255
+	SetTextColor 226 75 43 255
 	SetBorderColor 255 255 255 255
 	SetBackgroundColor 0 20 40 255
 	PlayEffect Cyan Temp
@@ -608,7 +608,7 @@ Show #Runes T2
     Class == "Socketable"
     BaseType "Rune"
 	SetFontSize 35
-	SetTextColor 0 140 193 255
+	SetTextColor 226 75 43 255
 	SetBorderColor 255 255 255 255
 	SetBackgroundColor 0 20 40 255
 	PlayEffect Cyan Temp
@@ -618,8 +618,8 @@ Show #Soul Cores
     Class = "Socketable"
     BaseType "Soul Core"
 	SetFontSize 40
-	SetTextColor 0 75 250 255
-	SetBorderColor 240 100 0 255
+	SetTextColor 189 43 226 255
+	SetBorderColor 189 43 226 255
 	SetBackgroundColor 0 20 40 255
 	PlayAlertSound 1 300
     PlayEffect Cyan Temp
