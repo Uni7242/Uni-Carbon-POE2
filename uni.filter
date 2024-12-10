@@ -52,7 +52,7 @@ Show #T4
 #Act6+
 Show #Gold
     BaseType == "Gold"
-    AreaLevel >=57
+    AreaLevel >= 57
     StackSize > 1000
     SetFontSize 22
     SetTextColor 255 215 0
@@ -62,7 +62,7 @@ Show #Gold
 
 Show #Gold
     BaseType == "Gold"
-    AreaLevel >=57
+    AreaLevel >= 57
     StackSize > 400
     SetFontSize 20
     SetTextColor 255 215 0
