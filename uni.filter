@@ -1,0 +1,502 @@
+###CURRENCY###
+#---General
+Show #Mirror of Kalandra
+    Class == "Stackable Currency"
+    BaseType == "Mirror of Kalandra"
+	SetFontSize 45
+	SetTextColor 255 0 0 255
+	SetBorderColor 255 0 0 255
+	SetBackgroundColor 255 255 255 177
+	PlayAlertSound ShMirror 300
+	PlayEffect Red
+	MinimapIcon 0 Red Star
+
+Show #T1
+    Class == "Stackable Currency"
+    BaseType == "Divine Orb" "Greater Jeweller's Orb" "Orb of Annulment" "Perfect Jeweller's Orb"
+	SetFontSize 40
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	SetBackgroundColor 240 90 35 178
+	PlayAlertSound 6 300
+	PlayEffect Yellow
+	MinimapIcon 1 Yellow Circle
+
+Show #T2
+    Class == "Stackable Currency"
+    BaseType == "Orb of Alteration" "Glassblower's Bauble" "Chaos Orb" "Vaal Orb" "Artificer's Orb" "Arcanist's Etcher" "Exalted Orb" 
+	SetFontSize 35
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	SetBackgroundColor 213 159 0 178
+    MinimapIcon 2 White Circle
+
+Show #T3
+    Class == "Stackable Currency"
+    BaseType == "Blacksmith's Whetstone" "Armourer's Scrap" "Regal Shard" "Alchemy Shard" "Chaos Shard" "Artificer's Shard" "Regal Orb" "Orb of Alchemy" "Orb of Chance" "Lesser Jeweller's Orb"
+    SetFontSize 35
+    SetTextColor 0 0 0 255
+    SetBorderColor 0 0 0 255
+    SetBackgroundColor 210 178 135 178
+
+Show #T4
+    Class == "Stackable Currency"
+    BaseType == "Orb of Transmutation" "Orb of Augmentation" "Transmutation Shard" "Chance Shard" 
+    SetFontSize 35
+    SetTextColor 170 158 130 255
+    SetBorderColor 170 158 130 255
+    SetBackgroundColor 20 20 0 200
+
+#---Gold---
+Show #Gold
+    BaseType == "Gold"
+    StackSize > 1000
+    SetFontSize 22
+    SetTextColor 255 215 0
+    SetBorderColor 255 215 0
+    PlayEffect Yellow Temp
+    MinimapIcon 1 Yellow Cross
+
+Show #Gold
+    BaseType == "Gold"
+    StackSize > 400
+    SetFontSize 20
+    SetTextColor 255 215 0
+    MinimapIcon 2 Yellow Cross
+
+
+Show #Gold
+    BaseType == "Gold"
+    SetFontSize 18
+    SetTextColor 255 215 0
+    MinimapIcon 2 Yellow Cross
+
+#---Scrolls---
+Show #Scrolls
+	Class == "Stackable Currency"
+	BaseType == "Scroll of Wisdom"
+	SetFontSize 27
+	SetBorderColor 200 100 60 255
+	SetBackgroundColor 20 20 0 200
+
+#---Essence---
+Show #Essence
+    Class == "Stackable Currency"
+    BaseType = "Essence of"
+    SetTextColor 196 93 255
+    PlayEffect Purple Temp
+    MinimapIcon 1 Purple Moon
+
+#---Breach---
+Show #Splinter
+    Class == "Stackable Currency"
+    BaseType = "Splinter"
+	StackSize > 4
+    SetFontSize 35
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	SetBackgroundColor 249 150 25 178
+	PlayAlertSound 2 300
+	PlayEffect White
+	MinimapIcon 2 White Circle
+
+Show #Breachstone
+    Class == "Breachstones"
+	SetFontSize 40
+	SetTextColor 255 255 255 255
+	SetBorderColor 255 255 255 255
+	SetBackgroundColor 159 15 213 255
+	PlayAlertSound 1 300
+	PlayEffect Red
+	MinimapIcon 0 Red Hexagon
+
+Show #Splinter
+    Class == "Stackable Currency"
+    BaseType = "Splinter"
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	SetBackgroundColor 249 150 25 178    
+
+Show #Catalyst
+    Class == "Stackable Currency"
+    BaseType = "Catalyst"
+	SetFontSize 35
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	SetBackgroundColor 213 159 0 255
+	PlayAlertSound 2 300
+	PlayEffect White
+	MinimapIcon 2 White Circle
+
+#---Expedition---
+Show #Expedition
+    Class == "Stackable Currency"
+    BaseType == "Exotic Coinage"
+	SetFontSize 35
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	SetBackgroundColor 240 90 35 178
+	PlayAlertSound 2 300
+	PlayEffect Yellow
+	MinimapIcon 1 Yellow Circle
+
+Show #Expedition
+    Class == "Stackable Currency"
+    BaseType = "Artifact"
+	SetFontSize 35
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	SetBackgroundColor 240 90 35 255
+	PlayAlertSound 2 300
+	PlayEffect Yellow
+	MinimapIcon 1 Yellow Circle
+
+#---Distilled---
+Show #Distilled
+	Class == "Stackable Currency"
+    BaseType = "Distilled"
+    SetFontSize 40
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	SetBackgroundColor 249 150 25 255
+	PlayAlertSound 2 300
+	PlayEffect White
+	MinimapIcon 2 White Circle
+
+#---Omen---
+Show #Omen
+    Class == "Stackable Currency"
+    BaseType "Omen"
+    SetFontSize 45
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	SetBackgroundColor 240 90 35 178
+	PlayAlertSound 2 300
+	PlayEffect Yellow
+	MinimapIcon 1 Yellow Circle
+
+###QUEST###
+Show #Quest
+	Class "Quest Items"
+	SetFontSize 35
+	SetTextColor 74 230 58 255
+	SetBorderColor 74 230 58 255
+	SetBackgroundColor 0 0 0 255
+	PlayAlertSound 3 300
+	PlayEffect Green
+	MinimapIcon 1 Green Pentagon
+
+Show #Keys
+	BaseType "Bronze Key" "Silver Key" "Gold Key"
+	SetFontSize 35
+	SetTextColor 74 230 58 255
+	SetBorderColor 74 230 58 255
+	SetBackgroundColor 0 0 0 255
+	PlayAlertSound 3 300
+	PlayEffect Green
+	MinimapIcon 1 Green Pentagon
+
+###MAPS###
+Show #Waystone
+    Class = "Waystones"
+    WaystoneTier >= 11
+	SetFontSize 35
+	SetTextColor 122 0 0 255
+	SetBackgroundColor 235 235 235 126
+	PlayAlertSound 5 300
+	PlayEffect Yellow
+	MinimapIcon 1 Red Square
+    SetBorderColor 255 0 0
+
+Show #Waystone
+	Class == "Waystones"
+	WaystoneTier >= 7
+	WaystoneTier <= 10
+	SetFontSize 35
+	SetTextColor 0 0 0 255
+	SetBackgroundColor 200 200 200 178
+	PlayAlertSound 5 300
+
+Show #Waystone
+	Class == "Waystones"
+	WaystoneTier >= 4
+	WaystoneTier <= 6
+    SetFontSize 35
+    SetTextColor 255 255 255 255
+    SetBackgroundColor 20 20 0 127
+
+Show #Waystone
+	Class == "Waystones"
+	WaystoneTier >= 1
+	WaystoneTier <= 3
+    SetFontSize 35
+    SetTextColor 255 255 255 255
+    SetBackgroundColor 20 20 0 127
+
+###FRAGMENTS###
+Show #Sanctum
+    Class == "Trial Coins"
+    SetTextColor 253 7 79
+    PlayEffect Red Temp
+    MinimapIcon 1 Red Square
+
+Show #Expedition
+    Class == "Expedition Logbooks"
+    SetTextColor 253 7 79
+    PlayEffect Red Temp
+    MinimapIcon 1 Red Square
+
+Show #Ultimatum
+    Class == "Inscribed Ultimatum"
+    SetTextColor 253 7 79
+    PlayEffect Red Temp
+    MinimapIcon 1 Red Square
+
+Show #Tablets
+    Class = "Tablet"
+	SetFontSize 45
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	SetBackgroundColor 180 0 255 255
+	PlayAlertSound 2 300
+	PlayEffect Yellow
+	MinimapIcon 1 Yellow Hexagon
+
+Show #Endgame Keys
+	Class = "Pinnacle Keys"
+    SetFontSize 45
+	SetTextColor 180 0 255 255
+	SetBorderColor 180 0 255 255
+	SetBackgroundColor 255 255 255 177
+	PlayAlertSound 6 300
+	PlayEffect Red
+	MinimapIcon 0 Red Star
+
+###GEMS###
+Show #Uncut Spirit Gems
+    BaseType == "Uncut Spirit Gem"
+	SetFontSize 35
+	SetTextColor 30 190 190 255
+	SetBorderColor 30 190 190 255
+	PlayAlertSound 2 300
+	PlayEffect Grey
+	MinimapIcon 1 White Triangle
+
+Show #Uncut Other Gems
+    BaseType == "Uncut Skill Gem" "Uncut Support Gem"
+	SetFontSize 30
+	SetTextColor 30 190 190 255
+	SetBorderColor 30 190 190 255
+	Continue
+
+Show #Uncut Other Gems
+    BaseType == "Uncut Skill Gem" "Uncut Support Gem"
+    GemLevel >= 17
+    PlayAlertSound 2 300
+	PlayEffect Grey Temp
+	MinimapIcon 1 White Triangle
+
+Show #Uncut Other Gems
+    BaseType = "Uncut Skill Gem" "Uncut Support Gem"
+
+Show #Gems
+    Class == "Skill Gems" "Support Gems"
+	SetTextColor 30 190 190 255
+	SetBorderColor 30 190 190 255
+    Continue
+
+Show #Gems
+    Class == "Skill Gems" "Support Gems"
+	Quality > 0
+	PlayEffect Grey
+    PlayAlertSound 2 300
+	MinimapIcon 1 White Triangle
+
+Show #Gems
+    Class == "Skill Gems" "Support Gems"
+	Sockets > 2
+	PlayEffect Grey
+    PlayAlertSound 2 300
+	MinimapIcon 1 White Triangle
+
+###GEAR###
+#--Unique
+Show #Unique
+    Rarity == Unique
+    Sockets > 0
+	SetFontSize 40
+	SetTextColor 175 96 37 255
+	SetBorderColor 175 96 37 255
+	SetBackgroundColor 255 255 255 177
+	PlayEffect Red
+	MinimapIcon 0 Red Star
+    PlayAlertSound 3 300
+
+Show #Unique
+    Rarity == Unique
+    MinimapIcon 1 Brown Star
+    PlayEffect Brown
+
+#---General
+Show #General
+    Class == "Body Armour" "One Hand Maces" "Two Hand Maces" "One Hand Axes" "Two Hand Axes" "One Hand Swords" "Two Hand Swords" "Wands" "Boots" "Gloves" "Bows" "Shields" "Staves" "Quarterstaves" "Foci" "Crossbows" "Claws" "Daggers" "Traps" "Flails" "Spears" "Quivers"
+    Rarity == Rare
+    SetTextColor 233 206 14 255
+    SetBorderColor 233 206 14 255
+    Continue
+
+Show #General
+    Class == "Body Armour" "One Hand Maces" "Two Hand Maces" "One Hand Axes" "Two Hand Axes" "One Hand Swords" "Two Hand Swords" "Wands" "Boots" "Gloves" "Bows" "Shields" "Staves" "Quarterstaves" "Foci" "Crossbows" "Claws" "Daggers" "Traps" "Flails" "Spears" "Quivers"
+    Rarity == Magic
+    SetTextColor 54 108 209 255
+    SetBorderColor 54 108 209 255
+    Continue
+
+Show #General
+    Class == "Body Armour" "One Hand Maces" "Two Hand Maces" "One Hand Axes" "Two Hand Axes" "One Hand Swords" "Two Hand Swords" "Wands" "Boots" "Gloves" "Bows" "Shields" "Staves" "Quarterstaves" "Foci" "Crossbows" "Claws" "Daggers" "Traps" "Flails" "Spears" "Quivers"
+    Rarity == Normal
+    SetTextColor 204 204 204 255
+    Continue
+
+Show #General
+    Class == "Body Armour" "One Hand Maces" "Two Hand Maces" "One Hand Axes" "Two Hand Axes" "One Hand Swords" "Two Hand Swords" "Wands" "Boots" "Gloves" "Bows" "Shields" "Staves" "Quarterstaves" "Foci" "Crossbows" "Claws" "Daggers" "Traps" "Flails" "Spears" "Quivers"
+	Sockets > 0
+    SetBorderColor 148 255 236 200
+    SetBackgroundColor 40 40 0 220
+    PlayEffect Cyan Temp
+
+Show #General
+    Class == "Body Armour" "One Hand Maces" "Two Hand Maces" "One Hand Axes" "Two Hand Axes" "One Hand Swords" "Two Hand Swords" "Wands" "Boots" "Gloves" "Bows" "Shields" "Staves" "Quarterstaves" "Foci" "Crossbows" "Claws" "Daggers" "Traps" "Flails" "Spears" "Quivers"
+    Quality > 0
+    SetBorderColor 180 94 255 255
+    SetBackgroundColor 70 0 0 220
+    PlayEffect Orange
+
+#---Jewellry
+Show #Jewellery
+    Class == "Amulets" "Rings" "Belts" 
+    Rarity == Rare
+    SetTextColor 233 206 14 255
+    SetBorderColor 233 206 14 255
+    PlayEffect White Temp
+    PlayAlertSound 2 300
+    Continue
+
+Show #Jewellery
+    Class == "Amulets" "Rings" "Belts" 
+    Rarity == Magic
+    SetTextColor 54 108 209 255
+    SetBorderColor 54 108 209 255
+    PlayEffect White Temp
+    PlayAlertSound 2 300
+    Continue
+
+Show #Jewellery
+    Class == "Amulets" "Rings" "Belts" 
+    Rarity == Normal
+    SetTextColor 204 204 204 255
+    PlayEffect White Temp
+    PlayAlertSound 2 300
+    Continue
+
+Show #Jewellery
+    Class == "Amulets" "Rings" "Belts" 
+    Quality > 0
+    PlayEffect Orange
+    PlayAlertSound 1 300
+
+#---Flasks
+Show #Flasks
+    Class == "Mana Flasks" "Life Flasks" "Charms"
+    Rarity == Normal Magic
+	SetFontSize 30
+	SetBorderColor 0 0 0 255
+	SetBackgroundColor 25 100 75
+	PlayEffect Grey Temp
+    Continue   
+
+Show #Flasks
+    Quality > 0
+    Class == "Mana Flasks" "Life Flasks" "Charms"
+	Rarity Normal Magic
+	SetTextColor 0 240 190 255
+	SetBorderColor 0 240 190 255
+	SetBackgroundColor 20 20 0 127
+	PlayAlertSound 3 300
+	PlayEffect Blue
+	MinimapIcon 1 Blue Diamond
+
+#---Relics
+Show #Relics
+	Class == "Relic"
+    SetFontSize 35
+	SetBorderColor 0 240 190 255
+	PlayAlertSound 3 300
+	PlayEffect Blue
+	MinimapIcon 2 Blue Diamond
+
+#---Jewel
+Show #Jewels
+    Class == "Jewels"
+    BaseType == "Emerald" "Sapphire" "Ruby" "Diamond"
+    Rarity == Rare
+	SetFontSize 35
+	SetTextColor 220 220 0 255
+	SetBorderColor 220 220 0 255
+	SetBackgroundColor 120 120 0 225
+	PlayEffect Grey Temp
+	MinimapIcon 2 Grey Diamond
+
+Show #Jewels
+    Class == "Jewels"
+    BaseType == "Emerald" "Sapphire" "Ruby" "Diamond"
+    Rarity <= Magic
+	SetFontSize 35
+	SetTextColor 0 75 250 255
+	SetBorderColor 0 75 250 255
+	SetBackgroundColor 0 20 40 255
+
+Show #Jewels
+    Class == "Jewels"
+    BaseType = "Time-Lost"
+    Rarity == Rare
+    SetFontSize 35
+	SetTextColor 150 0 255 255
+	SetBorderColor 150 0 255 255
+	SetBackgroundColor 34 0 67 255
+	PlayAlertSound 2 300
+	PlayEffect Grey Temp
+	MinimapIcon 2 Grey Pentagon
+
+Show #Jewels
+    Class == "Jewels"
+    BaseType = "Time-Lost"
+    Rarity <= Magic
+	SetFontSize 35
+	SetTextColor 150 0 255 255
+	SetBorderColor 150 0 255 255
+	SetBackgroundColor 34 0 67 255
+	PlayAlertSound 2 300
+	PlayEffect Grey Temp
+	MinimapIcon 2 Grey Pentagon
+
+#---Socketables
+Show #Runes
+    Class == "Socketable"
+    BaseType "Rune"
+	SetFontSize 40
+	SetTextColor 0 75 250 255
+	SetBorderColor 0 75 250 255
+	SetBackgroundColor 0 20 40 255
+	PlayEffect White Temp
+	MinimapIcon 2 White Circle
+Show #Soul Cores
+    Class = "Socketable"
+    BaseType "Soul Core"
+	SetFontSize 40
+	SetTextColor 0 75 250 255
+	SetBorderColor 240 100 0 255
+	SetBackgroundColor 0 20 40 255
+	PlayAlertSound 1 300
+    PlayEffect White Temp
+	MinimapIcon 2 White Circle
