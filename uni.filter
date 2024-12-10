@@ -71,8 +71,8 @@ Show #Gold
 #Act5
 Show #Gold
     BaseType == "Gold"
-    AreaLevel <= 57
-    AreaLevel > 52
+    AreaLevel < 57
+    AreaLevel >= 52
     StackSize > 800
     SetFontSize 22
     SetTextColor 255 215 0
@@ -82,8 +82,8 @@ Show #Gold
 
 Show #Gold
     BaseType == "Gold"
-    AreaLevel <= 57
-    AreaLevel > 52
+    AreaLevel < 57
+    AreaLevel >= 52
     StackSize > 350
     SetFontSize 20
     SetTextColor 255 215 0
@@ -92,8 +92,8 @@ Show #Gold
 #Act4
 Show #Gold
     BaseType == "Gold"
-    AreaLevel <= 52
-    AreaLevel > 45
+    AreaLevel < 52
+    AreaLevel >= 45
     StackSize > 750
     SetFontSize 22
     SetTextColor 255 215 0
@@ -103,8 +103,8 @@ Show #Gold
 
 Show #Gold
     BaseType == "Gold"
-    AreaLevel <= 52
-    AreaLevel > 45
+    AreaLevel < 52
+    AreaLevel >= 45
     StackSize > 250
     SetFontSize 20
     SetTextColor 255 215 0
@@ -113,8 +113,8 @@ Show #Gold
 #Act3
 Show #Gold
     BaseType == "Gold"
-    AreaLevel <= 45
-    AreaLevel > 32
+    AreaLevel < 45
+    AreaLevel >= 32
     StackSize > 500
     SetFontSize 22
     SetTextColor 255 215 0
@@ -124,8 +124,8 @@ Show #Gold
 
 Show #Gold
     BaseType == "Gold"
-    AreaLevel <= 45
-    AreaLevel > 32
+    AreaLevel < 45
+    AreaLevel >= 32
     StackSize > 150
     SetFontSize 20
     SetTextColor 255 215 0
@@ -134,8 +134,8 @@ Show #Gold
 #Act2
 Show #Gold
     BaseType == "Gold"
-    AreaLevel <= 32
-    AreaLevel > 15
+    AreaLevel < 32
+    AreaLevel >= 15
     StackSize > 300
     SetFontSize 22
     SetTextColor 255 215 0
@@ -145,8 +145,8 @@ Show #Gold
 
 Show #Gold
     BaseType == "Gold"
-    AreaLevel <= 32
-    AreaLevel > 15
+    AreaLevel < 32
+    AreaLevel >= 15
     StackSize > 75
     SetFontSize 20
     SetTextColor 255 215 0
@@ -155,7 +155,7 @@ Show #Gold
 #Act1
 Show #Gold
     BaseType == "Gold"
-    AreaLevel <= 15
+    AreaLevel < 15
     StackSize > 150
     SetFontSize 22
     SetTextColor 255 215 0
@@ -165,7 +165,7 @@ Show #Gold
 
 Show #Gold
     BaseType == "Gold"
-    AreaLevel <= 15
+    AreaLevel < 15
     StackSize > 50
     SetFontSize 20
     SetTextColor 255 215 0
