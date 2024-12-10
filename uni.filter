@@ -602,8 +602,8 @@ Show #Runes T1
 	SetTextColor 0 140 193 255
 	SetBorderColor 255 255 255 255
 	SetBackgroundColor 0 20 40 255
-	PlayEffect White Temp
-	MinimapIcon 2 White Circle
+	PlayEffect Cyan Temp
+	MinimapIcon 2 Cyan UpsideDownHouse
 
 Show #Runes T2
     Class == "Socketable"
@@ -612,8 +612,8 @@ Show #Runes T2
 	SetTextColor 0 140 193 255
 	SetBorderColor 255 255 255 255
 	SetBackgroundColor 0 20 40 255
-	PlayEffect White Temp
-	MinimapIcon 2 White Circle
+	PlayEffect Cyan Temp
+	MinimapIcon 2 Cyan UpsideDownHouse
 
 Show #Soul Cores
     Class = "Socketable"
@@ -623,5 +623,5 @@ Show #Soul Cores
 	SetBorderColor 240 100 0 255
 	SetBackgroundColor 0 20 40 255
 	PlayAlertSound 1 300
-    PlayEffect White Temp
-	MinimapIcon 2 White Circle
+    PlayEffect Cyan Temp
+	MinimapIcon 2 Cyan UpsideDownHouse
