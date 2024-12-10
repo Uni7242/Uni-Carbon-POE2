@@ -48,8 +48,11 @@ Show #T4
     SetBackgroundColor 20 20 0 200
 
 #---Gold---
+
+#Act6+
 Show #Gold
     BaseType == "Gold"
+    AreaLevel >=57
     StackSize > 1000
     SetFontSize 22
     SetTextColor 255 215 0
@@ -59,12 +62,116 @@ Show #Gold
 
 Show #Gold
     BaseType == "Gold"
+    AreaLevel >=57
     StackSize > 400
     SetFontSize 20
     SetTextColor 255 215 0
     MinimapIcon 2 Yellow Cross
 
+#Act5
+Show #Gold
+    BaseType == "Gold"
+    AreaLevel <= 57
+    AreaLevel > 52
+    StackSize > 800
+    SetFontSize 22
+    SetTextColor 255 215 0
+    SetBorderColor 255 215 0
+    PlayEffect Yellow Temp
+    MinimapIcon 1 Yellow Cross
 
+Show #Gold
+    BaseType == "Gold"
+    AreaLevel <= 57
+    AreaLevel > 52
+    StackSize > 350
+    SetFontSize 20
+    SetTextColor 255 215 0
+    MinimapIcon 2 Yellow Cross
+
+#Act4
+Show #Gold
+    BaseType == "Gold"
+    AreaLevel <= 52
+    AreaLevel > 45
+    StackSize > 750
+    SetFontSize 22
+    SetTextColor 255 215 0
+    SetBorderColor 255 215 0
+    PlayEffect Yellow Temp
+    MinimapIcon 1 Yellow Cross
+
+Show #Gold
+    BaseType == "Gold"
+    AreaLevel <= 52
+    AreaLevel > 45
+    StackSize > 250
+    SetFontSize 20
+    SetTextColor 255 215 0
+    MinimapIcon 2 Yellow Cross
+
+#Act3
+Show #Gold
+    BaseType == "Gold"
+    AreaLevel <= 45
+    AreaLevel > 32
+    StackSize > 500
+    SetFontSize 22
+    SetTextColor 255 215 0
+    SetBorderColor 255 215 0
+    PlayEffect Yellow Temp
+    MinimapIcon 1 Yellow Cross
+
+Show #Gold
+    BaseType == "Gold"
+    AreaLevel <= 45
+    AreaLevel > 32
+    StackSize > 150
+    SetFontSize 20
+    SetTextColor 255 215 0
+    MinimapIcon 2 Yellow Cross
+
+#Act2
+Show #Gold
+    BaseType == "Gold"
+    AreaLevel <= 32
+    AreaLevel > 15
+    StackSize > 300
+    SetFontSize 22
+    SetTextColor 255 215 0
+    SetBorderColor 255 215 0
+    PlayEffect Yellow Temp
+    MinimapIcon 1 Yellow Cross
+
+Show #Gold
+    BaseType == "Gold"
+    AreaLevel <= 32
+    AreaLevel > 15
+    StackSize > 75
+    SetFontSize 20
+    SetTextColor 255 215 0
+    MinimapIcon 2 Yellow Cross
+
+#Act1
+Show #Gold
+    BaseType == "Gold"
+    AreaLevel <= 15
+    StackSize > 150
+    SetFontSize 22
+    SetTextColor 255 215 0
+    SetBorderColor 255 215 0
+    PlayEffect Yellow Temp
+    MinimapIcon 1 Yellow Cross
+
+Show #Gold
+    BaseType == "Gold"
+    AreaLevel <= 15
+    StackSize > 50
+    SetFontSize 20
+    SetTextColor 255 215 0
+    MinimapIcon 2 Yellow Cross
+
+#Other
 Show #Gold
     BaseType == "Gold"
     SetFontSize 18
@@ -339,34 +446,41 @@ Show #Unique
 
 #---General
 Show #General
-    Class == "Body Armour" "One Hand Maces" "Two Hand Maces" "One Hand Axes" "Two Hand Axes" "One Hand Swords" "Two Hand Swords" "Wands" "Boots" "Gloves" "Bows" "Shields" "Staves" "Quarterstaves" "Foci" "Crossbows" "Claws" "Daggers" "Traps" "Flails" "Spears" "Quivers"
+    Class == "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "One Hand Maces" "Two Hand Maces" "One Hand Axes" "Two Hand Axes" "One Hand Swords" "Two Hand Swords" "Crossbows" "Claws" "Daggers" "Traps" "Flails" "Spears" "Staves" "Quarterstaves" "Wands" "Foci" "Quivers" "Shields"
     Rarity == Rare
     SetTextColor 233 206 14 255
     SetBorderColor 233 206 14 255
     Continue
 
 Show #General
-    Class == "Body Armour" "One Hand Maces" "Two Hand Maces" "One Hand Axes" "Two Hand Axes" "One Hand Swords" "Two Hand Swords" "Wands" "Boots" "Gloves" "Bows" "Shields" "Staves" "Quarterstaves" "Foci" "Crossbows" "Claws" "Daggers" "Traps" "Flails" "Spears" "Quivers"
+    Class == "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "One Hand Maces" "Two Hand Maces" "One Hand Axes" "Two Hand Axes" "One Hand Swords" "Two Hand Swords" "Crossbows" "Claws" "Daggers" "Traps" "Flails" "Spears" "Staves" "Quarterstaves" "Wands" "Foci" "Quivers" "Shields"
     Rarity == Magic
     SetTextColor 54 108 209 255
     SetBorderColor 54 108 209 255
     Continue
 
 Show #General
-    Class == "Body Armour" "One Hand Maces" "Two Hand Maces" "One Hand Axes" "Two Hand Axes" "One Hand Swords" "Two Hand Swords" "Wands" "Boots" "Gloves" "Bows" "Shields" "Staves" "Quarterstaves" "Foci" "Crossbows" "Claws" "Daggers" "Traps" "Flails" "Spears" "Quivers"
+    Class == "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "One Hand Maces" "Two Hand Maces" "One Hand Axes" "Two Hand Axes" "One Hand Swords" "Two Hand Swords" "Crossbows" "Claws" "Daggers" "Traps" "Flails" "Spears" "Staves" "Quarterstaves" "Wands" "Foci" "Quivers" "Shields"
     Rarity == Normal
     SetTextColor 204 204 204 255
     Continue
 
 Show #General
-    Class == "Body Armour" "One Hand Maces" "Two Hand Maces" "One Hand Axes" "Two Hand Axes" "One Hand Swords" "Two Hand Swords" "Wands" "Boots" "Gloves" "Bows" "Shields" "Staves" "Quarterstaves" "Foci" "Crossbows" "Claws" "Daggers" "Traps" "Flails" "Spears" "Quivers"
+    Class == "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "One Hand Maces" "Two Hand Maces" "One Hand Axes" "Two Hand Axes" "One Hand Swords" "Two Hand Swords" "Crossbows" "Claws" "Daggers" "Traps" "Flails" "Spears" "Staves" "Quarterstaves" "Wands" "Foci" "Quivers" "Shields"
 	Sockets > 0
     SetBorderColor 148 255 236 200
     SetBackgroundColor 40 40 0 220
     PlayEffect Cyan Temp
 
 Show #General
-    Class == "Body Armour" "One Hand Maces" "Two Hand Maces" "One Hand Axes" "Two Hand Axes" "One Hand Swords" "Two Hand Swords" "Wands" "Boots" "Gloves" "Bows" "Shields" "Staves" "Quarterstaves" "Foci" "Crossbows" "Claws" "Daggers" "Traps" "Flails" "Spears" "Quivers"
+    Class == "Body Armour" "Boots" "Gloves" "Helmets" "Foci" "Quivers" "Shields"
+    Quality > 0
+    SetBorderColor 180 94 255 255
+    SetBackgroundColor 60 0 0 220
+    PlayEffect Orange Temp
+
+Show #General
+    Class == "Bows" "One Hand Maces" "Two Hand Maces" "One Hand Axes" "Two Hand Axes" "One Hand Swords" "Two Hand Swords" "Crossbows" "Claws" "Daggers" "Traps" "Flails" "Spears" "Staves" "Quarterstaves" "Wands"
     Quality > 0
     SetBorderColor 180 94 255 255
     SetBackgroundColor 70 0 0 220
