@@ -24,7 +24,7 @@ Show #T1
 
 Show #T2
     Class == "Stackable Currency"
-    BaseType == "Orb of Alteration" "Glassblower's Bauble" "Chaos Orb" "Vaal Orb" "Artificer's Orb" "Arcanist's Etcher" "Exalted Orb" "Regal Orb" "Gemcutter's Prism"
+    BaseType == "Orb of Alteration" "Glassblower's Bauble" "Chaos Orb" "Vaal Orb" "Artificer's Orb" "Arcanist's Etcher" "Exalted Orb" "Regal Orb" "Gemcutter's Prism" "Orb of Chance"
 	SetFontSize 35
 	SetTextColor 0 0 0 255
 	SetBorderColor 0 0 0 255
@@ -33,7 +33,7 @@ Show #T2
 
 Show #T3
     Class == "Stackable Currency"
-    BaseType == "Blacksmith's Whetstone" "Armourer's Scrap" "Regal Shard" "Alchemy Shard" "Chaos Shard" "Artificer's Shard" "Orb of Alchemy" "Orb of Chance" "Lesser Jeweller's Orb"
+    BaseType == "Blacksmith's Whetstone" "Armourer's Scrap" "Regal Shard" "Alchemy Shard" "Chaos Shard" "Artificer's Shard" "Orb of Alchemy" "Lesser Jeweller's Orb" "Chance Shard" 
     SetFontSize 35
     SetTextColor 0 0 0 255
     SetBorderColor 0 0 0 255
@@ -41,7 +41,7 @@ Show #T3
 
 Show #T4
     Class == "Stackable Currency"
-    BaseType == "Orb of Transmutation" "Orb of Augmentation" "Transmutation Shard" "Chance Shard" 
+    BaseType == "Orb of Transmutation" "Orb of Augmentation" "Transmutation Shard"
     SetFontSize 35
     SetTextColor 170 158 130 255
     SetBorderColor 170 158 130 255
@@ -446,27 +446,26 @@ Show #Unique
 
 #---General
 Show #General
-    Class == "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "One Hand Maces" "Two Hand Maces" "One Hand Axes" "Two Hand Axes" "One Hand Swords" "Two Hand Swords" "Crossbows" "Claws" "Daggers" "Traps" "Flails" "Spears" "Staves" "Quarterstaves" "Wands" "Foci" "Quivers" "Shields"
+    Class == "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "One Hand Maces" "Two Hand Maces" "One Hand Axes" "Two Hand Axes" "One Hand Swords" "Two Hand Swords" "Crossbows" "Claws" "Daggers" "Traps" "Flails" "Spears" "Sceptres" "Staves" "Quarterstaves" "Wands" "Foci" "Quivers" "Shields"
     Rarity == Rare
     SetTextColor 233 206 14 255
     SetBorderColor 233 206 14 255
     Continue
 
 Show #General
-    Class == "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "One Hand Maces" "Two Hand Maces" "One Hand Axes" "Two Hand Axes" "One Hand Swords" "Two Hand Swords" "Crossbows" "Claws" "Daggers" "Traps" "Flails" "Spears" "Staves" "Quarterstaves" "Wands" "Foci" "Quivers" "Shields"
+    Class == "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "One Hand Maces" "Two Hand Maces" "One Hand Axes" "Two Hand Axes" "One Hand Swords" "Two Hand Swords" "Crossbows" "Claws" "Daggers" "Traps" "Flails" "Spears" "Sceptres" "Staves" "Quarterstaves" "Wands" "Foci" "Quivers" "Shields"
     Rarity == Magic
-    SetTextColor 54 108 209 255
-    SetBorderColor 54 108 209 255
+    SetTextColor 43 123 226 255
     Continue
 
 Show #General
-    Class == "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "One Hand Maces" "Two Hand Maces" "One Hand Axes" "Two Hand Axes" "One Hand Swords" "Two Hand Swords" "Crossbows" "Claws" "Daggers" "Traps" "Flails" "Spears" "Staves" "Quarterstaves" "Wands" "Foci" "Quivers" "Shields"
+    Class == "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "One Hand Maces" "Two Hand Maces" "One Hand Axes" "Two Hand Axes" "One Hand Swords" "Two Hand Swords" "Crossbows" "Claws" "Daggers" "Traps" "Flails" "Spears" "Sceptres" "Staves" "Quarterstaves" "Wands" "Foci" "Quivers" "Shields"
     Rarity == Normal
     SetTextColor 204 204 204 255
     Continue
 
 Show #General
-    Class == "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "One Hand Maces" "Two Hand Maces" "One Hand Axes" "Two Hand Axes" "One Hand Swords" "Two Hand Swords" "Crossbows" "Claws" "Daggers" "Traps" "Flails" "Spears" "Staves" "Quarterstaves" "Wands" "Foci" "Quivers" "Shields"
+    Class == "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "One Hand Maces" "Two Hand Maces" "One Hand Axes" "Two Hand Axes" "One Hand Swords" "Two Hand Swords" "Crossbows" "Claws" "Daggers" "Traps" "Flails" "Spears" "Sceptres" "Staves" "Quarterstaves" "Wands" "Foci" "Quivers" "Shields"
 	Sockets > 0
     SetBorderColor 148 255 236 200
     SetBackgroundColor 40 40 0 220
@@ -480,7 +479,7 @@ Show #General
     PlayEffect Orange Temp
 
 Show #General
-    Class == "Bows" "One Hand Maces" "Two Hand Maces" "One Hand Axes" "Two Hand Axes" "One Hand Swords" "Two Hand Swords" "Crossbows" "Claws" "Daggers" "Traps" "Flails" "Spears" "Staves" "Quarterstaves" "Wands"
+    Class == "Bows" "One Hand Maces" "Two Hand Maces" "One Hand Axes" "Two Hand Axes" "One Hand Swords" "Two Hand Swords" "Crossbows" "Claws" "Daggers" "Traps" "Flails" "Spears" "Sceptres" "Staves" "Quarterstaves" "Wands"
     Quality > 0
     SetBorderColor 180 94 255 255
     SetBackgroundColor 70 0 0 220
