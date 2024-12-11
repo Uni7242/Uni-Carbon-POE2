@@ -452,98 +452,65 @@ Show #Unique
 
 #---General
 Show #General
-    Class == "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "One Hand Maces" "Two Hand Maces" "One Hand Axes" "Two Hand Axes" "One Hand Swords" "Two Hand Swords" "Crossbows" "Claws" "Daggers" "Traps" "Flails" "Spears" "Sceptres" "Staves" "Quarterstaves" "Wands" "Foci" "Quivers" "Shields"
+    Class == "Jewels" "Amulets" "Rings" "Belts" "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "One Hand Maces" "Two Hand Maces" "One Hand Axes" "Two Hand Axes" "One Hand Swords" "Two Hand Swords" "Crossbows" "Claws" "Daggers" "Traps" "Flails" "Spears" "Sceptres" "Staves" "Quarterstaves" "Wands" "Foci" "Quivers" "Shields"
     Rarity == Rare
     SetTextColor 233 206 14 255
     SetBorderColor 233 206 14 255
     Continue
 
 Show #General
-    Class == "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "One Hand Maces" "Two Hand Maces" "One Hand Axes" "Two Hand Axes" "One Hand Swords" "Two Hand Swords" "Crossbows" "Claws" "Daggers" "Traps" "Flails" "Spears" "Sceptres" "Staves" "Quarterstaves" "Wands" "Foci" "Quivers" "Shields"
+    Class == "Jewels" "Amulets" "Rings" "Belts" "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "One Hand Maces" "Two Hand Maces" "One Hand Axes" "Two Hand Axes" "One Hand Swords" "Two Hand Swords" "Crossbows" "Claws" "Daggers" "Traps" "Flails" "Spears" "Sceptres" "Staves" "Quarterstaves" "Wands" "Foci" "Quivers" "Shields"
     Rarity == Magic
     SetTextColor 43 123 226 255
     Continue
 
 Show #General
-    Class == "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "One Hand Maces" "Two Hand Maces" "One Hand Axes" "Two Hand Axes" "One Hand Swords" "Two Hand Swords" "Crossbows" "Claws" "Daggers" "Traps" "Flails" "Spears" "Sceptres" "Staves" "Quarterstaves" "Wands" "Foci" "Quivers" "Shields"
+    Class == "Jewels" "Amulets" "Rings" "Belts" "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "One Hand Maces" "Two Hand Maces" "One Hand Axes" "Two Hand Axes" "One Hand Swords" "Two Hand Swords" "Crossbows" "Claws" "Daggers" "Traps" "Flails" "Spears" "Sceptres" "Staves" "Quarterstaves" "Wands" "Foci" "Quivers" "Shields"
     Rarity == Normal
     SetTextColor 204 204 204 255
     Continue
 
-Show #General
+Show #Non Jewellery With Sockets
     Class == "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "One Hand Maces" "Two Hand Maces" "One Hand Axes" "Two Hand Axes" "One Hand Swords" "Two Hand Swords" "Crossbows" "Claws" "Daggers" "Traps" "Flails" "Spears" "Sceptres" "Staves" "Quarterstaves" "Wands" "Foci" "Quivers" "Shields"
 	Sockets > 0
     SetBorderColor 148 255 236 200
     SetBackgroundColor 40 40 0 220
     PlayEffect Cyan Temp
 
-Show #General
-    Class == "Body Armour" "Boots" "Gloves" "Helmets" "Foci" "Quivers" "Shields"
-    Quality > 0
-    SetBorderColor 180 94 255 255
-    SetBackgroundColor 60 0 0 220
-    PlayEffect Orange Temp
+Show #Jewellery
+    Class == "Amulets" "Rings" "Belts" 
+	SetBackgroundColor 110 59 110 200
+    PlayEffect White Temp
+    Continue
 
-Show #General
-    Class == "Bows" "One Hand Maces" "Two Hand Maces" "One Hand Axes" "Two Hand Axes" "One Hand Swords" "Two Hand Swords" "Crossbows" "Claws" "Daggers" "Traps" "Flails" "Spears" "Sceptres" "Staves" "Quarterstaves" "Wands"
+Show #Quality Basetypes
+    Class == "Amulets" "Rings" "Belts" "Bows" "One Hand Maces" "Two Hand Maces" "One Hand Axes" "Two Hand Axes" "One Hand Swords" "Two Hand Swords" "Crossbows" "Claws" "Daggers" "Traps" "Flails" "Spears" "Sceptres" "Staves" "Quarterstaves" "Wands"
     Quality > 0
     SetBorderColor 180 94 255 255
     SetBackgroundColor 70 0 0 220
     PlayEffect Orange
 
-#---Jewellry
-Show #Jewellery
-    Class == "Amulets" "Rings" "Belts" 
-    Rarity == Rare
-    SetTextColor 233 206 14 255
-    SetBorderColor 233 206 14 255
-    PlayEffect White Temp
-    PlayAlertSound 2 300
-    Continue
-
-Show #Jewellery
-    Class == "Amulets" "Rings" "Belts" 
-    Rarity == Magic
-    SetTextColor 54 108 209 255
-    SetBorderColor 54 108 209 255
-    PlayEffect White Temp
-    PlayAlertSound 2 300
-    Continue
-
-Show #Jewellery
-    Class == "Amulets" "Rings" "Belts" 
-    Rarity == Normal
-    SetTextColor 204 204 204 255
-    PlayEffect White Temp
-    PlayAlertSound 2 300
-    Continue
-
-Show #Jewellery
-    Class == "Amulets" "Rings" "Belts" 
-    Quality > 0
-    PlayEffect Orange
-    PlayAlertSound 1 300
-
-#---Flasks
-Show #Flasks
-    Class == "Mana Flasks" "Life Flasks" "Charms"
-    Rarity == Normal Magic
-	SetFontSize 30
-	SetBorderColor 0 0 0 255
-	SetBackgroundColor 25 100 75
+Show #Jewels
+    Class == "Jewels"
+    BaseType == "Emerald" "Sapphire" "Ruby" "Diamond"
+	SetFontSize 35
+	SetBackgroundColor 0 65 20 225
 	PlayEffect Grey Temp
-    Continue   
+	MinimapIcon 2 Grey Diamond
 
-Show #Flasks
-    Quality > 0
-    Class == "Mana Flasks" "Life Flasks" "Charms"
-	Rarity Normal Magic
-	SetTextColor 0 240 190 255
-	SetBorderColor 0 240 190 255
-	SetBackgroundColor 20 20 0 127
-	PlayAlertSound 3 300
-	PlayEffect Blue
-	MinimapIcon 1 Blue Diamond
+
+Show #Jewels
+    Class == "Jewels"
+    BaseType = "Time-Lost"
+    SetFontSize 35
+	SetBorderColor 150 0 255 255
+	SetBackgroundColor 216 249 228 255
+	PlayAlertSound 2 300
+	PlayEffect Grey Temp
+	MinimapIcon 2 Grey Pentagon
+
+Show #Final Catch
+    Class == "Jewels" "Amulets" "Rings" "Belts" "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "One Hand Maces" "Two Hand Maces" "One Hand Axes" "Two Hand Axes" "One Hand Swords" "Two Hand Swords" "Crossbows" "Claws" "Daggers" "Traps" "Flails" "Spears" "Sceptres" "Staves" "Quarterstaves" "Wands" "Foci" "Quivers" "Shields"
 
 #---Relics
 Show #Relics
@@ -554,50 +521,188 @@ Show #Relics
 	PlayEffect Blue
 	MinimapIcon 2 Blue Diamond
 
-#---Jewel
-Show #Jewels
-    Class == "Jewels"
-    BaseType == "Emerald" "Sapphire" "Ruby" "Diamond"
-    Rarity == Rare
+#---Flasks
+Hide #Flasks
+	Quality 0
+	AreaLevel >= 15
+	Class "Life Flask" "Mana Flask"
+	BaseType "Greater" "Medium" "Lesser"
+	SetFontSize 18
+	SetBorderColor 0 0 0 0
+	SetBackgroundColor 0 0 0 0
+	DisableDropSound True
+
+Hide #Flasks
+	Quality 0
+	AreaLevel >= 30
+	Class "Life Flask" "Mana Flask"
+	BaseType "Grand" "Giant"
+	SetFontSize 18
+	SetBorderColor 0 0 0 0
+	SetBackgroundColor 0 0 0 0
+	DisableDropSound True
+
+Hide #Flasks
+	Quality 0
+	AreaLevel >= 48
+	Class "Life Flask" "Mana Flask"
+	BaseType "Colossal" "Gargantuan"
+	SetFontSize 18
+	SetBorderColor 0 0 0 0
+	SetBackgroundColor 0 0 0 0
+	DisableDropSound True
+
+Hide #Flasks
+	Quality 0
+	AreaLevel >= 60
+	Class "Life Flask" "Mana Flask"
+	BaseType "Transcendent"
+	SetFontSize 18
+	SetBorderColor 0 0 0 0
+	SetBackgroundColor 0 0 0 0
+	DisableDropSound True
+
+Show #Flasks
+	AreaLevel <= 4
+	Class "Life Flask"
+	BaseType "Lesser"
 	SetFontSize 35
-	SetTextColor 220 220 0 255
+	SetBorderColor 120 0 0
+
+Show #Flasks
+	AreaLevel <= 10
+	Class "Life Flask"
+	BaseType "Medium"
+	SetFontSize 35
+	SetBorderColor 120 0 0
+
+Show #Flasks
+	AreaLevel <= 16
+	Class "Life Flask"
+	BaseType "Greater"
+	SetFontSize 35
+	SetBorderColor 120 0 0
+
+Show #Flasks
+	AreaLevel <= 23
+	Class "Life Flask"
+	BaseType "Grand"
+	SetFontSize 35
+	SetBorderColor 120 0 0
+
+Show #Flasks
+	AreaLevel <= 30
+	Class "Life Flask"
+	BaseType "Giant"
+	SetFontSize 35
+	SetBorderColor 120 0 0
+
+Show #Flasks
+	AreaLevel <= 40
+	Class "Life Flask"
+	BaseType "Colossal"
+	SetFontSize 35
+	SetBorderColor 120 0 0
+
+Show #Flasks
+	AreaLevel <= 50
+	Class "Life Flask"
+	BaseType "Gargantuan"
+	SetFontSize 35
+	SetBorderColor 120 0 0
+
+Show #Flasks
+	AreaLevel <= 60
+	Class "Life Flask"
+	BaseType "Transcendent"
+	SetFontSize 35
+	SetBorderColor 120 0 0
+
+Show #Flasks
+	Class "Life Flask"
+	BaseType "Ultimate"
+	SetFontSize 35
+	SetBorderColor 120 0 0
+
+Show #Flasks
+	AreaLevel <= 5
+	Class "Mana Flask"
+	BaseType "Lesser"
+	SetFontSize 35
+	SetBorderColor 0 133 255
+
+Show #Flasks
+	AreaLevel <= 11
+	Class "Mana Flask"
+	BaseType "Medium"
+	SetFontSize 35
+	SetBorderColor 0 133 255
+
+Show #Flasks
+	AreaLevel <= 17
+	Class "Mana Flask"
+	BaseType "Greater"
+	SetFontSize 35
+	SetBorderColor 0 133 255
+
+Show #Flasks
+	AreaLevel <= 24
+	Class "Mana Flask"
+	BaseType "Grand"
+	SetFontSize 35
+	SetBorderColor 0 133 255
+
+Show #Flasks
+	AreaLevel <= 31
+	Class "Mana Flask"
+	BaseType "Giant"
+	SetFontSize 35
+	SetBorderColor 0 133 255
+
+Show #Flasks
+	AreaLevel <= 41
+	Class "Mana Flask"
+	BaseType "Colossal"
+	SetFontSize 35
+	SetBorderColor 0 133 255
+
+Show #Flasks
+	AreaLevel <= 51
+	Class "Mana Flask"
+	BaseType "Gargantuan"
+	SetFontSize 35
+	SetBorderColor 0 133 255
+
+Show #Flasks
+	AreaLevel <= 61
+	Class "Mana Flask"
+	BaseType "Transcendent"
+	SetFontSize 35
+	SetBorderColor 0 133 255
+
+Show #Flasks
+	Class "Mana Flask"
+	BaseType "Ultimate"
+	SetFontSize 35
+	SetBorderColor 0 133 255
+
+Show #Flasks
+    Class == "Charms"
+	SetFontSize 30
 	SetBorderColor 0 0 0 255
-	SetBackgroundColor 120 120 0 225
+	SetBackgroundColor 25 100 75
 	PlayEffect Grey Temp
-	MinimapIcon 2 Grey Diamond
+    Continue   
 
-Show #Jewels
-    Class == "Jewels"
-    BaseType == "Emerald" "Sapphire" "Ruby" "Diamond"
-    Rarity <= Magic
-	SetFontSize 35
-	SetTextColor 0 75 250 255
-	SetBorderColor 0 0 0 255
-	SetBackgroundColor 0 20 40 255
-
-Show #Jewels
-    Class == "Jewels"
-    BaseType = "Time-Lost"
-    Rarity == Rare
-    SetFontSize 35
-	SetTextColor 150 0 255 255
-	SetBorderColor 150 0 255 255
-	SetBackgroundColor 34 0 67 255
-	PlayAlertSound 2 300
-	PlayEffect Grey Temp
-	MinimapIcon 2 Grey Pentagon
-
-Show #Jewels
-    Class == "Jewels"
-    BaseType = "Time-Lost"
-    Rarity <= Magic
-	SetFontSize 35
-	SetTextColor 150 0 255 255
-	SetBorderColor 150 0 255 255
-	SetBackgroundColor 34 0 67 255
-	PlayAlertSound 2 300
-	PlayEffect Grey Temp
-	MinimapIcon 2 Grey Pentagon
+Show #Flasks
+    Quality > 0
+    Class == "Charms"
+	SetTextColor 0 240 190 255
+	SetBorderColor 0 240 190 255
+	SetBackgroundColor 20 20 0 127
+	PlayAlertSound 3 300
+	PlayEffect Blue
+	MinimapIcon 1 Blue Diamond
 
 #---Socketables
 Show #Runes T1
