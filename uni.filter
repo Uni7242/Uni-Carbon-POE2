@@ -81,7 +81,7 @@ Show #Gold
     StackSize > 400
     SetFontSize 20
     SetTextColor 187 165 61
-    SetBorderColor 199 164 0
+    SetBorderColor 187 165 61
     MinimapIcon 2 Yellow Cross
 
 #Act5
@@ -103,7 +103,7 @@ Show #Gold
     StackSize > 250
     SetFontSize 20
     SetTextColor 187 165 61
-    SetBorderColor 199 164 0
+    SetBorderColor 187 165 61
     MinimapIcon 2 Yellow Cross
 
 #Act4
@@ -125,7 +125,7 @@ Show #Gold
     StackSize > 200
     SetFontSize 20
     SetTextColor 187 165 61
-    SetBorderColor 199 164 0
+    SetBorderColor 187 165 61
     MinimapIcon 2 Yellow Cross
 
 #Act3
@@ -169,7 +169,7 @@ Show #Gold
     StackSize > 75
     SetFontSize 20
     SetTextColor 187 165 61
-    SetBorderColor 199 164 0
+    SetBorderColor 187 165 61
     MinimapIcon 2 Yellow Cross
 
 #Act1
@@ -189,14 +189,14 @@ Show #Gold
     StackSize > 50
     SetFontSize 20
     SetTextColor 187 165 61
-    SetBorderColor 199 164 0
+    SetBorderColor 187 165 61
     MinimapIcon 2 Yellow Cross
 
 #Other
 Show #Gold
     BaseType == "Gold"
     SetFontSize 18
-    SetTextColor 255 215 0
+    SetTextColor 187 165 61
     MinimapIcon 2 Yellow Cross
 
 #---Scrolls---
@@ -505,7 +505,7 @@ Show #Jewellery
     Continue
 
 Show #Quality Basetypes
-    Class == "Amulets" "Rings" "Belts" "Bows" "One Hand Maces" "Two Hand Maces" "One Hand Axes" "Two Hand Axes" "One Hand Swords" "Two Hand Swords" "Crossbows" "Claws" "Daggers" "Traps" "Flails" "Spears" "Sceptres" "Staves" "Quarterstaves" "Wands"
+    Class == "Jewels" "Amulets" "Rings" "Belts" "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "One Hand Maces" "Two Hand Maces" "One Hand Axes" "Two Hand Axes" "One Hand Swords" "Two Hand Swords" "Crossbows" "Claws" "Daggers" "Traps" "Flails" "Spears" "Sceptres" "Staves" "Quarterstaves" "Wands" "Foci" "Quivers" "Shields"
     Quality > 0
     SetBorderColor 180 94 255 255
     PlayEffect Orange
