@@ -55,8 +55,8 @@ Show #Gold
     AreaLevel >= 57
     StackSize > 1000
     SetFontSize 22
-    SetTextColor 255 215 0
-    SetBorderColor 255 215 0
+    SetTextColor 187 165 61
+    SetBorderColor 187 165 61
     PlayEffect Yellow Temp
     MinimapIcon 1 Yellow Cross
 
@@ -65,7 +65,8 @@ Show #Gold
     AreaLevel >= 57
     StackSize > 400
     SetFontSize 20
-    SetTextColor 255 215 0
+    SetTextColor 187 165 61
+    SetBorderColor 199 164 0
     MinimapIcon 2 Yellow Cross
 
 #Act5
@@ -73,10 +74,10 @@ Show #Gold
     BaseType == "Gold"
     AreaLevel < 57
     AreaLevel >= 52
-    StackSize > 750
+    StackSize > 600
     SetFontSize 22
-    SetTextColor 255 215 0
-    SetBorderColor 255 215 0
+    SetTextColor 187 165 61
+    SetBorderColor 187 165 61
     PlayEffect Yellow Temp
     MinimapIcon 1 Yellow Cross
 
@@ -84,9 +85,10 @@ Show #Gold
     BaseType == "Gold"
     AreaLevel < 57
     AreaLevel >= 52
-    StackSize > 300
+    StackSize > 250
     SetFontSize 20
-    SetTextColor 255 215 0
+    SetTextColor 187 165 61
+    SetBorderColor 199 164 0
     MinimapIcon 2 Yellow Cross
 
 #Act4
@@ -94,10 +96,10 @@ Show #Gold
     BaseType == "Gold"
     AreaLevel < 52
     AreaLevel >= 45
-    StackSize > 600
+    StackSize > 500
     SetFontSize 22
-    SetTextColor 255 215 0
-    SetBorderColor 255 215 0
+    SetTextColor 187 165 61
+    SetBorderColor 187 165 61
     PlayEffect Yellow Temp
     MinimapIcon 1 Yellow Cross
 
@@ -107,7 +109,8 @@ Show #Gold
     AreaLevel >= 45
     StackSize > 200
     SetFontSize 20
-    SetTextColor 255 215 0
+    SetTextColor 187 165 61
+    SetBorderColor 199 164 0
     MinimapIcon 2 Yellow Cross
 
 #Act3
@@ -117,8 +120,8 @@ Show #Gold
     AreaLevel >= 32
     StackSize > 400
     SetFontSize 22
-    SetTextColor 255 215 0
-    SetBorderColor 255 215 0
+    SetTextColor 187 165 61
+    SetBorderColor 187 165 61
     PlayEffect Yellow Temp
     MinimapIcon 1 Yellow Cross
 
@@ -128,7 +131,8 @@ Show #Gold
     AreaLevel >= 32
     StackSize > 100
     SetFontSize 20
-    SetTextColor 255 215 0
+    SetTextColor 187 165 61
+    SetBorderColor 199 164 0
     MinimapIcon 2 Yellow Cross
 
 #Act2
@@ -138,8 +142,8 @@ Show #Gold
     AreaLevel >= 15
     StackSize > 250
     SetFontSize 22
-    SetTextColor 255 215 0
-    SetBorderColor 255 215 0
+    SetTextColor 187 165 61
+    SetBorderColor 187 165 61
     PlayEffect Yellow Temp
     MinimapIcon 1 Yellow Cross
 
@@ -149,7 +153,8 @@ Show #Gold
     AreaLevel >= 15
     StackSize > 75
     SetFontSize 20
-    SetTextColor 255 215 0
+    SetTextColor 187 165 61
+    SetBorderColor 199 164 0
     MinimapIcon 2 Yellow Cross
 
 #Act1
@@ -158,8 +163,8 @@ Show #Gold
     AreaLevel < 15
     StackSize > 150
     SetFontSize 22
-    SetTextColor 255 215 0
-    SetBorderColor 255 215 0
+    SetTextColor 187 165 61
+    SetBorderColor 187 165 61
     PlayEffect Yellow Temp
     MinimapIcon 1 Yellow Cross
 
@@ -168,7 +173,8 @@ Show #Gold
     AreaLevel < 15
     StackSize > 50
     SetFontSize 20
-    SetTextColor 255 215 0
+    SetTextColor 187 165 61
+    SetBorderColor 199 164 0
     MinimapIcon 2 Yellow Cross
 
 #Other
