@@ -487,7 +487,6 @@ Show #Quality Basetypes
     Class == "Amulets" "Rings" "Belts" "Bows" "One Hand Maces" "Two Hand Maces" "One Hand Axes" "Two Hand Axes" "One Hand Swords" "Two Hand Swords" "Crossbows" "Claws" "Daggers" "Traps" "Flails" "Spears" "Sceptres" "Staves" "Quarterstaves" "Wands"
     Quality > 0
     SetBorderColor 180 94 255 255
-    SetBackgroundColor 70 0 0 220
     PlayEffect Orange
 
 Show #Jewels
