@@ -21,6 +21,7 @@ Show #T1
 	PlayAlertSound 6 300
 	PlayEffect Yellow
 	MinimapIcon 1 Yellow Circle
+	Continue
 
 Show #T2
     Class == "Stackable Currency"
@@ -29,7 +30,9 @@ Show #T2
 	SetTextColor 0 0 0 255
 	SetBorderColor 0 0 0 255
 	SetBackgroundColor 213 159 0 178
+	PlayAlertSound 2 300
     MinimapIcon 2 White Circle
+	Continue
 
 Show #T3
     Class == "Stackable Currency"
@@ -38,6 +41,7 @@ Show #T3
     SetTextColor 0 0 0 255
     SetBorderColor 0 0 0 255
     SetBackgroundColor 210 178 135 178
+	Continue
 
 Show #T4
     Class == "Stackable Currency"
@@ -46,7 +50,18 @@ Show #T4
     SetTextColor 170 158 130 255
     SetBorderColor 170 158 130 255
     SetBackgroundColor 20 20 0 200
+	Continue
 
+Show #Stack
+	Class == "Stackable Currency"
+	BaseType == "Divine Orb" "Greater Jeweller's Orb" "Orb of Annulment" "Perfect Jeweller's Orb" "Orb of Alteration" "Glassblower's Bauble" "Chaos Orb" "Vaal Orb" "Artificer's Orb" "Arcanist's Etcher" "Exalted Orb" "Regal Orb" "Gemcutter's Prism" "Orb of Chance" "Orb of Transmutation" "Orb of Augmentation" "Transmutation Shard" "Blacksmith's Whetstone" "Armourer's Scrap" "Regal Shard" "Alchemy Shard" "Chaos Shard" "Artificer's Shard" "Orb of Alchemy" "Lesser Jeweller's Orb" "Chance Shard"
+	StackSize > 3
+	SetBorderColor 255 255 255 255
+	PlayEffect White
+
+Show #Catch
+	Class == "Stackable Currency"
+	BaseType == "Divine Orb" "Greater Jeweller's Orb" "Orb of Annulment" "Perfect Jeweller's Orb" "Orb of Alteration" "Glassblower's Bauble" "Chaos Orb" "Vaal Orb" "Artificer's Orb" "Arcanist's Etcher" "Exalted Orb" "Regal Orb" "Gemcutter's Prism" "Orb of Chance" "Orb of Transmutation" "Orb of Augmentation" "Transmutation Shard" "Blacksmith's Whetstone" "Armourer's Scrap" "Regal Shard" "Alchemy Shard" "Chaos Shard" "Artificer's Shard" "Orb of Alchemy" "Lesser Jeweller's Orb" "Chance Shard"
 #---Gold---
 
 #Act6+
@@ -493,7 +508,7 @@ Show #Jewels
     Class == "Jewels"
     BaseType == "Emerald" "Sapphire" "Ruby" "Diamond"
 	SetFontSize 35
-	SetBackgroundColor 0 65 20 225
+	SetBackgroundColor 90 5 0 225
 	PlayEffect Grey Temp
 	MinimapIcon 2 Grey Diamond
 
@@ -621,6 +636,7 @@ Show #Flasks
 	Class "Life Flask"
 	BaseType "Ultimate"
 	SetFontSize 35
+	SetBackgroundColor 25 100 75
 	SetBorderColor 120 0 0
 
 Show #Flasks
@@ -683,6 +699,7 @@ Show #Flasks
 	Class "Mana Flask"
 	BaseType "Ultimate"
 	SetFontSize 35
+	SetBackgroundColor 25 100 75
 	SetBorderColor 0 133 255
 
 Show #Flasks
