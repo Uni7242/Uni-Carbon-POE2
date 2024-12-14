@@ -342,13 +342,25 @@ Show #Keys
 ###MAPS###
 Show #Waystone
 	Class = "Waystones"
-	WaystoneTier >= 11
-	SetFontSize 35
+	WaystoneTier >= 15
+	SetFontSize 37
 	SetTextColor 122 0 0 255
-	SetBackgroundColor 235 235 235 126
+	SetBackgroundColor 235 235 235 200
 	PlayAlertSoundPositional 5 300
 	PlayEffect Yellow
 	MinimapIcon 1 Red Square
+	SetBorderColor 255 0 0
+
+Show #Waystone
+	Class = "Waystones"
+	WaystoneTier >= 11
+	WaystoneTier < 15
+	SetFontSize 35
+	SetTextColor 122 0 0 255
+	SetBackgroundColor 235 235 235 126
+	PlayAlertSoundPositional 5 200
+	PlayEffect Yellow Temp
+	MinimapIcon 1 White Square
 	SetBorderColor 255 0 0
 
 Show #Waystone
@@ -429,7 +441,7 @@ Show #Uncut Spirit Gems
 	SetTextColor 30 190 190 255
 	SetBorderColor 30 190 190 255
 	PlayAlertSoundPositional 2 300
-	PlayEffect Cyan
+	PlayEffect Grey Temp
 	MinimapIcon 1 Cyan Triangle
 	Continue
 
@@ -453,14 +465,14 @@ Show #Uncut 18+ Gems
     SetTextColor 23 148 148 255
     SetBackgroundColor 240 250 240
     SetBorderColor 30 190 190 255
-    SetFontSize 35
+    SetFontSize 40
     PlayAlertSoundPositional 2 300
     MinimapIcon 1 Cyan Triangle
     PlayEffect Cyan Temp
 
 Show #Uncut +Socket Gems
     BaseType "==" "Uncut Skill Gem" "Uncut Support Gem" "Uncut Spirit Gem"
-    Sockets ">" "3"
+    Sockets > 3
     PlayAlertSoundPositional 2 300
     MinimapIcon 1 Cyan Triangle
     PlayEffect Cyan
