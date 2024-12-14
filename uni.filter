@@ -342,26 +342,26 @@ Show #Keys
 ###MAPS###
 Show #Waystone
 	Class = "Waystones"
-	WaystoneTier >= 15
+	WaystoneTier >= 14
 	SetFontSize 37
-	SetTextColor 122 0 0 255
-	SetBackgroundColor 235 235 235 200
+	SetTextColor 190 0 0 255
+	SetBackgroundColor 255 255 255 200
 	PlayAlertSoundPositional 5 300
+	SetBorderColor 255 0 0
 	PlayEffect Yellow
 	MinimapIcon 1 Red Square
-	SetBorderColor 255 0 0
 
 Show #Waystone
 	Class = "Waystones"
 	WaystoneTier >= 11
-	WaystoneTier < 15
+	WaystoneTier < 14
 	SetFontSize 35
 	SetTextColor 122 0 0 255
-	SetBackgroundColor 235 235 235 126
-	PlayAlertSoundPositional 5 200
-	PlayEffect Yellow Temp
-	MinimapIcon 1 White Square
+	SetBackgroundColor 245 245 245 150
 	SetBorderColor 255 0 0
+	PlayAlertSoundPositional 5 60
+	PlayEffect White Temp
+	MinimapIcon 1 White Square
 
 Show #Waystone
     Class == "Waystones"
