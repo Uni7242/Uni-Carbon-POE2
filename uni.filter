@@ -1,5 +1,6 @@
-﻿###CURRENCY###
-#---General
+﻿# Script edited with Filtration - https://github.com/ben-wallis/Filtration
+# ##CURRENCY###
+# ---General
 
 Show #Mirror of Kalandra
 	Class == "Stackable Currency"
@@ -357,7 +358,6 @@ Show #Waystone
     SetTextColor 0 0 0 255
     SetBackgroundColor 200 200 200 178
     SetFontSize 35
-    PlayAlertSoundPositional 5 300
     MinimapIcon 1 White Square
 
 Show #Waystone
@@ -421,51 +421,86 @@ Show #Endgame Keys
 	MinimapIcon 0 Red Star
 
 ###GEMS###
+
+#Uncut
 Show #Uncut Spirit Gems
 	BaseType == "Uncut Spirit Gem"
 	SetFontSize 35
 	SetTextColor 30 190 190 255
 	SetBorderColor 30 190 190 255
 	PlayAlertSoundPositional 2 300
-	PlayEffect Grey
-	MinimapIcon 1 White Triangle
+	PlayEffect Cyan
+	MinimapIcon 1 Cyan Triangle
+	Continue
 
 Show #Uncut Other Gems
 	BaseType == "Uncut Skill Gem" "Uncut Support Gem"
 	SetFontSize 30
 	SetTextColor 30 190 190 255
-	SetBorderColor 30 190 190 255
 	Continue
 
-Show #Uncut Other Gems
-	BaseType == "Uncut Skill Gem" "Uncut Support Gem"
-	GemLevel >= 17
-	PlayAlertSoundPositional 2 300
-	PlayEffect Grey Temp
-	MinimapIcon 1 White Triangle
-
-Show #Uncut Other Gems
-	BaseType = "Uncut Skill Gem" "Uncut Support Gem"
-
-Show #Gems
-	Class == "Skill Gems" "Support Gems"
-	SetTextColor 30 190 190 255
-	SetBorderColor 30 190 190 255
-	Continue
-
-Show #Gems
-	Class == "Skill Gems" "Support Gems"
+Show #Uncut Quality Gems
+	BaseType == "Uncut Skill Gem" "Uncut Support Gem" "Uncut Spirit Gem"
 	Quality > 0
-	PlayEffect Grey
+	PlayEffect Cyan
+	SetBorderColor 180 94 255 255
 	PlayAlertSoundPositional 2 300
-	MinimapIcon 1 White Triangle
+	MinimapIcon 1 Cyan Triangle
 
-Show #Gems
-	Class == "Skill Gems" "Support Gems"
-	Sockets > 2
-	PlayEffect Grey
+Show #Uncut 18+ Gems
+    ItemLevel > 18
+    BaseType "==" "Uncut Skill Gem" "Uncut Support Gem" "Uncut Spirit Gem"
+    SetTextColor 23 148 148 255
+    SetBackgroundColor 240 250 240
+    SetBorderColor 30 190 190 255
+    SetFontSize 35
+    PlayAlertSoundPositional 2 300
+    MinimapIcon 1 Cyan Triangle
+    PlayEffect Cyan Temp
+
+Show #Uncut +Socket Gems
+    BaseType "==" "Uncut Skill Gem" "Uncut Support Gem" "Uncut Spirit Gem"
+    Sockets ">" "3"
+    PlayAlertSoundPositional 2 300
+    MinimapIcon 1 Cyan Triangle
+    PlayEffect Cyan
+
+Show #Uncut Other Gems
+	BaseType == "Uncut Skill Gem" "Uncut Support Gem" "Uncut Spirit Gem"
+
+#Cut
+Show #Cut Gems
+	Class == "Skill Gem" "Support Gem"
+	SetFontSize 30
+	SetTextColor 30 190 190 255
+	Continue
+
+Show #Quality Cut Gems
+	Class == "Skill Gem" "Support Gem"
+	Quality > 0
+	PlayEffect Cyan
+	SetBorderColor 180 94 255 255
 	PlayAlertSoundPositional 2 300
-	MinimapIcon 1 White Triangle
+	MinimapIcon 1 Cyan Triangle
+
+Show #18+ Cut Gems
+	Class == "Skill Gem" "Support Gem"
+	GemLevel > 17
+	SetFontSize 35
+	SetBackgroundColor 20 20 20
+	PlayAlertSoundPositional 2 300
+	PlayEffect Cyan Temp
+	MinimapIcon 1 Cyan Triangle
+
+Show #+Socket Cut Gems
+	Class == "Skill Gem" "Support Gem"
+	Sockets > 2
+	PlayEffect Cyan
+	PlayAlertSoundPositional 2 300
+	MinimapIcon 1 Cyan Triangle
+
+Show #Other Gems
+	Class == "Skill Gem" "Support Gem"
 
 ###GEAR###
 
@@ -548,7 +583,6 @@ Show #Quality Basetypes
 	Class == "Jewels" "Amulets" "Rings" "Belts" "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "One Hand Maces" "Two Hand Maces" "One Hand Axes" "Two Hand Axes" "One Hand Swords" "Two Hand Swords" "Crossbows" "Claws" "Daggers" "Traps" "Flails" "Spears" "Sceptres" "Staves" "Quarterstaves" "Wands" "Foci" "Quivers" "Shields"
 	Quality > 0
 	SetBorderColor 180 94 255 255
-	PlayEffect Orange
 
 Show #Jewels
 	Class == "Jewels"
