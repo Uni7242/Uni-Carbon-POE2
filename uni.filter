@@ -501,10 +501,18 @@ Show #Non Jewellery With Sockets
 	PlayEffect Cyan Temp
 	Continue
 
-Show #Expert Other
+Show #Expert <Magic
 	Class == "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "One Hand Maces" "Two Hand Maces" "One Hand Axes" "Two Hand Axes" "One Hand Swords" "Two Hand Swords" "Crossbows" "Claws" "Daggers" "Traps" "Flails" "Spears" "Sceptres" "Staves" "Quarterstaves" "Wands" "Foci" "Quivers" "Shields"
+	Rarity < Rare
 	BaseType = "Expert"
-	SetBackgroundColor 105 191 34 220
+	SetBackgroundColor 43 79 12 200
+	Continue
+
+Show #Expert Rare
+	Class == "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "One Hand Maces" "Two Hand Maces" "One Hand Axes" "Two Hand Axes" "One Hand Swords" "Two Hand Swords" "Crossbows" "Claws" "Daggers" "Traps" "Flails" "Spears" "Sceptres" "Staves" "Quarterstaves" "Wands" "Foci" "Quivers" "Shields"
+	Rarity == Rare
+	BaseType = "Expert"
+	SetBackgroundColor 77 140 23 200
 	Continue
 
 Show #Expert Boots
@@ -515,12 +523,6 @@ Show #Expert Boots
 	SetFontSize 38
 	SetBorderColor 242 10 150 255
 	Continue
-
-# Show #Expert
-#	Class == "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "One Hand Maces" "Two Hand Maces" "One Hand Axes" "Two Hand Axes" "One Hand Swords" "Two Hand Swords" "Crossbows" "Claws" "Daggers" "Traps" "Flails" "Spears" "Sceptres" "Staves" "Quarterstaves" "Wands" "Foci" "Quivers" "Shields"
-# 	BaseType = "Expert"
-# 	SetBackgroundColor 0 75 0 200
-# 	Continue
 
 Show #Jewellery
 	Class == "Amulets" "Rings" "Belts" 
