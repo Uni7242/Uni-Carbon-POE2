@@ -1,5 +1,6 @@
-###CURRENCY###
+﻿###CURRENCY###
 #---General
+
 Show #Mirror of Kalandra
 	Class == "Stackable Currency"
 	BaseType == "Mirror of Kalandra"
@@ -7,7 +8,7 @@ Show #Mirror of Kalandra
 	SetTextColor 255 0 0 255
 	SetBorderColor 255 0 0 255
 	SetBackgroundColor 255 255 255 177
-	PlayAlertSound ShMirror 300
+	PlayAlertSoundPositional ShMirror 300
 	PlayEffect Red
 	MinimapIcon 0 Red Star
 
@@ -18,7 +19,7 @@ Show #T1
 	SetTextColor 0 0 0 255
 	SetBorderColor 0 0 0 255
 	SetBackgroundColor 240 90 35 178
-	PlayAlertSound 6 300
+	PlayAlertSoundPositional 6 300
 	PlayEffect Yellow
 	MinimapIcon 1 Yellow Circle
 	Continue
@@ -30,18 +31,20 @@ Show #T2
 	SetTextColor 0 0 0 255
 	SetBorderColor 0 0 0 255
 	SetBackgroundColor 213 159 0 178
-	PlayAlertSound 2 300
+	PlayAlertSoundPositional 2 300
 	MinimapIcon 2 White Circle
 	Continue
 
 Show #T3
-	Class == "Stackable Currency"
-	BaseType == "Blacksmith's Whetstone" "Armourer's Scrap" "Regal Shard" "Alchemy Shard" "Chaos Shard" "Artificer's Shard" "Orb of Alchemy" "Lesser Jeweller's Orb" "Chance Shard" 
-	SetFontSize 35
-	SetTextColor 0 0 0 255
-	SetBorderColor 0 0 0 255
-	SetBackgroundColor 210 178 135 178
-	Continue
+    Class == "Stackable Currency"
+    BaseType == "Blacksmith's Whetstone" "Armourer's Scrap" "Regal Shard" "Alchemy Shard" "Chaos Shard" "Artificer's Shard" "Orb of Alchemy" "Lesser Jeweller's Orb" "Chance Shard"
+    SetTextColor 0 0 0 255
+    SetBackgroundColor 210 178 135 178
+    SetBorderColor 0 0 0 255
+    SetFontSize 35
+    PlayAlertSoundPositional 2 79
+    MinimapIcon 2 White Circle
+    Continue
 
 Show #T4
 	Class == "Stackable Currency"
@@ -62,16 +65,18 @@ Show #Stack
 Show #Catch
 	Class == "Stackable Currency"
 	BaseType == "Divine Orb" "Greater Jeweller's Orb" "Orb of Annulment" "Perfect Jeweller's Orb" "Orb of Alteration" "Glassblower's Bauble" "Chaos Orb" "Vaal Orb" "Artificer's Orb" "Arcanist's Etcher" "Exalted Orb" "Regal Orb" "Gemcutter's Prism" "Orb of Chance" "Orb of Transmutation" "Orb of Augmentation" "Transmutation Shard" "Blacksmith's Whetstone" "Armourer's Scrap" "Regal Shard" "Alchemy Shard" "Chaos Shard" "Artificer's Shard" "Orb of Alchemy" "Lesser Jeweller's Orb" "Chance Shard"
+
 #---Gold---
 
 Show #Gold
-	BaseType == "Gold"
-	StackSize > 1000
-	SetFontSize 22
-	SetTextColor 187 165 61
-	SetBorderColor 187 165 61
-	PlayEffect Yellow Temp
-	MinimapIcon 1 Yellow Cross
+    BaseType == "Gold"
+    StackSize > 1000
+    SetTextColor 187 165 61
+    SetBorderColor 187 165 61
+    SetFontSize 24
+    PlayAlertSoundPositional 14 80
+    MinimapIcon 1 Yellow Cross
+    PlayEffect Yellow
 
 #Act6+
 Show #Gold
@@ -233,7 +238,7 @@ Show #Splinter
 	SetTextColor 0 0 0 255
 	SetBorderColor 0 0 0 255
 	SetBackgroundColor 249 150 25 178
-	PlayAlertSound 2 300
+	PlayAlertSoundPositional 2 300
 	PlayEffect White
 	MinimapIcon 2 White Circle
 
@@ -243,7 +248,7 @@ Show #Breachstone
 	SetTextColor 255 255 255 255
 	SetBorderColor 255 255 255 255
 	SetBackgroundColor 159 15 213 255
-	PlayAlertSound 1 300
+	PlayAlertSoundPositional 1 300
 	PlayEffect Red
 	MinimapIcon 0 Red Hexagon
 
@@ -261,7 +266,7 @@ Show #Catalyst
 	SetTextColor 0 0 0 255
 	SetBorderColor 0 0 0 255
 	SetBackgroundColor 213 159 0 255
-	PlayAlertSound 2 300
+	PlayAlertSoundPositional 2 300
 	PlayEffect White
 	MinimapIcon 2 White Circle
 
@@ -273,7 +278,7 @@ Show #Expedition
 	SetTextColor 0 0 0 255
 	SetBorderColor 0 0 0 255
 	SetBackgroundColor 240 90 35 178
-	PlayAlertSound 2 300
+	PlayAlertSoundPositional 2 300
 	PlayEffect Yellow
 	MinimapIcon 1 Yellow Circle
 
@@ -284,7 +289,7 @@ Show #Expedition
 	SetTextColor 0 0 0 255
 	SetBorderColor 0 0 0 255
 	SetBackgroundColor 240 90 35 255
-	PlayAlertSound 2 300
+	PlayAlertSoundPositional 2 300
 	PlayEffect Yellow
 	MinimapIcon 1 Yellow Circle
 
@@ -296,7 +301,7 @@ Show #Distilled
 	SetTextColor 0 0 0 255
 	SetBorderColor 0 0 0 255
 	SetBackgroundColor 249 150 25 255
-	PlayAlertSound 2 300
+	PlayAlertSoundPositional 2 300
 	PlayEffect White
 	MinimapIcon 2 White Circle
 
@@ -308,7 +313,7 @@ Show #Omen
 	SetTextColor 0 0 0 255
 	SetBorderColor 0 0 0 255
 	SetBackgroundColor 240 90 35 178
-	PlayAlertSound 2 300
+	PlayAlertSoundPositional 2 300
 	PlayEffect Yellow
 	MinimapIcon 1 Yellow Circle
 
@@ -319,7 +324,7 @@ Show #Quest
 	SetTextColor 74 230 58 255
 	SetBorderColor 74 230 58 255
 	SetBackgroundColor 0 0 0 255
-	PlayAlertSound 3 300
+	PlayAlertSoundPositional 3 300
 	PlayEffect Green
 	MinimapIcon 1 Green Pentagon
 
@@ -329,7 +334,7 @@ Show #Keys
 	SetTextColor 74 230 58 255
 	SetBorderColor 74 230 58 255
 	SetBackgroundColor 0 0 0 255
-	PlayAlertSound 3 300
+	PlayAlertSoundPositional 3 300
 	PlayEffect Green
 	MinimapIcon 1 Green Pentagon
 
@@ -340,54 +345,60 @@ Show #Waystone
 	SetFontSize 35
 	SetTextColor 122 0 0 255
 	SetBackgroundColor 235 235 235 126
-	PlayAlertSound 5 300
+	PlayAlertSoundPositional 5 300
 	PlayEffect Yellow
 	MinimapIcon 1 Red Square
 	SetBorderColor 255 0 0
 
 Show #Waystone
-	Class == "Waystones"
-	WaystoneTier >= 7
-	WaystoneTier <= 10
-	SetFontSize 35
-	SetTextColor 0 0 0 255
-	SetBackgroundColor 200 200 200 178
-	PlayAlertSound 5 300
+    Class == "Waystones"
+	WaystoneTier >= 6
+	WaystoneTier < 11
+    SetTextColor 0 0 0 255
+    SetBackgroundColor 200 200 200 178
+    SetFontSize 35
+    PlayAlertSoundPositional 5 300
+    MinimapIcon 1 White Square
 
 Show #Waystone
 	Class == "Waystones"
 	WaystoneTier >= 4
-	WaystoneTier <= 6
+	WaystoneTier < 7
 	SetFontSize 35
 	SetTextColor 255 255 255 255
 	SetBackgroundColor 20 20 0 127
+    MinimapIcon 1 White Square
 
 Show #Waystone
 	Class == "Waystones"
 	WaystoneTier >= 1
-	WaystoneTier <= 3
+	WaystoneTier < 4
 	SetFontSize 35
 	SetTextColor 255 255 255 255
 	SetBackgroundColor 20 20 0 127
+    MinimapIcon 1 White Square
 
-###FRAGMENTS###
+# FRAGMENTS###
 Show #Sanctum
-	Class == "Trial Coins"
-	SetTextColor 253 7 79
-	PlayEffect Red Temp
-	MinimapIcon 1 Red Square
+    Class == "Trial Coins"
+    SetTextColor 253 7 79
+    PlayAlertSoundPositional 16 200
+    MinimapIcon 1 Red Square
+    PlayEffect Red Temp
 
 Show #Expedition
-	Class == "Expedition Logbooks"
-	SetTextColor 253 7 79
-	PlayEffect Red Temp
-	MinimapIcon 1 Red Square
+    Class == "Expedition Logbooks"
+    SetTextColor 253 7 79
+    PlayAlertSoundPositional 16 200
+    MinimapIcon 1 Red Square
+    PlayEffect Red Temp
 
 Show #Ultimatum
-	Class == "Inscribed Ultimatum"
-	SetTextColor 253 7 79
-	PlayEffect Red Temp
-	MinimapIcon 1 Red Square
+    Class == "Inscribed Ultimatum"
+    SetTextColor 253 7 79
+    PlayAlertSoundPositional 16 200
+    MinimapIcon 1 Red Square
+    PlayEffect Red Temp
 
 Show #Tablets
 	Class = "Tablet"
@@ -395,7 +406,7 @@ Show #Tablets
 	SetTextColor 0 0 0 255
 	SetBorderColor 0 0 0 255
 	SetBackgroundColor 180 0 255 255
-	PlayAlertSound 2 300
+	PlayAlertSoundPositional 2 300
 	PlayEffect Yellow
 	MinimapIcon 1 Yellow Hexagon
 
@@ -405,7 +416,7 @@ Show #Endgame Keys
 	SetTextColor 180 0 255 255
 	SetBorderColor 180 0 255 255
 	SetBackgroundColor 255 255 255 177
-	PlayAlertSound 6 300
+	PlayAlertSoundPositional 6 300
 	PlayEffect Red
 	MinimapIcon 0 Red Star
 
@@ -415,7 +426,7 @@ Show #Uncut Spirit Gems
 	SetFontSize 35
 	SetTextColor 30 190 190 255
 	SetBorderColor 30 190 190 255
-	PlayAlertSound 2 300
+	PlayAlertSoundPositional 2 300
 	PlayEffect Grey
 	MinimapIcon 1 White Triangle
 
@@ -429,7 +440,7 @@ Show #Uncut Other Gems
 Show #Uncut Other Gems
 	BaseType == "Uncut Skill Gem" "Uncut Support Gem"
 	GemLevel >= 17
-	PlayAlertSound 2 300
+	PlayAlertSoundPositional 2 300
 	PlayEffect Grey Temp
 	MinimapIcon 1 White Triangle
 
@@ -446,33 +457,35 @@ Show #Gems
 	Class == "Skill Gems" "Support Gems"
 	Quality > 0
 	PlayEffect Grey
-	PlayAlertSound 2 300
+	PlayAlertSoundPositional 2 300
 	MinimapIcon 1 White Triangle
 
 Show #Gems
 	Class == "Skill Gems" "Support Gems"
 	Sockets > 2
 	PlayEffect Grey
-	PlayAlertSound 2 300
+	PlayAlertSoundPositional 2 300
 	MinimapIcon 1 White Triangle
 
 ###GEAR###
-#--Unique
+
+# --Unique
 Show #Unique T1
-	Rarity == Unique
-	BaseType == "Stellar Amulet" "Heavy Belt"
-	SetFontSize 40
-	SetTextColor 175 96 37 255
-	SetBorderColor 175 96 37 255
-	SetBackgroundColor 255 255 255 177
-	PlayEffect Red
-	MinimapIcon 0 Red Star
-	PlayAlertSound 3 300
+    Rarity == Unique
+    BaseType == "Stellar Amulet" "Heavy Belt"
+    SetTextColor 175 96 37 255
+    SetBackgroundColor 255 255 255 177
+    SetBorderColor 175 96 37 255
+    SetFontSize 40
+    PlayAlertSoundPositional 13 300
+    MinimapIcon 0 Red Star
+    PlayEffect Red
 
 Show #Unique
-	Rarity == Unique
-	MinimapIcon 1 Brown Star
-	PlayEffect Brown
+    Rarity == Unique
+    PlayAlertSoundPositional 4 10
+    MinimapIcon 1 Brown Star
+    PlayEffect Brown
 
 #---General
 Show #General
@@ -521,7 +534,7 @@ Show #Expert Boots
 	Rarity == "Normal"
 	SetFontSize 38
 	SetBorderColor 242 10 150 255
-	PlayAlertSound 3 200
+	PlayAlertSoundPositional 3 200
 	PlayEffect Purple Temp
 	Continue
 
@@ -545,16 +558,16 @@ Show #Jewels
 	PlayEffect Grey Temp
 	MinimapIcon 2 Grey Diamond
 
-
 Show #Jewels
-	Class == "Jewels"
-	BaseType = "Time-Lost"
-	SetFontSize 35
-	SetBorderColor 150 0 255 255
-	SetBackgroundColor 216 249 228 255
-	PlayAlertSound 2 300
-	PlayEffect Grey Temp
-	MinimapIcon 2 Grey Pentagon
+    Class == "Jewels"
+    BaseType "=" "Time-Lost"
+    SetTextColor 150 0 0
+    SetBackgroundColor 216 249 228 255
+    SetBorderColor 150 0 255 255
+    SetFontSize 35
+    PlayAlertSoundPositional 2 300
+    MinimapIcon 2 Grey Pentagon
+    PlayEffect Grey Temp
 
 Show #Final Catch
 	Class == "Jewels" "Amulets" "Rings" "Belts" "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "One Hand Maces" "Two Hand Maces" "One Hand Axes" "Two Hand Axes" "One Hand Swords" "Two Hand Swords" "Crossbows" "Claws" "Daggers" "Traps" "Flails" "Spears" "Sceptres" "Staves" "Quarterstaves" "Wands" "Foci" "Quivers" "Shields"
@@ -564,7 +577,7 @@ Show #Relics
 	Class == "Relic"
 	SetFontSize 35
 	SetBorderColor 0 240 190 255
-	PlayAlertSound 3 300
+	PlayAlertSoundPositional 3 300
 	PlayEffect Blue
 	MinimapIcon 2 Blue Diamond
 
@@ -749,7 +762,7 @@ Show #Flasks
 	SetTextColor 0 240 190 255
 	SetBorderColor 0 240 190 255
 	SetBackgroundColor 20 20 0 127
-	PlayAlertSound 3 300
+	PlayAlertSoundPositional 3 300
 	PlayEffect Blue
 	MinimapIcon 1 Blue Diamond
 
@@ -781,6 +794,7 @@ Show #Soul Cores
 	SetTextColor 189 43 226 255
 	SetBorderColor 189 43 226 255
 	SetBackgroundColor 0 20 40 255
-	PlayAlertSound 1 300
+	PlayAlertSoundPositional 1 300
 	PlayEffect Cyan Temp
 	MinimapIcon 2 Cyan UpsideDownHouse
+
