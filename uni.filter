@@ -505,23 +505,24 @@ Show #Expert <Magic
 	Class == "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "One Hand Maces" "Two Hand Maces" "One Hand Axes" "Two Hand Axes" "One Hand Swords" "Two Hand Swords" "Crossbows" "Claws" "Daggers" "Traps" "Flails" "Spears" "Sceptres" "Staves" "Quarterstaves" "Wands" "Foci" "Quivers" "Shields"
 	Rarity < Rare
 	BaseType = "Expert"
-	SetBackgroundColor 43 79 12 200
+	SetBackgroundColor 33 61 9 200
 	Continue
 
 Show #Expert Rare
 	Class == "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "One Hand Maces" "Two Hand Maces" "One Hand Axes" "Two Hand Axes" "One Hand Swords" "Two Hand Swords" "Crossbows" "Claws" "Daggers" "Traps" "Flails" "Spears" "Sceptres" "Staves" "Quarterstaves" "Wands" "Foci" "Quivers" "Shields"
 	Rarity == Rare
 	BaseType = "Expert"
-	SetBackgroundColor 77 140 23 200
+	SetBackgroundColor 43 79 12 200
 	Continue
 
 Show #Expert Boots
 	Class == "Boots"
 	BaseType = "Expert"
 	Rarity == "Normal"
-	SetBackgroundColor 105 191 34 220
 	SetFontSize 38
 	SetBorderColor 242 10 150 255
+	PlayAlertSound 3 200
+	PlayEffect Purple Temp
 	Continue
 
 Show #Jewellery
