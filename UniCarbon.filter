@@ -32,6 +32,7 @@ Show #T2
 	SetBorderColor 0 0 0 255
 	SetBackgroundColor 213 159 0 178
 	PlayAlertSoundPositional 2 300
+	PlayEffect Yellow
 	MinimapIcon 2 White Circle
 	Continue
 
@@ -821,11 +822,11 @@ Show #Unique
 
 #---General
 
-# Hide #Hide Non-Expert #MF
-# 	Class == "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "One Hand Maces" "Two Hand Maces" "One Hand Axes" "Two Hand Axes" "One Hand Swords" "Two Hand Swords" "Crossbows" "Claws" "Daggers" "Traps" "Flails" "Spears" "Quarterstaves" "Foci" "Shields" #MF
-#     Rarity < Rare #MF
-#     SetFontSize 15 #MF
-#     Continue #MF
+Hide #Hide Non-Expert #MF
+	Class == "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "One Hand Maces" "Two Hand Maces" "One Hand Axes" "Two Hand Axes" "One Hand Swords" "Two Hand Swords" "Crossbows" "Claws" "Daggers" "Traps" "Flails" "Spears" "Quarterstaves" "Foci" "Shields" #MF
+    Rarity < Rare #MF
+    SetFontSize 15 #MF
+    Continue #MF
 
 Show #General
 	Class == "Jewels" "Amulets" "Rings" "Belts" "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "One Hand Maces" "Two Hand Maces" "One Hand Axes" "Two Hand Axes" "One Hand Swords" "Two Hand Swords" "Crossbows" "Claws" "Daggers" "Traps" "Flails" "Spears" "Sceptres" "Staves" "Quarterstaves" "Wands" "Foci" "Quivers" "Shields"
@@ -835,17 +836,67 @@ Show #General
 	SetBorderColor 233 206 14 255
 	Continue
 
-Show #General
-	Class == "Jewels" "Amulets" "Rings" "Belts" "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "One Hand Maces" "Two Hand Maces" "One Hand Axes" "Two Hand Axes" "One Hand Swords" "Two Hand Swords" "Crossbows" "Claws" "Daggers" "Traps" "Flails" "Spears" "Sceptres" "Staves" "Quarterstaves" "Wands" "Foci" "Quivers" "Shields"
-    # BaseType = "Expert" #MF
+Show #General Magic
+	Class == "Jewels" "Amulets" "Rings" "Belts" "Sceptres" "Staves" "Wands" "Foci" "Quivers"
 	Rarity == Magic
 	SetFontSize 33
 	SetTextColor 43 123 226 255
 	Continue
 
-Show #General
+Show #General Magic Late Game
 	Class == "Jewels" "Amulets" "Rings" "Belts" "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "One Hand Maces" "Two Hand Maces" "One Hand Axes" "Two Hand Axes" "One Hand Swords" "Two Hand Swords" "Crossbows" "Claws" "Daggers" "Traps" "Flails" "Spears" "Sceptres" "Staves" "Quarterstaves" "Wands" "Foci" "Quivers" "Shields"
-    # BaseType = "Expert" #MF
+    BaseType = "Expert" #MF
+	AreaLevel > 78
+	Rarity == Magic
+	SetFontSize 33
+	SetTextColor 43 123 226 255
+	Continue
+
+Show #General Magic Midgame
+	Class == "Jewels" "Amulets" "Rings" "Belts" "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "One Hand Maces" "Two Hand Maces" "One Hand Axes" "Two Hand Axes" "One Hand Swords" "Two Hand Swords" "Crossbows" "Claws" "Daggers" "Traps" "Flails" "Spears" "Sceptres" "Staves" "Quarterstaves" "Wands" "Foci" "Quivers" "Shields"
+    BaseType = "Advanced" "Expert" #MF
+	AreaLevel > 68
+	Rarity == Magic
+	SetFontSize 33
+	SetTextColor 43 123 226 255
+	Continue
+
+Show #General Magic Campaign
+	Class == "Jewels" "Amulets" "Rings" "Belts" "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "One Hand Maces" "Two Hand Maces" "One Hand Axes" "Two Hand Axes" "One Hand Swords" "Two Hand Swords" "Crossbows" "Claws" "Daggers" "Traps" "Flails" "Spears" "Sceptres" "Staves" "Quarterstaves" "Wands" "Foci" "Quivers" "Shields"
+	AreaLevel < 68
+	Rarity == Magic
+	SetFontSize 33
+	SetTextColor 43 123 226 255
+	Continue
+
+Show #General Normal
+	Class == "Jewels" "Amulets" "Rings" "Belts" "Sceptres" "Staves" "Wands" "Foci" "Quivers"
+	Rarity == Normal
+	SetFontSize 33
+	SetTextColor 204 204 204 255
+	Continue
+
+Show #General Normal Late Game
+	Class == "Jewels" "Amulets" "Rings" "Belts" "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "One Hand Maces" "Two Hand Maces" "One Hand Axes" "Two Hand Axes" "One Hand Swords" "Two Hand Swords" "Crossbows" "Claws" "Daggers" "Traps" "Flails" "Spears" "Sceptres" "Staves" "Quarterstaves" "Wands" "Foci" "Quivers" "Shields"
+    BaseType = "Expert" #MF
+	AreaLevel > 78
+	Rarity == Normal
+	SetFontSize 33
+	SetTextColor 204 204 204 255
+	Continue
+
+Show #General Normal Midgame
+	Class == "Jewels" "Amulets" "Rings" "Belts" "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "One Hand Maces" "Two Hand Maces" "One Hand Axes" "Two Hand Axes" "One Hand Swords" "Two Hand Swords" "Crossbows" "Claws" "Daggers" "Traps" "Flails" "Spears" "Sceptres" "Staves" "Quarterstaves" "Wands" "Foci" "Quivers" "Shields"
+    BaseType = "Advanced" #MF
+	AreaLevel > 68
+	Rarity == Normal
+	SetFontSize 33
+	SetTextColor 204 204 204 255
+	Continue
+
+Show #General Normal Campaign
+	Class == "Jewels" "Amulets" "Rings" "Belts" "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "One Hand Maces" "Two Hand Maces" "One Hand Axes" "Two Hand Axes" "One Hand Swords" "Two Hand Swords" "Crossbows" "Claws" "Daggers" "Traps" "Flails" "Spears" "Sceptres" "Staves" "Quarterstaves" "Wands" "Foci" "Quivers" "Shields"
+	AreaLevel < 68
 	Rarity == Normal
 	SetFontSize 33
 	SetTextColor 204 204 204 255
