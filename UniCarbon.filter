@@ -745,11 +745,22 @@ Show #Uncut Quality Gems
 	PlayAlertSoundPositional 2 300
 	MinimapIcon 1 Cyan Triangle
 
-Show #Uncut 18+ Gems
+Show #Uncut 20 Gems
+    ItemLevel > 19
+    BaseType "==" "Uncut Skill Gem" "Uncut Support Gem" "Uncut Spirit Gem"
+    SetTextColor 23 148 148 255
+    SetBackgroundColor 255 255 255 255
+    SetBorderColor 30 190 190 255
+    SetFontSize 40
+	PlayAlertSoundPositional 6 300
+    MinimapIcon 1 Cyan Triangle
+    PlayEffect Cyan Temp
+
+Show #Uncut 19 Gems
     ItemLevel > 18
     BaseType "==" "Uncut Skill Gem" "Uncut Support Gem" "Uncut Spirit Gem"
     SetTextColor 23 148 148 255
-    SetBackgroundColor 240 250 240
+    SetBackgroundColor 240 250 240 220
     SetBorderColor 30 190 190 255
     SetFontSize 40
     PlayAlertSoundPositional 2 300
@@ -940,6 +951,7 @@ Show #Breach Rings
 Show #Non Jewellery With Sockets
 	Class == "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "One Hand Maces" "Two Hand Maces" "One Hand Axes" "Two Hand Axes" "One Hand Swords" "Two Hand Swords" "Crossbows" "Claws" "Daggers" "Traps" "Flails" "Spears" "Sceptres" "Staves" "Quarterstaves" "Wands" "Foci" "Quivers" "Shields"
 	Sockets > 0
+	SetFontSize 33
 	SetBorderColor 148 255 236 200
 	PlayEffect Cyan Temp
 	Continue
@@ -947,6 +959,7 @@ Show #Non Jewellery With Sockets
 Show #Expert <Magic
 	Class == "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "One Hand Maces" "Two Hand Maces" "One Hand Axes" "Two Hand Axes" "One Hand Swords" "Two Hand Swords" "Crossbows" "Claws" "Daggers" "Traps" "Flails" "Spears" "Sceptres" "Staves" "Quarterstaves" "Wands" "Foci" "Quivers" "Shields"
 	Rarity < Rare
+	SetFontSize 33
 	BaseType = "Expert"
 	SetBackgroundColor 33 61 9 200
 	Continue
@@ -954,6 +967,7 @@ Show #Expert <Magic
 Show #Expert Rare
 	Class == "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "One Hand Maces" "Two Hand Maces" "One Hand Axes" "Two Hand Axes" "One Hand Swords" "Two Hand Swords" "Crossbows" "Claws" "Daggers" "Traps" "Flails" "Spears" "Sceptres" "Staves" "Quarterstaves" "Wands" "Foci" "Quivers" "Shields"
 	Rarity == Rare
+	SetFontSize 33
 	BaseType = "Expert"
 	SetBackgroundColor 43 79 12 200
 	Continue
