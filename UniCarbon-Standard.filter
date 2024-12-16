@@ -820,24 +820,71 @@ Show #Unique
     PlayEffect Brown
 
 #---General
+
+# Hide #Hide Non-Expert #MF
+# 	Class == "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "One Hand Maces" "Two Hand Maces" "One Hand Axes" "Two Hand Axes" "One Hand Swords" "Two Hand Swords" "Crossbows" "Claws" "Daggers" "Traps" "Flails" "Spears" "Quarterstaves" "Foci" "Shields" #MF
+#     Rarity < Rare #MF
+#     SetFontSize 15 #MF
+#     Continue #MF
+
 Show #General
 	Class == "Jewels" "Amulets" "Rings" "Belts" "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "One Hand Maces" "Two Hand Maces" "One Hand Axes" "Two Hand Axes" "One Hand Swords" "Two Hand Swords" "Crossbows" "Claws" "Daggers" "Traps" "Flails" "Spears" "Sceptres" "Staves" "Quarterstaves" "Wands" "Foci" "Quivers" "Shields"
 	Rarity == Rare
-	SetTextColor 233 206 14 255
+	SetFontSize 33
+    SetTextColor 233 206 14 255
 	SetBorderColor 233 206 14 255
 	Continue
 
 Show #General
 	Class == "Jewels" "Amulets" "Rings" "Belts" "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "One Hand Maces" "Two Hand Maces" "One Hand Axes" "Two Hand Axes" "One Hand Swords" "Two Hand Swords" "Crossbows" "Claws" "Daggers" "Traps" "Flails" "Spears" "Sceptres" "Staves" "Quarterstaves" "Wands" "Foci" "Quivers" "Shields"
+    # BaseType = "Expert" #MF
 	Rarity == Magic
+	SetFontSize 33
 	SetTextColor 43 123 226 255
 	Continue
 
 Show #General
 	Class == "Jewels" "Amulets" "Rings" "Belts" "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "One Hand Maces" "Two Hand Maces" "One Hand Axes" "Two Hand Axes" "One Hand Swords" "Two Hand Swords" "Crossbows" "Claws" "Daggers" "Traps" "Flails" "Spears" "Sceptres" "Staves" "Quarterstaves" "Wands" "Foci" "Quivers" "Shields"
+    # BaseType = "Expert" #MF
 	Rarity == Normal
+	SetFontSize 33
 	SetTextColor 204 204 204 255
 	Continue
+
+Show #Jewellery
+	Class == "Amulets" "Rings" "Belts" 
+	SetBackgroundColor 120 17 118 200
+	SetFontSize 35
+	PlayEffect White Temp
+	Continue
+
+Show #Expert Boots
+	Class == "Boots"
+	BaseType = "Expert"
+	Rarity == "Normal"
+	ItemLevel >= 82
+	SetFontSize 38
+	SetBorderColor 242 10 150 255
+	PlayAlertSoundPositional 3 200
+	PlayEffect Purple Temp
+
+Show #Expert Belts
+	Class == "Belts"
+	BaseType = "Fine Belt" "Utility Belt"
+	SetFontSize 38
+	SetBorderColor 242 10 150 255
+	PlayAlertSoundPositional 3 200
+	PlayEffect Purple Temp
+
+Show #Breach Rings
+	Class == "Ring"
+	BaseType = "Breach"
+	SetFontSize 38
+	SetBackgroundColor 134 49 143 230
+	SetBorderColor 199 179 63 255
+	SetTextColor 199 179 63 255
+	PlayAlertSoundPositional 3 200
+	PlayEffect Purple Temp
 
 Show #Non Jewellery With Sockets
 	Class == "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "One Hand Maces" "Two Hand Maces" "One Hand Axes" "Two Hand Axes" "One Hand Swords" "Two Hand Swords" "Crossbows" "Claws" "Daggers" "Traps" "Flails" "Spears" "Sceptres" "Staves" "Quarterstaves" "Wands" "Foci" "Quivers" "Shields"
@@ -860,42 +907,6 @@ Show #Expert Rare
 	SetBackgroundColor 43 79 12 200
 	Continue
 
-Show #Expert Boots
-	Class == "Boots"
-	BaseType = "Expert"
-	Rarity == "Normal"
-	ItemLevel >= 82
-	SetFontSize 38
-	SetBorderColor 242 10 150 255
-	PlayAlertSoundPositional 3 200
-	PlayEffect Purple Temp
-	Continue
-
-Show #Expert Boots
-	Class == "Belts"
-	BaseType = "Fine Belt" "Utility Belt"
-	SetFontSize 38
-	SetBorderColor 242 10 150 255
-	PlayAlertSoundPositional 3 200
-	PlayEffect Purple Temp
-	Continue
-
-Show #Breach Rings
-	Class == "Ring"
-	BaseType = "Breach"
-	SetFontSize 38
-	SetBackgroundColor 134 49 143 230
-	SetBorderColor 199 179 63 255
-	SetTextColor 199 179 63 255
-	PlayAlertSoundPositional 3 200
-	PlayEffect Purple Temp
-
-Show #Jewellery
-	Class == "Amulets" "Rings" "Belts" 
-	SetBackgroundColor 120 17 118 200
-	PlayEffect White Temp
-	Continue
-
 Show #Quality Basetypes
 	Class == "Jewels" "Amulets" "Rings" "Belts" "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "One Hand Maces" "Two Hand Maces" "One Hand Axes" "Two Hand Axes" "One Hand Swords" "Two Hand Swords" "Crossbows" "Claws" "Daggers" "Traps" "Flails" "Spears" "Sceptres" "Staves" "Quarterstaves" "Wands" "Foci" "Quivers" "Shields"
 	Quality > 0
@@ -911,7 +922,7 @@ Show #Jewels
 
 Show #Jewels
     Class == "Jewels"
-    BaseType "=" "Time-Lost"
+    BaseType = "Time-Lost"
     SetTextColor 150 0 0
     SetBackgroundColor 216 249 228 255
     SetBorderColor 150 0 255 255
@@ -920,8 +931,8 @@ Show #Jewels
     MinimapIcon 2 Grey Pentagon
     PlayEffect Grey Temp
 
-Show #Final Catch
-	Class == "Jewels" "Amulets" "Rings" "Belts" "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "One Hand Maces" "Two Hand Maces" "One Hand Axes" "Two Hand Axes" "One Hand Swords" "Two Hand Swords" "Crossbows" "Claws" "Daggers" "Traps" "Flails" "Spears" "Sceptres" "Staves" "Quarterstaves" "Wands" "Foci" "Quivers" "Shields"
+# Show #Final Catch
+# 	Class == "Jewels" "Amulets" "Rings" "Belts" "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "One Hand Maces" "Two Hand Maces" "One Hand Axes" "Two Hand Axes" "One Hand Swords" "Two Hand Swords" "Crossbows" "Claws" "Daggers" "Traps" "Flails" "Spears" "Sceptres" "Staves" "Quarterstaves" "Wands" "Foci" "Quivers" "Shields"
 
 #---Relics
 Show #Relics
