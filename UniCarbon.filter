@@ -441,12 +441,12 @@ Show #
 	Rarity ! Unique
 	WaystoneTier 13
 	Class "Waystones"
-	SetFontSize 40
+	SetFontSize 35
 	SetTextColor 0 0 0 255
 	SetBackgroundColor 200 200 200 255
 	PlayAlertSound 5 300
 	PlayEffect Yellow
-	MinimapIcon 1 Red Square
+	MinimapIcon 1 Yellow Square
 
 Show #
 	Rarity ! Unique
@@ -460,12 +460,12 @@ Show #
 	Rarity ! Unique
 	WaystoneTier 12
 	Class "Waystones"
-	SetFontSize 40
+	SetFontSize 35
 	SetTextColor 0 0 0 255
 	SetBackgroundColor 200 200 200 255
 	PlayAlertSound 5 300
 	PlayEffect Yellow
-	MinimapIcon 1 Red Square
+	MinimapIcon 1 Yellow Square
 
 Show #
 	Rarity ! Unique
@@ -479,12 +479,12 @@ Show #
 	Rarity ! Unique
 	WaystoneTier 11
 	Class "Waystones"
-	SetFontSize 40
+	SetFontSize 35
 	SetTextColor 0 0 0 255
 	SetBackgroundColor 200 200 200 255
 	PlayAlertSound 5 300
 	PlayEffect Yellow
-	MinimapIcon 1 Red Square
+	MinimapIcon 1 Yellow Square
 
 Show #
 	Rarity ! Unique
@@ -498,7 +498,7 @@ Show #
 	Rarity ! Unique
 	WaystoneTier 10
 	Class "Waystones"
-	SetFontSize 40
+	SetFontSize 35
 	SetTextColor 255 255 255 255
 	SetBackgroundColor 0 0 0 255
 	PlayAlertSound 4 300
@@ -517,7 +517,7 @@ Show #
 	Rarity ! Unique
 	WaystoneTier 9
 	Class "Waystones"
-	SetFontSize 40
+	SetFontSize 35
 	SetTextColor 255 255 255 255
 	SetBackgroundColor 0 0 0 255
 	PlayAlertSound 4 300
@@ -536,7 +536,7 @@ Show #
 	Rarity ! Unique
 	WaystoneTier 8
 	Class "Waystones"
-	SetFontSize 40
+	SetFontSize 35
 	SetTextColor 255 255 255 255
 	SetBackgroundColor 0 0 0 255
 	PlayAlertSound 4 300
