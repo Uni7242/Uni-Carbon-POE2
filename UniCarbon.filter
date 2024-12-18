@@ -295,6 +295,8 @@ Show #Expedition
 	PlayEffect Yellow
 	MinimapIcon 1 Yellow Circle
 
+#---Ultimatum
+ 
 #---Distilled---
 Show #Distilled
 	Class == "Stackable Currency"
@@ -318,6 +320,70 @@ Show #Omen
 	PlayAlertSoundPositional 2 300
 	PlayEffect Yellow
 	MinimapIcon 1 Yellow Circle
+
+# FRAGMENTS###
+Show #Sanctum
+    Class == "Trial Coins"
+    SetTextColor 253 7 79
+    PlayAlertSoundPositional 16 200
+    MinimapIcon 1 Red Square
+    PlayEffect Red Temp
+
+Show #Audience
+	Class == "Map Fragments"
+	BaseType "An Audience with the King"
+	SetFontSize 40
+	SetTextColor 255 85 85 255
+	SetBorderColor 255 85 85 255
+	SetBackgroundColor 40 0 30 255
+	PlayAlertSound 5 300
+	PlayEffect Yellow
+	MinimapIcon 1 Yellow UpsideDownHouse
+
+Show #Expedition
+    Class == "Expedition Logbooks"
+    SetTextColor 253 7 79
+    PlayAlertSoundPositional 16 200
+    MinimapIcon 1 Red Square
+    PlayEffect Red Temp
+
+Show #Ultimatum Fates
+	Class == "Map Fragments"
+	BaseType "Fate"
+	SetFontSize 40
+	SetTextColor 255 85 85 255
+	SetBorderColor 255 85 85 255
+	SetBackgroundColor 40 0 30 255
+	PlayAlertSound 5 300
+	PlayEffect Yellow
+	MinimapIcon 1 Yellow UpsideDownHouse
+
+Show #Ultimatum
+    Class == "Inscribed Ultimatum"
+    SetTextColor 253 7 79
+    PlayAlertSoundPositional 16 200
+    MinimapIcon 1 Red Square
+    PlayEffect Red Temp
+
+Show #Tablets
+	Class = "Tablet"
+	SetFontSize 38
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	SetBackgroundColor 180 0 255 255
+	PlayAlertSoundPositional 2 300
+	PlayEffect Yellow
+	MinimapIcon 1 Yellow Hexagon
+
+Show #Endgame Keys
+	Class = "Pinnacle Keys"
+	SetFontSize 38
+	SetTextColor 180 0 255 255
+	SetBorderColor 180 0 255 255
+	SetBackgroundColor 255 255 255 177
+	PlayAlertSoundPositional 6 300
+	PlayEffect Red
+	MinimapIcon 0 Red Star
 
 ###QUEST###
 Show #Quest
@@ -465,7 +531,6 @@ Show #T10 - T3
 	Rarity < Unique
 	WaystoneTier == 10
 	AreaLevel > 77
-	AreaLevel < 82
 	Class "Waystones"
 	SetFontSize 35
 	SetTextColor 255 255 255 255
@@ -473,11 +538,6 @@ Show #T10 - T3
 	PlayAlertSound 2 100
 	PlayEffect White Temp
 	MinimapIcon 2 White Square
-
-Hide #T10 - T4
-	Rarity < Unique
-	WaystoneTier == 10
-	AreaLevel >= 82
 
 Show #T9 - T2
 	Rarity < Unique
@@ -495,7 +555,6 @@ Show #T9 - T3
 	Rarity < Unique
 	WaystoneTier == 9
 	AreaLevel > 76
-	AreaLevel < 81
 	Class "Waystones"
 	SetFontSize 35
 	SetTextColor 255 255 255 255
@@ -503,11 +562,6 @@ Show #T9 - T3
 	PlayAlertSound 2 100
 	PlayEffect White Temp
 	MinimapIcon 2 White Square
-
-Hide #T9 - T4
-	Rarity < Unique
-	WaystoneTier == 9
-	AreaLevel >= 81
 
 Show #T8 - T2
 	Rarity < Unique
@@ -525,7 +579,6 @@ Show #T8 - T3
 	Rarity < Unique
 	WaystoneTier == 8
 	AreaLevel > 75
-	AreaLevel < 80
 	Class "Waystones"
 	SetFontSize 35
 	SetTextColor 255 255 255 255
@@ -533,11 +586,6 @@ Show #T8 - T3
 	PlayAlertSound 2 100
 	PlayEffect White Temp
 	MinimapIcon 2 White Square
-
-Hide #T8 - T4
-	Rarity < Unique
-	WaystoneTier == 8
-	AreaLevel >= 80
 
 Show #T7 - T2
 	Rarity < Unique
@@ -555,7 +603,6 @@ Show #T7 - T3
 	Rarity < Unique
 	WaystoneTier == 7
 	AreaLevel > 74
-	AreaLevel < 79
 	Class "Waystones"
 	SetFontSize 35
 	SetTextColor 255 255 255 255
@@ -563,11 +610,6 @@ Show #T7 - T3
 	PlayAlertSound 2 100
 	PlayEffect White Temp
 	MinimapIcon 2 White Square
-
-Hide #T7 - T4
-	Rarity < Unique
-	WaystoneTier == 7
-	AreaLevel >= 79
 
 Show #T6 - T2
 	Rarity < Unique
@@ -585,7 +627,7 @@ Show #T6 - T3
 	Rarity < Unique
 	WaystoneTier == 6
 	AreaLevel > 73
-	AreaLevel < 78
+	AreaLevel < 82
 	Class "Waystones"
 	SetFontSize 35
 	SetTextColor 255 255 255 255
@@ -597,7 +639,7 @@ Show #T6 - T3
 Hide #T6 - T4
 	Rarity < Unique
 	WaystoneTier == 6
-	AreaLevel >= 78
+	AreaLevel > 81
 
 Show #T5 - T2
 	Rarity < Unique
@@ -615,7 +657,7 @@ Show #T5 - T3
 	Rarity < Unique
 	WaystoneTier == 5
 	AreaLevel > 72
-	AreaLevel < 77
+	AreaLevel < 81
 	Class "Waystones"
 	SetFontSize 35
 	SetTextColor 255 255 255 255
@@ -627,7 +669,7 @@ Show #T5 - T3
 Hide #T5 - T4
 	Rarity < Unique
 	WaystoneTier == 5
-	AreaLevel >= 77
+	AreaLevel > 80
 
 Show #T4 - T2
 	Rarity < Unique
@@ -645,7 +687,7 @@ Show #T4 - T3
 	Rarity < Unique
 	WaystoneTier == 4
 	AreaLevel > 71
-	AreaLevel < 76
+	AreaLevel < 80
 	Class "Waystones"
 	SetFontSize 35
 	SetTextColor 255 255 255 255
@@ -657,7 +699,7 @@ Show #T4 - T3
 Hide #T4 - T4
 	Rarity < Unique
 	WaystoneTier == 4
-	AreaLevel >= 76
+	AreaLevel > 79
 
 Show #T3 - T2
 	Rarity < Unique
@@ -675,7 +717,7 @@ Show #T3 - T3
 	Rarity < Unique
 	WaystoneTier == 3
 	AreaLevel > 70
-	AreaLevel < 75
+	AreaLevel < 79
 	Class "Waystones"
 	SetFontSize 35
 	SetTextColor 255 255 255 255
@@ -687,7 +729,7 @@ Show #T3 - T3
 Hide #T3 - T4
 	Rarity < Unique
 	WaystoneTier == 3
-	AreaLevel >= 75
+	AreaLevel > 78
 
 Show #T2 - T2
 	Rarity < Unique
@@ -705,7 +747,7 @@ Show #T2 - T3
 	Rarity < Unique
 	WaystoneTier == 2
 	AreaLevel > 69
-	AreaLevel < 74
+	AreaLevel < 78
 	Class "Waystones"
 	SetFontSize 35
 	SetTextColor 255 255 255 255
@@ -717,7 +759,7 @@ Show #T2 - T3
 Hide #T2 - T4
 	Rarity < Unique
 	WaystoneTier == 2
-	AreaLevel >= 74
+	AreaLevel > 77
 
 Show #T1 - T2
 	Rarity < Unique
@@ -735,7 +777,7 @@ Show #T1 - T3
 	Rarity < Unique
 	WaystoneTier == 1
 	AreaLevel > 68
-	AreaLevel < 73
+	AreaLevel < 77
 	Class "Waystones"
 	SetFontSize 35
 	SetTextColor 255 255 255 255
@@ -747,49 +789,7 @@ Show #T1 - T3
 Hide #T1 - T4
 	Rarity < Unique
 	WaystoneTier == 1
-	AreaLevel >= 73
-
-# FRAGMENTS###
-Show #Sanctum
-    Class == "Trial Coins"
-    SetTextColor 253 7 79
-    PlayAlertSoundPositional 16 200
-    MinimapIcon 1 Red Square
-    PlayEffect Red Temp
-
-Show #Expedition
-    Class == "Expedition Logbooks"
-    SetTextColor 253 7 79
-    PlayAlertSoundPositional 16 200
-    MinimapIcon 1 Red Square
-    PlayEffect Red Temp
-
-Show #Ultimatum
-    Class == "Inscribed Ultimatum"
-    SetTextColor 253 7 79
-    PlayAlertSoundPositional 16 200
-    MinimapIcon 1 Red Square
-    PlayEffect Red Temp
-
-Show #Tablets
-	Class = "Tablet"
-	SetFontSize 38
-	SetTextColor 0 0 0 255
-	SetBorderColor 0 0 0 255
-	SetBackgroundColor 180 0 255 255
-	PlayAlertSoundPositional 2 300
-	PlayEffect Yellow
-	MinimapIcon 1 Yellow Hexagon
-
-Show #Endgame Keys
-	Class = "Pinnacle Keys"
-	SetFontSize 38
-	SetTextColor 180 0 255 255
-	SetBorderColor 180 0 255 255
-	SetBackgroundColor 255 255 255 177
-	PlayAlertSoundPositional 6 300
-	PlayEffect Red
-	MinimapIcon 0 Red Star
+	AreaLevel > 76
 
 ###GEMS###
 
