@@ -294,8 +294,6 @@ Show #Expedition
 	PlayAlertSoundPositional 2 300
 	PlayEffect Yellow
 	MinimapIcon 1 Yellow Circle
-
-#---Ultimatum
  
 #---Distilled---
 Show #Distilled
