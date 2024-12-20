@@ -816,6 +816,14 @@ Show #Uncut Quality Gems
 	PlayAlertSoundPositional 2 300
 	MinimapIcon 1 Cyan Triangle
 
+Show #Lvl3 Support Gems
+	BaseType == "Uncut Support Gem"
+	ItemLevel > 2
+	PlayEffect Cyan
+	SetBorderColor 180 94 255 255
+	PlayAlertSoundPositional 2 300
+	MinimapIcon 1 Cyan Triangle
+
 Show #Uncut 20 Gems
     ItemLevel > 19
     BaseType "==" "Uncut Skill Gem" "Uncut Support Gem" "Uncut Spirit Gem"
