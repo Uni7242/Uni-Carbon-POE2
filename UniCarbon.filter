@@ -1056,8 +1056,6 @@ Show #Normal
 
 Show #Socket Override
 	Class == "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "One Hand Maces" "Two Hand Maces" "One Hand Axes" "Two Hand Axes" "One Hand Swords" "Two Hand Swords" "Crossbows" "Claws" "Daggers" "Traps" "Flails" "Spears" "Sceptres" "Staves" "Quarterstaves" "Wands" "Foci" "Quivers" "Shields"
-	AreaLevel >=68
-	AreaLevel < 74
 	Sockets > 0
 	SetFontSize 30
 	SetBorderColor 148 255 236 200
@@ -1065,8 +1063,6 @@ Show #Socket Override
 
 Show #Quality Override
 	Class == "Jewels" "Amulets" "Rings" "Belts" "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "One Hand Maces" "Two Hand Maces" "One Hand Axes" "Two Hand Axes" "One Hand Swords" "Two Hand Swords" "Crossbows" "Claws" "Daggers" "Traps" "Flails" "Spears" "Sceptres" "Staves" "Quarterstaves" "Wands" "Foci" "Quivers" "Shields"
-	AreaLevel >=68
-	AreaLevel < 74
 	Quality > 0
 	SetFontSize 30
 	SetBorderColor 180 94 255 255
