@@ -997,8 +997,6 @@ Show #Magic Time-Lost Jewels
 Show #Expert <Magic
 	Class == "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "One Hand Maces" "Two Hand Maces" "One Hand Axes" "Two Hand Axes" "One Hand Swords" "Two Hand Swords" "Crossbows" "Claws" "Daggers" "Traps" "Flails" "Spears" "Quarterstaves" "Foci" "Shields"
 	Rarity < Rare
-	AreaLevel >=68
-	AreaLevel < 74
 	BaseType = "Expert"
 	SetBackgroundColor 33 61 9 200
 	Continue
@@ -1006,8 +1004,6 @@ Show #Expert <Magic
 Show #Expert Rare
 	Class == "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "One Hand Maces" "Two Hand Maces" "One Hand Axes" "Two Hand Axes" "One Hand Swords" "Two Hand Swords" "Crossbows" "Claws" "Daggers" "Traps" "Flails" "Spears" "Quarterstaves" "Foci" "Shields"
 	Rarity == Rare
-	AreaLevel >=68
-	AreaLevel < 74
 	BaseType = "Expert"
 	SetBackgroundColor 43 79 12 200
 	Continue
