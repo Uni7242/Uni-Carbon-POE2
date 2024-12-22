@@ -26,7 +26,7 @@ Show #T1
 
 Show #T2
 	Class == "Stackable Currency"
-	BaseType == "Orb of Alteration" "Glassblower's Bauble" "Chaos Orb" "Vaal Orb" "Artificer's Orb" "Arcanist's Etcher" "Exalted Orb" "Regal Orb" "Gemcutter's Prism" "Orb of Chance" "Blacksmith's Whetstone" "Armourer's Scrap"
+	BaseType == "Orb of Alteration" "Glassblower's Bauble" "Chaos Orb" "Vaal Orb" "Artificer's Orb" "Arcanist's Etcher" "Exalted Orb" "Regal Orb" "Gemcutter's Prism" "Orb of Chance" "Armourer's Scrap"
 	SetFontSize 32
 	SetTextColor 0 0 0 255
 	SetBorderColor 0 0 0 255
@@ -38,7 +38,7 @@ Show #T2
 
 Show #T3
     Class == "Stackable Currency"
-    BaseType == "Regal Shard" "Alchemy Shard" "Chaos Shard" "Artificer's Shard" "Orb of Alchemy" "Lesser Jeweller's Orb" "Chance Shard"
+    BaseType == "Regal Shard" "Alchemy Shard" "Chaos Shard" "Artificer's Shard" "Orb of Alchemy" "Lesser Jeweller's Orb" "Chance Shard" "Blacksmith's Whetstone"
     SetTextColor 0 0 0 255
     SetBackgroundColor 210 178 135 178
     SetBorderColor 0 0 0 255
