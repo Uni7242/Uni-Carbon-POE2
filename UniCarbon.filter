@@ -216,6 +216,8 @@ Show #Gold
 
 #---Scrolls---
 Hide #End Game Scrolls
+	Class == "Stackable Currency"
+	BaseType == "Scroll of Wisdom"	
 	AreaLevel > 75
 	SetFontSize 18
 
