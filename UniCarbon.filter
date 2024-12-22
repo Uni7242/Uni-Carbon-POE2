@@ -26,7 +26,7 @@ Show #T1
 
 Show #T2
 	Class == "Stackable Currency"
-	BaseType == "Orb of Alteration" "Glassblower's Bauble" "Chaos Orb" "Vaal Orb" "Artificer's Orb" "Arcanist's Etcher" "Exalted Orb" "Regal Orb" "Gemcutter's Prism" "Orb of Chance"
+	BaseType == "Orb of Alteration" "Glassblower's Bauble" "Chaos Orb" "Vaal Orb" "Artificer's Orb" "Arcanist's Etcher" "Exalted Orb" "Regal Orb" "Gemcutter's Prism" "Orb of Chance" "Blacksmith's Whetstone" "Armourer's Scrap"
 	SetFontSize 32
 	SetTextColor 0 0 0 255
 	SetBorderColor 0 0 0 255
@@ -38,7 +38,7 @@ Show #T2
 
 Show #T3
     Class == "Stackable Currency"
-    BaseType == "Blacksmith's Whetstone" "Armourer's Scrap" "Regal Shard" "Alchemy Shard" "Chaos Shard" "Artificer's Shard" "Orb of Alchemy" "Lesser Jeweller's Orb" "Chance Shard"
+    BaseType == "Regal Shard" "Alchemy Shard" "Chaos Shard" "Artificer's Shard" "Orb of Alchemy" "Lesser Jeweller's Orb" "Chance Shard"
     SetTextColor 0 0 0 255
     SetBackgroundColor 210 178 135 178
     SetBorderColor 0 0 0 255
@@ -50,7 +50,7 @@ Show #T3
 Show #T4
 	Class == "Stackable Currency"
 	BaseType == "Orb of Transmutation" "Orb of Augmentation" "Transmutation Shard"
-	SetFontSize 32
+	SetFontSize 28
 	SetTextColor 170 158 130 255
 	SetBorderColor 170 158 130 255
 	SetBackgroundColor 20 20 0 200
@@ -61,7 +61,7 @@ Show #Stack
 	BaseType == "Divine Orb" "Greater Jeweller's Orb" "Orb of Annulment" "Perfect Jeweller's Orb" "Orb of Alteration" "Glassblower's Bauble" "Chaos Orb" "Vaal Orb" "Artificer's Orb" "Arcanist's Etcher" "Exalted Orb" "Regal Orb" "Gemcutter's Prism" "Orb of Chance" "Orb of Transmutation" "Orb of Augmentation" "Transmutation Shard" "Blacksmith's Whetstone" "Armourer's Scrap" "Regal Shard" "Alchemy Shard" "Chaos Shard" "Artificer's Shard" "Orb of Alchemy" "Lesser Jeweller's Orb" "Chance Shard"
 	StackSize > 3
 	SetBorderColor 255 255 255 255
-	PlayEffect White
+	PlayEffect White Temp
 
 Show #Catch
 	Class == "Stackable Currency"
@@ -215,6 +215,10 @@ Show #Gold
 	MinimapIcon 2 Yellow Cross
 
 #---Scrolls---
+Hide #End Game Scrolls
+	AreaLevel > 75
+	SetFontSize 18
+
 Show #Scrolls
 	Class == "Stackable Currency"
 	BaseType == "Scroll of Wisdom"
