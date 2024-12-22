@@ -309,8 +309,7 @@ Show #Distilled
 
 #---Omen---
 Show #Omen
-	Class == "Stackable Currency"
-	BaseType "Omen"
+	Class == "Omen"
 	SetFontSize 38
 	SetTextColor 0 0 0 255
 	SetBorderColor 0 0 0 255
@@ -912,94 +911,25 @@ Show #Unique
 
 #---General
 
-Hide #Hide Non-Expert #MF
-	Class == "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "One Hand Maces" "Two Hand Maces" "One Hand Axes" "Two Hand Axes" "One Hand Swords" "Two Hand Swords" "Crossbows" "Claws" "Daggers" "Traps" "Flails" "Spears" "Quarterstaves" "Foci" "Shields" #MF
-    Rarity < Rare #MF
-    SetFontSize 15 #MF
-    Continue #MF
-
-Show #General
-	Class == "Jewels" "Amulets" "Rings" "Belts" "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "One Hand Maces" "Two Hand Maces" "One Hand Axes" "Two Hand Axes" "One Hand Swords" "Two Hand Swords" "Crossbows" "Claws" "Daggers" "Traps" "Flails" "Spears" "Sceptres" "Staves" "Quarterstaves" "Wands" "Foci" "Quivers" "Shields"
-	Rarity == Rare
-	SetFontSize 30
-    SetTextColor 233 206 14 255
-	SetBorderColor 233 206 14 255
-	Continue
-
-Show #General Magic
-	Class == "Jewels" "Amulets" "Rings" "Belts" "Sceptres" "Staves" "Wands" "Foci" "Quivers"
-	Rarity == Magic
-	SetFontSize 30
-	SetTextColor 43 123 226 255
-	Continue
-
-Show #General Magic Late Game
-	Class == "Jewels" "Amulets" "Rings" "Belts" "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "One Hand Maces" "Two Hand Maces" "One Hand Axes" "Two Hand Axes" "One Hand Swords" "Two Hand Swords" "Crossbows" "Claws" "Daggers" "Traps" "Flails" "Spears" "Sceptres" "Staves" "Quarterstaves" "Wands" "Foci" "Quivers" "Shields"
-    BaseType = "Expert" #MF
-	AreaLevel > 78
-	Rarity == Magic
-	SetFontSize 30
-	SetTextColor 43 123 226 255
-	Continue
-
-Show #General Magic Midgame
-	Class == "Jewels" "Amulets" "Rings" "Belts" "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "One Hand Maces" "Two Hand Maces" "One Hand Axes" "Two Hand Axes" "One Hand Swords" "Two Hand Swords" "Crossbows" "Claws" "Daggers" "Traps" "Flails" "Spears" "Sceptres" "Staves" "Quarterstaves" "Wands" "Foci" "Quivers" "Shields"
-    BaseType = "Advanced" "Expert" #MF
-	AreaLevel > 68
-	Rarity == Magic
-	SetFontSize 30
-	SetTextColor 43 123 226 255
-	Continue
-
-Show #General Magic Campaign
-	Class == "Jewels" "Amulets" "Rings" "Belts" "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "One Hand Maces" "Two Hand Maces" "One Hand Axes" "Two Hand Axes" "One Hand Swords" "Two Hand Swords" "Crossbows" "Claws" "Daggers" "Traps" "Flails" "Spears" "Sceptres" "Staves" "Quarterstaves" "Wands" "Foci" "Quivers" "Shields"
-	AreaLevel < 68
-	Rarity == Magic
-	SetFontSize 30
-	SetTextColor 43 123 226 255
-	Continue
-
-Show #General Normal
-	Class == "Jewels" "Amulets" "Rings" "Belts" "Sceptres" "Staves" "Wands" "Foci" "Quivers"
-	Rarity == Normal
-	SetFontSize 30
-	SetTextColor 204 204 204 255
-	Continue
-
-Show #General Normal Late Game
-	Class == "Jewels" "Amulets" "Rings" "Belts" "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "One Hand Maces" "Two Hand Maces" "One Hand Axes" "Two Hand Axes" "One Hand Swords" "Two Hand Swords" "Crossbows" "Claws" "Daggers" "Traps" "Flails" "Spears" "Sceptres" "Staves" "Quarterstaves" "Wands" "Foci" "Quivers" "Shields"
-    BaseType = "Expert" #MF
-	AreaLevel > 78
-	Rarity == Normal
-	SetFontSize 30
-	SetTextColor 204 204 204 255
-	Continue
-
-Show #General Normal Midgame
-	Class == "Jewels" "Amulets" "Rings" "Belts" "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "One Hand Maces" "Two Hand Maces" "One Hand Axes" "Two Hand Axes" "One Hand Swords" "Two Hand Swords" "Crossbows" "Claws" "Daggers" "Traps" "Flails" "Spears" "Sceptres" "Staves" "Quarterstaves" "Wands" "Foci" "Quivers" "Shields"
-    BaseType = "Advanced" #MF
-	AreaLevel > 68
-	Rarity == Normal
-	SetFontSize 30
-	SetTextColor 204 204 204 255
-	Continue
-
-Show #General Normal Campaign
-	Class == "Jewels" "Amulets" "Rings" "Belts" "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "One Hand Maces" "Two Hand Maces" "One Hand Axes" "Two Hand Axes" "One Hand Swords" "Two Hand Swords" "Crossbows" "Claws" "Daggers" "Traps" "Flails" "Spears" "Sceptres" "Staves" "Quarterstaves" "Wands" "Foci" "Quivers" "Shields"
-	AreaLevel < 68
-	Rarity == Normal
-	SetFontSize 30
-	SetTextColor 204 204 204 255
-	Continue
-
-Show #Jewellery
+Show #Rare Jewellery
 	Class == "Amulets" "Rings" "Belts" 
 	SetBackgroundColor 120 17 118 200
 	SetFontSize 32
 	PlayEffect White Temp
-	Continue
 
-Show #Expert Boots
+Show #Magic Jewellery
+	Class == "Amulets" "Rings" "Belts" 
+	SetBackgroundColor 120 17 118 200
+	SetFontSize 32
+	PlayEffect White Temp
+
+Show #Normal Jewellery
+	Class == "Amulets" "Rings" "Belts" 
+	SetBackgroundColor 120 17 118 200
+	SetFontSize 32
+	PlayEffect White Temp
+
+Show #Best Boots
 	Class == "Boots"
 	BaseType = "Expert"
 	Rarity == "Normal"
@@ -1009,7 +939,7 @@ Show #Expert Boots
 	PlayAlertSoundPositional 3 200
 	PlayEffect Purple Temp
 
-Show #Expert Belts
+Show #Belts
 	Class == "Belts"
 	BaseType = "Fine Belt" "Utility Belt"
 	SetFontSize 35
@@ -1027,46 +957,31 @@ Show #Breach Rings
 	PlayAlertSoundPositional 3 200
 	PlayEffect Purple Temp
 
-Show #Non Jewellery With Sockets
-	Class == "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "One Hand Maces" "Two Hand Maces" "One Hand Axes" "Two Hand Axes" "One Hand Swords" "Two Hand Swords" "Crossbows" "Claws" "Daggers" "Traps" "Flails" "Spears" "Sceptres" "Staves" "Quarterstaves" "Wands" "Foci" "Quivers" "Shields"
-	Sockets > 0
-	SetFontSize 30
-	SetBorderColor 148 255 236 200
-	PlayEffect Cyan Temp
-	Continue
-
-Show #Expert <Magic
-	Class == "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "One Hand Maces" "Two Hand Maces" "One Hand Axes" "Two Hand Axes" "One Hand Swords" "Two Hand Swords" "Crossbows" "Claws" "Daggers" "Traps" "Flails" "Spears" "Sceptres" "Staves" "Quarterstaves" "Wands" "Foci" "Quivers" "Shields"
-	Rarity < Rare
-	SetFontSize 30
-	BaseType = "Expert"
-	SetBackgroundColor 33 61 9 200
-	Continue
-
-Show #Expert Rare
-	Class == "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "One Hand Maces" "Two Hand Maces" "One Hand Axes" "Two Hand Axes" "One Hand Swords" "Two Hand Swords" "Crossbows" "Claws" "Daggers" "Traps" "Flails" "Spears" "Sceptres" "Staves" "Quarterstaves" "Wands" "Foci" "Quivers" "Shields"
-	Rarity == Rare
-	SetFontSize 30
-	BaseType = "Expert"
-	SetBackgroundColor 43 79 12 200
-	Continue
-
-Show #Quality Basetypes
-	Class == "Jewels" "Amulets" "Rings" "Belts" "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "One Hand Maces" "Two Hand Maces" "One Hand Axes" "Two Hand Axes" "One Hand Swords" "Two Hand Swords" "Crossbows" "Claws" "Daggers" "Traps" "Flails" "Spears" "Sceptres" "Staves" "Quarterstaves" "Wands" "Foci" "Quivers" "Shields"
-	Quality > 0
-	SetBorderColor 180 94 255 255
-
-Show #Jewels
+Show #Rare Jewels
 	Class == "Jewels"
 	BaseType == "Emerald" "Sapphire" "Ruby" "Diamond"
+	Rarity == Rare
 	SetFontSize 32
+    SetTextColor 233 206 14 255
+	SetBorderColor 233 206 14 255
 	SetBackgroundColor 90 5 0 225
 	PlayEffect Grey Temp
 	MinimapIcon 2 Grey Diamond
 
-Show #Jewels
+Show #Magic Jewels
+	Class == "Jewels"
+	BaseType == "Emerald" "Sapphire" "Ruby" "Diamond"
+	Rarity <= Magic
+	SetFontSize 32
+	SetTextColor 43 123 226 255
+	SetBackgroundColor 90 5 0 225
+	PlayEffect Grey Temp
+	MinimapIcon 2 Grey Diamond
+
+Show #Rare Time-Lost Jewels
     Class == "Jewels"
     BaseType = "Time-Lost"
+	Rarity == Rare
     SetTextColor 150 0 0
     SetBackgroundColor 216 249 228 255
     SetBorderColor 150 0 255 255
@@ -1075,9 +990,112 @@ Show #Jewels
     MinimapIcon 2 Grey Pentagon
     PlayEffect Grey Temp
 
-# Show #Final Catch
-# 	Class == "Jewels" "Amulets" "Rings" "Belts" "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "One Hand Maces" "Two Hand Maces" "One Hand Axes" "Two Hand Axes" "One Hand Swords" "Two Hand Swords" "Crossbows" "Claws" "Daggers" "Traps" "Flails" "Spears" "Sceptres" "Staves" "Quarterstaves" "Wands" "Foci" "Quivers" "Shields"
+Show #Magic Time-Lost Jewels
+    Class == "Jewels"
+    BaseType = "Time-Lost"
+	Rarity == Magic
+    SetTextColor 150 0 0
+    SetBackgroundColor 216 249 228 255
+    SetBorderColor 150 0 255 255
+    SetFontSize 32
+    PlayAlertSoundPositional 2 300
+    MinimapIcon 2 Grey Pentagon
+    PlayEffect Grey Temp
 
+Show #Expert <Magic
+	Class == "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "One Hand Maces" "Two Hand Maces" "One Hand Axes" "Two Hand Axes" "One Hand Swords" "Two Hand Swords" "Crossbows" "Claws" "Daggers" "Traps" "Flails" "Spears" "Quarterstaves" "Foci" "Shields"
+	Rarity < Rare
+	BaseType = "Expert"
+	SetBackgroundColor 33 61 9 200
+	Continue
+
+Show #Expert Rare
+	Class == "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "One Hand Maces" "Two Hand Maces" "One Hand Axes" "Two Hand Axes" "One Hand Swords" "Two Hand Swords" "Crossbows" "Claws" "Daggers" "Traps" "Flails" "Spears" "Quarterstaves" "Foci" "Shields"
+	Rarity == Rare
+	BaseType = "Expert"
+	SetBackgroundColor 43 79 12 200
+	Continue
+
+Show #Untierable Rares
+	Class == "Wands" "Staves" "Jewels" "Amulets" "Rings" "Belts" "Quivers" "Sceptres"
+	Rarity == Rare
+	SetFontSize 30
+    SetTextColor 233 206 14 255
+	SetBorderColor 233 206 14 255
+
+Show #Untierable Magic
+	Class == "Wands" "Staves" "Jewels" "Amulets" "Rings" "Belts" "Quivers" "Sceptres"
+	Rarity == Magic
+	SetFontSize 30
+	SetTextColor 43 123 226 255
+
+Show #Untierable Normal
+	Class == "Wands" "Staves" "Jewels" "Amulets" "Rings" "Belts" "Quivers" "Sceptres"
+	Rarity == Normal
+	SetFontSize 30
+	SetTextColor 204 204 204 255
+
+#Tierable Gear
+Show #Rares
+	Class == "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "One Hand Maces" "Two Hand Maces" "One Hand Axes" "Two Hand Axes" "One Hand Swords" "Two Hand Swords" "Crossbows" "Claws" "Daggers" "Traps" "Flails" "Spears" "Quarterstaves" "Foci" "Shields"
+	Rarity == Rare
+	SetFontSize 30
+    SetTextColor 233 206 14 255
+	SetBorderColor 233 206 14 255
+	Continue
+
+Show #Magic
+	Class == "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "One Hand Maces" "Two Hand Maces" "One Hand Axes" "Two Hand Axes" "One Hand Swords" "Two Hand Swords" "Crossbows" "Claws" "Daggers" "Traps" "Flails" "Spears" "Quarterstaves" "Foci" "Shields"
+	Rarity == Magic
+	SetFontSize 30
+	SetTextColor 43 123 226 255
+	Continue
+
+Show #Normal
+	Class == "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "One Hand Maces" "Two Hand Maces" "One Hand Axes" "Two Hand Axes" "One Hand Swords" "Two Hand Swords" "Crossbows" "Claws" "Daggers" "Traps" "Flails" "Spears" "Quarterstaves" "Foci" "Shields"
+	Rarity == Normal
+	SetFontSize 30
+	SetTextColor 204 204 204 255
+	Continue
+
+Show #Socket Override
+	Class == "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "One Hand Maces" "Two Hand Maces" "One Hand Axes" "Two Hand Axes" "One Hand Swords" "Two Hand Swords" "Crossbows" "Claws" "Daggers" "Traps" "Flails" "Spears" "Sceptres" "Staves" "Quarterstaves" "Wands" "Foci" "Quivers" "Shields"
+	Sockets > 0
+	SetFontSize 30
+	SetBorderColor 148 255 236 200
+	PlayEffect Cyan Temp
+
+Show #Quality Override
+	Class == "Jewels" "Amulets" "Rings" "Belts" "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "One Hand Maces" "Two Hand Maces" "One Hand Axes" "Two Hand Axes" "One Hand Swords" "Two Hand Swords" "Crossbows" "Claws" "Daggers" "Traps" "Flails" "Spears" "Sceptres" "Staves" "Quarterstaves" "Wands" "Foci" "Quivers" "Shields"
+	Quality > 0
+	SetFontSize 30
+	SetBorderColor 180 94 255 255
+
+#EARLY CAMPAIGN
+Hide #T5
+	Class == "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "One Hand Maces" "Two Hand Maces" "One Hand Axes" "Two Hand Axes" "One Hand Swords" "Two Hand Swords" "Crossbows" "Claws" "Daggers" "Traps" "Flails" "Spears" "Quarterstaves" "Foci" "Shields"
+	Rarity ! Unique
+	SetFontSize 15
+	AreaLevel > 45
+    BaseType == "Crude Bow" "Warden Bow" "Recurve Bow" "Composite Bow" "Stocky Mitts" "Riveted Mitts" "Tempered Mitts" "Suede Bracers" "Firm Bracers" "Bound Bracers" "Torn Gloves" "Sombre Gloves" "Stitched Gloves" "Ringmail Gauntlets" "Layered Gauntlets" "Rope Cuffs" "Aged Cuffs" "Gauze Wraps" "Linen Wraps" "Golden Caligae" "Rough Greaves" "Iron Greaves" "Bronze Greaves" "Rawhide Boots" "Laced Boots" "Embossed Boots" "Straw Sandals" "Wrapped Sandals" "Lattice Sandals" "Mail Sabatons" "Braced Sabatons" "Padded Leggings" "Secured Leggings" "Frayed Shoes" "Threaded Shoes" "Golden Mantle" "Rusted Cuirass" "Fur Plate" "Iron Cuirass" "Raider Plate" "Maraketh Cuirass" "Leather Vest" "Quilted Vest" "Pathfinder Coat" "Shrouded Vest" "Rhoahide Coat" "Tattered Robe" "Feathered Robe" "Hexer's Robe" "Bone Raiment" "Silk Robe" "Chain Mail" "Rogue Armour" "Vagabond Armour" "Pilgrim Vestments" "Pelt Mantle" "Mail Vestments" "Hermit Garb" "Waxed Jacket" "Marabout Garb" "Golden Wreath" "Golden Visage" "Rusted Greathelm" "Soldier Greathelm" "Wrapped Greathelm" "Shabby Hood" "Felt Cap" "Lace Hood" "Twig Circlet" "Wicker Tiara" "Beaded Circlet" "Brimmed Helm" "Guarded Helm" "Visored Helm" "Iron Crown" "Horned Crown" "Cultist Crown" "Hewn Mask" "Face Mask" "Hooded Mask" "Felled Greatclub" "Oak Greathammer" "Forge Maul" "Studded Greatclub" "Cultist Greathammer" "Wrapped Quarterstaff" "Long Quarterstaff" "Gothic Quarterstaff" "Crackling Quarterstaff" "Crescent Quarterstaff" "Makeshift Crossbow" "Tense Crossbow" "Sturdy Crossbow" "Varnished Crossbow" "Dyad Crossbow" "Wooden Club" "Smithing Hammer" "Slim Mace" "Spiked Club" "Warpick" "Splintered Tower Shield" "Painted Tower Shield" "Braced Tower Shield" "Barricade Tower Shield" "Effigial Tower Shield" "Hardwood Targe" "Pelage Targe" "Studded Targe" "Blazon Crest Shield" "Sigil Crest Shield" "Emblem Crest Shield" "Leather Buckler" "Wooden Buckler" "Plated Buckler" "Iron Buckler" "Ridged Buckler" "Twig Focus" "Woven Focus" "Antler Focus" "Engraved Focus" "Tonal Focus" "Crystal Focus"
+Hide #T4
+	Class == "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "One Hand Maces" "Two Hand Maces" "One Hand Axes" "Two Hand Axes" "One Hand Swords" "Two Hand Swords" "Crossbows" "Claws" "Daggers" "Traps" "Flails" "Spears" "Quarterstaves" "Foci" "Shields"
+	Rarity ! Unique
+	SetFontSize 15
+	AreaLevel > 55
+    BaseType == "Dualstring Bow" "Cultist Bow" "Zealot Bow" "Artillery Bow" "Bolstered Mitts" "Moulded Mitts" "Detailed Mitts" "Sectioned Bracers" "Spined Bracers" "Fine Bracers" "Jewelled Gloves" "Intricate Gloves" "Pauascale Gloves" "Doubled Gauntlets" "Plate Gauntlets" "Goldcast Cuffs" "Diviner Cuffs" "Spiral Wraps" "Buckled Wraps" "Advanced Riveted Mitts" "Advanced Firm Bracers" "Advanced Sombre Gloves" "Advanced Ringmail Gauntlets" "Advanced Rope Cuffs" "Advanced Gauze Wraps" "Trimmed Greaves" "Stone Greaves" "Reefsteel Greaves" "Steeltoe Boots" "Lizardscale Boots" "Flared Boots" "Silk Slippers" "Feathered Sandals" "Flax Sandals" "Stacked Sabatons" "Covered Sabatons" "Pelt Leggings" "Weaver Leggings" "Hunting Shoes" "Steelpoint Shoes" "Advanced Iron Greaves" "Advanced Laced Boots" "Advanced Wrapped Sandals" "Advanced Mail Sabatons" "Advanced Padded Leggings" "Advanced Frayed Shoes" "Steel Plate" "Full Plate" "Vaal Cuirass" "Juggernaut Plate" "Studded Vest" "Scout's Vest" "Serpentscale Coat" "Corsair Vest" "Keth Raiment" "Votive Raiment" "Altar Robe" "Elementalist Robe" "Cloaked Mail" "Explorer Armour" "Scale Mail" "Knight Armour" "Shaman Mantle" "Ironclad Vestments" "Sacrificial Mantle" "Cleric Vestments" "Wayfarer Jacket" "Anchorite Garb" "Scalper's Jacket" "Scoundrel Jacket" "Advanced Fur Plate" "Advanced Quilted Vest" "Advanced Feathered Robe" "Advanced Chain Mail" "Advanced Pilgrim Vestments" "Advanced Hermit Garb" "Spired Greathelm" "Elite Greathelm" "Warrior Greathelm" "Commander Greathelm" "Swathed Cap" "Hunter Hood" "Viper Cap" "Corsair Cap" "Chain Tiara" "Feathered Tiara" "Gold Circlet" "Coral Circlet" "Cowled Helm" "Shielded Helm" "Closed Helm" "Martyr Crown" "Heavy Crown" "Spiritbone Crown" "Veiled Mask" "Tribal Mask" "Solid Mask" "Advanced Rusted Greathelm" "Advanced Shabby Hood" "Advanced Twig Circlet" "Advanced Brimmed Helm" "Advanced Iron Crown" "Advanced Hewn Mask" "Temple Maul" "Leaden Greathammer" "Crumbling Maul" "Pointed Maul" "Advanced Oak Greathammer" "Steelpoint Quarterstaff" "Slicing Quarterstaff" "Barrier Quarterstaff" "Hefty Quarterstaff" "Advanced Long Quarterstaff" "Alloy Crossbow" "Bombard Crossbow" "Construct Crossbow" "Blackfire Crossbow" "Advanced Tense Crossbow" "Plated Mace" "Brigand Mace" "Construct Hammer" "Morning Star" "Advanced Smithing Hammer" "Rampart Tower Shield" "Heraldric Tower Shield" "Stone Tower Shield" "Crucible Tower Shield" "Crescent Targe" "Chiseled Targe" "Feathered Targe" "Stratified Targe" "Jingling Crest Shield" "Sectarian Crest Shield" "Omen Crest Shield" "Wayward Crest Shield" "Spiked Buckler" "Ringed Buckler" "Edged Buckler" "Laminate Buckler" "Advanced Painted Tower Shield" "Advanced Hardwood Targe" "Advanced Blazon Crest Shield" "Advanced Wooden Buckler" "Voodoo Focus" "Plumed Focus" "Jade Focus"
+Hide #T3
+	Class == "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "One Hand Maces" "Two Hand Maces" "One Hand Axes" "Two Hand Axes" "One Hand Swords" "Two Hand Swords" "Crossbows" "Claws" "Daggers" "Traps" "Flails" "Spears" "Quarterstaves" "Foci" "Shields"
+	Rarity ! Unique
+	SetFontSize 15
+	AreaLevel > 65
+    BaseType == "Tribal Bow" "Double Limb Bow" "Advanced Warden Bow" "Advanced Composite Bow" "Advanced Dualstring Bow" "Advanced Cultist Bow" "Advanced Zealot Bow" "Titan Mitts" "Hardened Bracers" "Embroidered Gloves" "Burnished Gauntlets" "Righteous Cuffs" "Furtive Wraps" "Advanced Tempered Mitts" "Advanced Bolstered Mitts" "Advanced Moulded Mitts" "Advanced Bound Bracers" "Advanced Sectioned Bracers" "Advanced Spined Bracers" "Advanced Stitched Gloves" "Advanced Jewelled Gloves" "Advanced Intricate Gloves" "Advanced Layered Gauntlets" "Advanced Doubled Gauntlets" "Advanced Aged Cuffs" "Advanced Goldcast Cuffs" "Advanced Linen Wraps" "Advanced Spiral Wraps" "Monument Greaves" "Leatherplate Boots" "Studded Sandals" "Flexile Sabatons" "Gilt Leggings" "Velour Shoes" "Advanced Bronze Greaves" "Advanced Trimmed Greaves" "Advanced Stone Greaves" "Advanced Embossed Boots" "Advanced Steeltoe Boots" "Advanced Lizardscale Boots" "Advanced Lattice Sandals" "Advanced Silk Slippers" "Advanced Feathered Sandals" "Advanced Braced Sabatons" "Advanced Stacked Sabatons" "Advanced Secured Leggings" "Advanced Pelt Leggings" "Advanced Threaded Shoes" "Advanced Hunting Shoes" "Chieftain Cuirass" "Colosseum Plate" "Champion Cuirass" "Smuggler Coat" "Strider Vest" "Hardleather Coat" "Mystic Raiment" "Imperial Robe" "Plated Raiment" "Ancestral Mail" "Lamellar Mail" "Gladiator Armour" "Tideseer Mantle" "Gilded Vestments" "Venerated Mantle" "Ascetic Garb" "Clandestine Jacket" "Monastic Garb" "Advanced Iron Cuirass" "Advanced Maraketh Cuirass" "Advanced Steel Plate" "Advanced Full Plate" "Advanced Vaal Cuirass" "Advanced Pathfinder Coat" "Advanced Rhoahide Coat" "Advanced Studded Vest" "Advanced Scout's Vest" "Advanced Serpentscale Coat" "Advanced Hexer's Robe" "Advanced Silk Robe" "Advanced Keth Raiment" "Advanced Votive Raiment" "Advanced Altar Robe" "Advanced Rogue Armour" "Advanced Vagabond Armour" "Advanced Cloaked Mail" "Advanced Explorer Armour" "Advanced Scale Mail" "Advanced Pelt Mantle" "Advanced Mail Vestments" "Advanced Shaman Mantle" "Advanced Ironclad Vestments" "Advanced Sacrificial Mantle" "Advanced Waxed Jacket" "Advanced Marabout Garb" "Advanced Wayfarer Jacket" "Advanced Anchorite Garb" "Advanced Scalper's Jacket" "Fierce Greathelm" "Dueling Greathelm" "Goliath Greathelm" "Leatherbound Hood" "Velvet Cap" "Covert Hood" "Jade Tiara" "Noble Circlet" "Twilight Tiara" "Decorated Helm" "Lavish Crown" "Shaded Mask" "Advanced Soldier Greathelm" "Advanced Wrapped Greathelm" "Advanced Spired Greathelm" "Advanced Elite Greathelm" "Advanced Felt Cap" "Advanced Lace Hood" "Advanced Swathed Cap" "Advanced Hunter Hood" "Advanced Wicker Tiara" "Advanced Beaded Circlet" "Advanced Chain Tiara" "Advanced Feathered Tiara" "Advanced Guarded Helm" "Advanced Visored Helm" "Advanced Cowled Helm" "Advanced Shielded Helm" "Advanced Horned Crown" "Advanced Cultist Crown" "Advanced Martyr Crown" "Advanced Heavy Crown" "Advanced Face Mask" "Advanced Hooded Mask" "Advanced Veiled Mask" "Advanced Tribal Mask" "Totemic Greatclub" "Greatmace" "Precise Greathammer" "Advanced Forge Maul" "Advanced Cultist Greathammer" "Advanced Temple Maul" "Advanced Leaden Greathammer" "Advanced Crumbling Maul" "Smooth Quarterstaff" "Anima Quarterstaff" "Graceful Quarterstaff" "Advanced Gothic Quarterstaff" "Advanced Crackling Quarterstaff" "Advanced Crescent Quarterstaff" "Advanced Slicing Quarterstaff" "Advanced Barrier Quarterstaff" "Piercing Crossbow" "Cumbrous Crossbow" "Dedalian Crossbow" "Advanced Sturdy Crossbow" "Advanced Varnished Crossbow" "Advanced Dyad Crossbow" "Advanced Bombard Crossbow" "Advanced Forlorn Crossbow" "Jade Club" "Lumen Mace" "Execratus Hammer" "Advanced Slim Mace" "Advanced Warpick" "Advanced Plated Mace" "Advanced Brigand Mace" "Advanced Construct Hammer" "Ancestor Tower Shield" "Phalanx Tower Shield" "Defiant Tower Shield" "Carved Targe" "Mosaic Targe" "Aureate Targe" "Seer Crest Shield" "Stoic Crest Shield" "Empyreal Crest Shield" "Pearl Buckler" "Ornate Buckler" "Array Buckler" "Advanced Braced Tower Shield" "Advanced Effigial Tower Shield" "Advanced Rampart Tower Shield" "Advanced Heraldric Tower Shield" "Advanced Stone Tower Shield" "Advanced Pelage Targe" "Advanced Studded Targe" "Advanced Crescent Targe" "Advanced Chiseled Targe" "Advanced Feathered Targe" "Advanced Sigil Crest Shield" "Advanced Emblem Crest Shield" "Advanced Jingling Crest Shield" "Advanced Sectarian Crest Shield"
+Hide #T2
+	Class == "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "One Hand Maces" "Two Hand Maces" "One Hand Axes" "Two Hand Axes" "One Hand Swords" "Two Hand Swords" "Crossbows" "Claws" "Daggers" "Traps" "Flails" "Spears" "Quarterstaves" "Foci" "Shields"
+	Rarity ! Unique
+	SetFontSize 15
+	AreaLevel > 75
+    BaseType == "Heavy Bow" "Grand Mitts" "Engraved Bracers" "Adorned Gloves" "Ornate Gauntlets" "Signet Cuffs" "Utility Wraps" "Grand Manchettes" "Expert Riveted Mitts" "Expert Firm Bracers" "Expert Sombre Gloves" "Expert Ringmail Gauntlets" "Expert Rope Cuffs" "Expert Gauze Wraps" "Totemic Greaves" "Embroidered Boots" "Elaborate Sandals" "Bold Sabatons" "Pious Leggings" "Bladed Shoes" "Grand Cuisses" "Expert Iron Greaves" "Expert Laced Boots" "Expert Wrapped Sandals" "Expert Mail Sabatons" "Expert Padded Leggings" "Expert Frayed Shoes" "Glorious Plate" "Conqueror Plate" "Exquisite Vest" "Mail Coat" "Havoc Raiment" "Enlightened Robe" "Heroic Armour" "Tournament Mail" "Tournament Mail" "Tournament Mail" "Revered Vestments" "Corvus Mantle" "Torment Jacket" "Devout Garb" "Grand Regalia" "Expert Iron Cuirass" "Expert Pathfinder Coat" "Expert Hexer's Robe" "Expert Pelt Mantle" "Expert Waxed Jacket" "Guardian Greathelm" "Armoured Cap" "Magus Tiara" "Gallant Helm" "Templar Crown" "Death Mask" "Grand Visage" "Expert Soldier Greathelm" "Expert Felt Cap" "Expert Wicker Tiara" "Expert Guarded Helm" "Expert Horned Crown" "Expert Face Mask" "Giant Maul" "Expert Forge Maul" "Wyrm Quarterstaff" "Expert Gothic Quarterstaff" "Esoteric Crossbow" "Expert Sturdy Crossbow" "Torment Club" "Expert Slim Mace" "Blacksteel Tower Shield" "Grand Targe" "Deified Crest Shield" "Aegis Buckler" "Expert Braced Tower Shield" "Expert Pelage Targe" "Expert Sigil Crest Shield" "Expert Plated Buckler" "Expert Antler Focus"
 #---Relics
 Show #Relics
 	Class == "Relic"
