@@ -327,6 +327,16 @@ Show #Omen
 # FRAGMENTS###
 Show #Sanctum
     Class == "Trial Coins"
+    ItemLevel >= 75
+	SetTextColor 253 7 79
+	SetBorderColor 253 7 79
+	SetBackgroundColor 255 230 230 240
+    PlayAlertSoundPositional 5 300
+    MinimapIcon 1 Red Square
+    PlayEffect Red Temp
+
+Show #Sanctum
+    Class == "Trial Coins"
     SetTextColor 253 7 79
     PlayAlertSoundPositional 16 200
     MinimapIcon 1 Red Square
@@ -900,7 +910,7 @@ Show #Other Gems
 # --Unique
 Show #Unique T1
     Rarity == Unique
-    BaseType == "Stellar Amulet" "Heavy Belt"
+    BaseType == "Stellar Amulet" "Heavy Belt" "Utility Belt" "Ultimate Life Flask" "Crucible Tower Shield" "Silk Robe" "Time-Lost Diamond" "Diamond"
     SetTextColor 175 96 37 255
     SetBackgroundColor 255 255 255 177
     SetBorderColor 175 96 37 255
@@ -1102,6 +1112,7 @@ Hide #T2
 	SetFontSize 15
 	AreaLevel > 75
     BaseType == "Heavy Bow" "Grand Mitts" "Engraved Bracers" "Adorned Gloves" "Ornate Gauntlets" "Signet Cuffs" "Utility Wraps" "Grand Manchettes" "Expert Riveted Mitts" "Expert Firm Bracers" "Expert Sombre Gloves" "Expert Ringmail Gauntlets" "Expert Rope Cuffs" "Expert Gauze Wraps" "Totemic Greaves" "Embroidered Boots" "Elaborate Sandals" "Bold Sabatons" "Pious Leggings" "Bladed Shoes" "Grand Cuisses" "Expert Iron Greaves" "Expert Laced Boots" "Expert Wrapped Sandals" "Expert Mail Sabatons" "Expert Padded Leggings" "Expert Frayed Shoes" "Glorious Plate" "Conqueror Plate" "Exquisite Vest" "Mail Coat" "Havoc Raiment" "Enlightened Robe" "Heroic Armour" "Tournament Mail" "Tournament Mail" "Tournament Mail" "Revered Vestments" "Corvus Mantle" "Torment Jacket" "Devout Garb" "Grand Regalia" "Expert Iron Cuirass" "Expert Pathfinder Coat" "Expert Hexer's Robe" "Expert Pelt Mantle" "Expert Waxed Jacket" "Guardian Greathelm" "Armoured Cap" "Magus Tiara" "Gallant Helm" "Templar Crown" "Death Mask" "Grand Visage" "Expert Soldier Greathelm" "Expert Felt Cap" "Expert Wicker Tiara" "Expert Guarded Helm" "Expert Horned Crown" "Expert Face Mask" "Giant Maul" "Expert Forge Maul" "Wyrm Quarterstaff" "Expert Gothic Quarterstaff" "Esoteric Crossbow" "Expert Sturdy Crossbow" "Torment Club" "Expert Slim Mace" "Blacksteel Tower Shield" "Grand Targe" "Deified Crest Shield" "Aegis Buckler" "Expert Braced Tower Shield" "Expert Pelage Targe" "Expert Sigil Crest Shield" "Expert Plated Buckler" "Expert Antler Focus"
+
 #---Relics
 Show #Relics
 	Class == "Relic"
