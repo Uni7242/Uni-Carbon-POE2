@@ -12,7 +12,7 @@ Show #Mirror of Kalandra
 	PlayEffect Red
 	MinimapIcon 0 Red Star
 
-Show #T1
+Show #T4
 	Class == "Stackable Currency"
 	BaseType == "Divine Orb" "Greater Jeweller's Orb" "Orb of Annulment" "Perfect Jeweller's Orb"
 	SetFontSize 35
@@ -24,7 +24,7 @@ Show #T1
 	MinimapIcon 1 Yellow Circle
 	Continue
 
-Show #T2
+Show #T3
 	Class == "Stackable Currency"
 	BaseType == "Orb of Alteration" "Glassblower's Bauble" "Chaos Orb" "Vaal Orb" "Artificer's Orb" "Arcanist's Etcher" "Exalted Orb" "Regal Orb" "Gemcutter's Prism" "Orb of Chance" "Armourer's Scrap"
 	SetFontSize 32
@@ -36,7 +36,7 @@ Show #T2
 	MinimapIcon 2 White Circle
 	Continue
 
-Show #T3
+Show #T2
     Class == "Stackable Currency"
     BaseType == "Regal Shard" "Alchemy Shard" "Chaos Shard" "Artificer's Shard" "Orb of Alchemy" "Lesser Jeweller's Orb" "Chance Shard" "Blacksmith's Whetstone"
     SetTextColor 0 0 0 255
@@ -47,7 +47,7 @@ Show #T3
     MinimapIcon 2 White Circle
     Continue
 
-Show #T4
+Show #T1
 	Class == "Stackable Currency"
 	BaseType == "Orb of Transmutation" "Orb of Augmentation" "Transmutation Shard"
 	SetFontSize 28
@@ -62,6 +62,11 @@ Show #Stack
 	StackSize > 3
 	SetBorderColor 255 255 255 255
 	PlayEffect White Temp
+
+Hide #Endgame low value currency
+	Class = "Stackable Currency"
+	AreaLevel > 68
+	BaseType == "Orb of Augmentation" "Transmutation Shard" "Orb of Transmutation"
 
 Show #Catch
 	Class == "Stackable Currency"
@@ -314,28 +319,51 @@ Show #Distilled
 	MinimapIcon 2 White Circle
 
 #---Omen---
-Show #Omen
+Show #Omen T3
 	Class == "Omen"
+	BaseType "Omen of Sinistral Annulment" "Omen of Whittling" "Omen of Sinistral Erasure" "Omen of Dextral Annulment" "Omen of Dextral Erasure"
 	SetFontSize 38
-	SetTextColor 0 0 0 255
-	SetBorderColor 0 0 0 255
-	SetBackgroundColor 240 90 35 178
-	PlayAlertSoundPositional 2 300
+	SetTextColor 255 255 255 255
+	SetBorderColor 255 255 255 255f
+	SetBackgroundColor 213 159 0 255
+	PlayAlertSoundPositional 1 300
 	PlayEffect Yellow
 	MinimapIcon 1 Yellow Circle
 
-# FRAGMENTS###
-Show #Sanctum
+Show #Omen T2
+	Class == "Omen"
+	BaseType "Omen of Corruption" "Omen of Amelioration"
+	SetFontSize 35
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	SetBackgroundColor 249 150 25 255
+	PlayAlertSoundPositional 2 300
+	PlayEffect Yellow Temp
+	MinimapIcon 2 Yellow Circle
+
+Show #Omen T1
+	Class == "Omen"
+	BaseType "Omen of Greater Annulment" "Omen of Dextral Coronation" "Omen of Greater Exaltation" "Omen of Sinistral Coronation" "Omen of Dextral Exaltation" "Omen of Sinistral Exaltation" "Omen of Dextral Alchemy" "Omen of Refreshment" "Omen of Resurgence" "Omen of Sinistral Alchemy"
+	SetFontSize 32
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	SetBackgroundColor 240 90 35 178
+	PlayAlertSoundPositional 2 150
+	PlayEffect Yellow Temp
+	MinimapIcon 3 Yellow Circle
+
+# FRAGMENTS### 
+Show #Sanctum T2
     Class == "Trial Coins"
     ItemLevel >= 75
 	SetTextColor 253 7 79
 	SetBorderColor 253 7 79
-	SetBackgroundColor 255 230 230 240
-    PlayAlertSoundPositional 5 300
+	SetBackgroundColor 0 0 0
+    PlayAlertSoundPositional 2 200
     MinimapIcon 1 Red Square
     PlayEffect Red Temp
 
-Show #Sanctum
+Show #Sanctum T1
     Class == "Trial Coins"
     SetTextColor 253 7 79
     PlayAlertSoundPositional 16 200
