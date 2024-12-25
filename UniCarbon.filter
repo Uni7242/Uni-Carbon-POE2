@@ -328,7 +328,7 @@ Show #Omen T3
 	SetBackgroundColor 213 159 0 255
 	PlayAlertSoundPositional 1 300
 	PlayEffect Yellow
-	MinimapIcon 1 Yellow Circle
+	MinimapIcon 0 Yellow Circle
 
 Show #Omen T2
 	Class == "Omen"
@@ -339,7 +339,7 @@ Show #Omen T2
 	SetBackgroundColor 249 150 25 255
 	PlayAlertSoundPositional 2 300
 	PlayEffect Yellow Temp
-	MinimapIcon 2 Yellow Circle
+	MinimapIcon 1 Yellow Circle
 
 Show #Omen T1
 	Class == "Omen"
@@ -350,7 +350,7 @@ Show #Omen T1
 	SetBackgroundColor 240 90 35 178
 	PlayAlertSoundPositional 2 150
 	PlayEffect Yellow Temp
-	MinimapIcon 3 Yellow Circle
+	MinimapIcon 2 Yellow Circle
 
 # FRAGMENTS### 
 Show #Sanctum T2
