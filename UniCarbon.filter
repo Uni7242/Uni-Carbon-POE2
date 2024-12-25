@@ -321,10 +321,10 @@ Show #Distilled
 #---Omen---
 Show #Omen T3
 	Class == "Omen"
-	BaseType "Omen of Sinistral Annulment" "Omen of Whittling" "Omen of Sinistral Erasure" "Omen of Dextral Annulment" "Omen of Dextral Erasure"
+	BaseType == "Omen of Sinistral Annulment" "Omen of Whittling" "Omen of Sinistral Erasure" "Omen of Dextral Annulment" "Omen of Dextral Erasure"
 	SetFontSize 38
 	SetTextColor 255 255 255 255
-	SetBorderColor 255 255 255 255f
+	SetBorderColor 255 255 255 255
 	SetBackgroundColor 213 159 0 255
 	PlayAlertSoundPositional 1 300
 	PlayEffect Yellow
@@ -1101,6 +1101,10 @@ Show #Normal
 	SetFontSize 30
 	SetTextColor 204 204 204 255
 	Continue
+
+Show
+	Class == "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "One Hand Maces" "Two Hand Maces" "One Hand Axes" "Two Hand Axes" "One Hand Swords" "Two Hand Swords" "Crossbows" "Claws" "Daggers" "Traps" "Flails" "Spears" "Quarterstaves" "Foci" "Shields"
+	BaseType = "Tier 4" "Tier 5"
 
 Show #Socket Override
 	Class == "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "One Hand Maces" "Two Hand Maces" "One Hand Axes" "Two Hand Axes" "One Hand Swords" "Two Hand Swords" "Crossbows" "Claws" "Daggers" "Traps" "Flails" "Spears" "Sceptres" "Staves" "Quarterstaves" "Wands" "Foci" "Quivers" "Shields"
