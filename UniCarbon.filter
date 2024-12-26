@@ -1207,6 +1207,12 @@ Show #Relics
 
 #---Flasks
 Hide #Flasks
+	Class "Mana Flask" "Life Flask"
+	AreaLevel > 75
+	SetFontSize 20
+	SetBorderColor 0 133 255
+
+Hide #Flasks
 	Quality 0
 	AreaLevel >= 15
 	Class "Life Flask" "Mana Flask"
@@ -1363,13 +1369,6 @@ Show #Flasks
 	Class "Mana Flask"
 	BaseType "Transcendent"
 	SetFontSize 32
-	SetBorderColor 0 133 255
-
-Show #Flasks
-	Class "Mana Flask"
-	BaseType "Ultimate"
-	AreaLevel > 72
-	SetFontSize 20
 	SetBorderColor 0 133 255
 
 Show #Flasks
