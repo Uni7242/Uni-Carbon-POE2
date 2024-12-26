@@ -261,7 +261,7 @@ Show #League T3
 	SetBackgroundColor 255 255 255 255
 	PlayEffect Pink
 	MinimapIcon 1 Pink Moon
-	PlayAlertSoundPositional 15 300
+	PlayAlertSoundPositional 6 300
 
 Show #League T2
 	Class == "Stackable Currency"
@@ -270,8 +270,8 @@ Show #League T2
 	SetTextColor 255 0 195
 	SetBorderColor 255 0 195
 	PlayEffect Pink Temp
-	MinimapIcon 1 Pink Moon
-	PlayAlertSoundPositional 14 200
+	MinimapIcon 2 Pink Moon
+	PlayAlertSoundPositional 1 200
 
 Show #League T1
 	Class == "Stackable Currency"
@@ -290,7 +290,7 @@ Show #Omen T3
 	SetTextColor 0 20 40 255
 	SetBorderColor 255 230 230 255
 	SetBackgroundColor 255 0 70 200
-	PlayAlertSoundPositional 15 300
+	PlayAlertSoundPositional 13 300
 	PlayEffect Red
 	MinimapIcon 0 Red UpsideDownHouse
 
@@ -301,7 +301,7 @@ Show #Omen T2
 	SetTextColor 0 20 40 255
 	SetBorderColor 0 20 40 255
 	SetBackgroundColor 255 0 70 200
-	PlayAlertSoundPositional 14 200
+	PlayAlertSoundPositional 16 200
 	PlayEffect Red Temp
 	MinimapIcon 1 Red UpsideDownHouse
 
@@ -312,7 +312,7 @@ Show #Omen T1
 	SetTextColor 255 0 70 255
 	SetBorderColor 255 0 70 255
 	SetBackgroundColor 0 20 40 255
-	PlayAlertSoundPositional 14 100
+	PlayAlertSoundPositional 16 100
 	MinimapIcon 2 Red UpsideDownHouse
 
 #---Runes
@@ -323,7 +323,7 @@ Show #Runes T1
 	SetTextColor 255 0 70 255
 	SetBorderColor 255 0 70 255
 	SetBackgroundColor 0 20 40 255
-	PlayAlertSoundPositional 14 100
+	PlayAlertSoundPositional 16 100
 	PlayEffect Red
 	MinimapIcon 2 Red UpsideDownHouse
 
@@ -334,7 +334,7 @@ Show #Runes T2
 	SetTextColor 255 0 70 255
 	SetBorderColor 255 0 70 255
 	SetBackgroundColor 0 20 40 255
-	PlayAlertSoundPositional 14 100
+	PlayAlertSoundPositional 16 100
 	PlayEffect Red
 	MinimapIcon 2 Red UpsideDownHouse
 
@@ -346,7 +346,7 @@ Show #Soul Cores T3
 	SetTextColor 0 20 40 255
 	SetBorderColor 255 230 230 255
 	SetBackgroundColor 255 0 70 200
-	PlayAlertSoundPositional 15 300
+	PlayAlertSoundPositional 13 300
 	PlayEffect Red
 	MinimapIcon 0 Red UpsideDownHouse
 
@@ -357,7 +357,7 @@ Show #Soul Cores T2
 	SetTextColor 0 20 40 255
 	SetBorderColor 0 20 40 255
 	SetBackgroundColor 255 0 70 200
-	PlayAlertSoundPositional 14 200
+	PlayAlertSoundPositional 16 200
 	PlayEffect Red Temp
 	MinimapIcon 1 Red UpsideDownHouse
 
@@ -368,7 +368,7 @@ Show #Soul Cores T1
 	SetTextColor 255 0 70 255
 	SetBorderColor 255 0 70 255
 	SetBackgroundColor 0 20 40 255
-	PlayAlertSoundPositional 14 100
+	PlayAlertSoundPositional 16 100
 	MinimapIcon 2 Red UpsideDownHouse
 
 ###SPLINTERS###
@@ -403,7 +403,7 @@ Show #Endgame Keys
 	SetTextColor 219 123 0 255
 	SetBorderColor 219 123 0 255
 	SetBackgroundColor 255 230 220 230
-	PlayAlertSoundPositional 6 300
+	PlayAlertSoundPositional 5 300
 	PlayEffect Orange
 	MinimapIcon 0 Orange Diamond
 
@@ -424,7 +424,7 @@ Show #Tablets
 	SetTextColor 235 129 0 255
 	SetBorderColor 235 129 0 255
 	SetBackgroundColor 40 40 0 220
-	PlayAlertSoundPositional 2 300
+	PlayAlertSoundPositional 4 300
 	PlayEffect Orange
 	MinimapIcon 1 Orange Diamond
 
@@ -949,7 +949,7 @@ Show #Uncut Spirit Gems
 	SetFontSize 32
 	SetTextColor 30 190 190 255
 	SetBorderColor 30 190 190 255
-	PlayAlertSoundPositional 2 300
+	PlayAlertSoundPositional 12 300
 	PlayEffect Grey Temp
 	MinimapIcon 1 Cyan Triangle
 	Continue
@@ -965,7 +965,7 @@ Show #Uncut Quality Gems
 	Quality > 0
 	PlayEffect Cyan
 	SetBorderColor 180 94 255 255
-	PlayAlertSoundPositional 2 300
+	PlayAlertSoundPositional 12 300
 	MinimapIcon 1 Cyan Triangle
 
 Show #Lvl3 Support Gems
@@ -973,35 +973,35 @@ Show #Lvl3 Support Gems
 	ItemLevel > 2
 	PlayEffect Cyan
 	SetBorderColor 180 94 255 255
-	PlayAlertSoundPositional 2 300
+	PlayAlertSoundPositional 12 300
 	MinimapIcon 1 Cyan Triangle
 
 Show #Uncut 20 Gems
     ItemLevel > 19
-    BaseType "==" "Uncut Skill Gem" "Uncut Support Gem" "Uncut Spirit Gem"
+    BaseType == "Uncut Skill Gem" "Uncut Support Gem" "Uncut Spirit Gem"
     SetTextColor 23 148 148 255
     SetBackgroundColor 255 255 255 255
     SetBorderColor 30 190 190 255
     SetFontSize 35
-	PlayAlertSoundPositional 6 300
+	PlayAlertSoundPositional 10 300
     MinimapIcon 1 Cyan Triangle
     PlayEffect Cyan Temp
 
 Show #Uncut 19 Gems
     ItemLevel > 18
-    BaseType "==" "Uncut Skill Gem" "Uncut Support Gem" "Uncut Spirit Gem"
+    BaseType == "Uncut Skill Gem" "Uncut Support Gem" "Uncut Spirit Gem"
     SetTextColor 23 148 148 255
     SetBackgroundColor 240 250 240 220
     SetBorderColor 30 190 190 255
     SetFontSize 35
-    PlayAlertSoundPositional 2 300
+    PlayAlertSoundPositional 12 300
     MinimapIcon 1 Cyan Triangle
     PlayEffect Cyan Temp
 
 Show #Uncut +Socket Gems
-    BaseType "==" "Uncut Skill Gem" "Uncut Support Gem" "Uncut Spirit Gem"
+    BaseType == "Uncut Skill Gem" "Uncut Support Gem" "Uncut Spirit Gem"
     Sockets > 3
-    PlayAlertSoundPositional 2 300
+    PlayAlertSoundPositional 12 300
     MinimapIcon 1 Cyan Triangle
     PlayEffect Cyan
 
@@ -1020,7 +1020,7 @@ Show #Quality Cut Gems
 	Quality > 0
 	PlayEffect Cyan
 	SetBorderColor 180 94 255 255
-	PlayAlertSoundPositional 2 300
+	PlayAlertSoundPositional 12 300
 	MinimapIcon 1 Cyan Triangle
 
 Show #18+ Cut Gems
@@ -1028,7 +1028,7 @@ Show #18+ Cut Gems
 	GemLevel > 17
 	SetFontSize 32
 	SetBackgroundColor 20 20 20
-	PlayAlertSoundPositional 2 300
+	PlayAlertSoundPositional 12 300
 	PlayEffect Cyan Temp
 	MinimapIcon 1 Cyan Triangle
 
@@ -1036,7 +1036,7 @@ Show #+Socket Cut Gems
 	Class == "Skill Gem" "Support Gem"
 	Sockets > 2
 	PlayEffect Cyan
-	PlayAlertSoundPositional 2 300
+	PlayAlertSoundPositional 12 300
 	MinimapIcon 1 Cyan Triangle
 
 Show #Other Gems
@@ -1058,13 +1058,13 @@ Show #Unique T1
     #SetBackgroundColor 255 255 255 177
     SetBorderColor 175 96 37 255
     SetFontSize 35
-    PlayAlertSoundPositional 4 10
+    PlayAlertSoundPositional 13 300
     MinimapIcon 0 Red Star
     PlayEffect Red
 
 Show #Unique
     Rarity == Unique
-    PlayAlertSoundPositional 4 10
+    PlayAlertSoundPositional 13 100
     MinimapIcon 1 Brown Star
     PlayEffect Brown
 
