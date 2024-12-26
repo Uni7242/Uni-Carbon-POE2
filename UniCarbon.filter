@@ -946,16 +946,22 @@ Show #Other Gems
 	Class == "Skill Gem" "Support Gem"
 
 ###GEAR###
+#---Chance Bases
+Show #Chanceable Bases
+	Rarity == Normal
+    BaseType == "Stellar Amulet" "Heavy Belt" "Utility Belt" "Ultimate Life Flask" "Crucible Tower Shield" "Silk Robe" "Time-Lost Diamond" "Diamond"
+	SetBorderColor 0 125 40 255
+	SetFontSize 32
 
-# --Unique
+#---Unique
 Show #Unique T1
     Rarity == Unique
     BaseType == "Stellar Amulet" "Heavy Belt" "Utility Belt" "Ultimate Life Flask" "Crucible Tower Shield" "Silk Robe" "Time-Lost Diamond" "Diamond"
     SetTextColor 175 96 37 255
-    SetBackgroundColor 255 255 255 177
+    #SetBackgroundColor 255 255 255 177
     SetBorderColor 175 96 37 255
     SetFontSize 35
-    PlayAlertSoundPositional 13 300
+    PlayAlertSoundPositional 4 10
     MinimapIcon 0 Red Star
     PlayEffect Red
 
@@ -964,6 +970,38 @@ Show #Unique
     PlayAlertSoundPositional 4 10
     MinimapIcon 1 Brown Star
     PlayEffect Brown
+
+#---Socketables
+Show #Runes T1
+	Class == "Socketable"
+	BaseType "Rune"
+	SetFontSize 32
+	SetTextColor 226 75 43 255
+	SetBorderColor 255 255 255 255
+	SetBackgroundColor 0 20 40 255
+	PlayEffect Cyan Temp
+	MinimapIcon 2 Cyan UpsideDownHouse
+
+Show #Runes T2
+	Class == "Socketable"
+	BaseType "Rune"
+	SetFontSize 32
+	SetTextColor 226 75 43 255
+	SetBorderColor 255 255 255 255
+	SetBackgroundColor 0 20 40 255
+	PlayEffect Cyan Temp
+	MinimapIcon 2 Cyan UpsideDownHouse
+
+Show #Soul Cores
+	Class = "Socketable"
+	BaseType "Soul Core"
+	SetFontSize 35
+	SetTextColor 189 43 226 255
+	SetBorderColor 189 43 226 255
+	SetBackgroundColor 0 20 40 255
+	PlayAlertSoundPositional 1 300
+	PlayEffect Cyan Temp
+	MinimapIcon 2 Cyan UpsideDownHouse
 
 #---General
 
@@ -1117,6 +1155,7 @@ Show #Normal
 Show
 	Class == "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "One Hand Maces" "Two Hand Maces" "One Hand Axes" "Two Hand Axes" "One Hand Swords" "Two Hand Swords" "Crossbows" "Claws" "Daggers" "Traps" "Flails" "Spears" "Quarterstaves" "Foci" "Shields"
 	BaseType = "Tier 4" "Tier 5"
+	SetBackgroundColor 255 255 255
 
 Show #Socket Override
 	Class == "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "One Hand Maces" "Two Hand Maces" "One Hand Axes" "Two Hand Axes" "One Hand Swords" "Two Hand Swords" "Crossbows" "Claws" "Daggers" "Traps" "Flails" "Spears" "Sceptres" "Staves" "Quarterstaves" "Wands" "Foci" "Quivers" "Shields"
@@ -1329,6 +1368,13 @@ Show #Flasks
 Show #Flasks
 	Class "Mana Flask"
 	BaseType "Ultimate"
+	AreaLevel > 72
+	SetFontSize 20
+	SetBorderColor 0 133 255
+
+Show #Flasks
+	Class "Mana Flask"
+	BaseType "Ultimate"
 	SetFontSize 32
 	SetBackgroundColor 25 100 75
 	SetBorderColor 0 133 255
@@ -1350,36 +1396,3 @@ Show #Flasks
 	PlayAlertSoundPositional 3 300
 	PlayEffect Blue
 	MinimapIcon 1 Blue Diamond
-
-#---Socketables
-Show #Runes T1
-	Class == "Socketable"
-	BaseType "Rune"
-	SetFontSize 32
-	SetTextColor 226 75 43 255
-	SetBorderColor 255 255 255 255
-	SetBackgroundColor 0 20 40 255
-	PlayEffect Cyan Temp
-	MinimapIcon 2 Cyan UpsideDownHouse
-
-Show #Runes T2
-	Class == "Socketable"
-	BaseType "Rune"
-	SetFontSize 32
-	SetTextColor 226 75 43 255
-	SetBorderColor 255 255 255 255
-	SetBackgroundColor 0 20 40 255
-	PlayEffect Cyan Temp
-	MinimapIcon 2 Cyan UpsideDownHouse
-
-Show #Soul Cores
-	Class = "Socketable"
-	BaseType "Soul Core"
-	SetFontSize 35
-	SetTextColor 189 43 226 255
-	SetBorderColor 189 43 226 255
-	SetBackgroundColor 0 20 40 255
-	PlayAlertSoundPositional 1 300
-	PlayEffect Cyan Temp
-	MinimapIcon 2 Cyan UpsideDownHouse
-
