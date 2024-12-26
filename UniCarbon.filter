@@ -12,16 +12,28 @@ Show #Mirror of Kalandra
 	PlayEffect Red
 	MinimapIcon 0 Red Star
 
+Show #T5
+	Class == "Stackable Currency"
+	BaseType == "Divine Orb" "Orb of Annulment" "Perfect Jeweller's Orb"
+	SetFontSize 35
+	SetTextColor 255 0 0 255
+	SetBorderColor 255 0 0 255
+	SetBackgroundColor 255 255 255 177
+	PlayAlertSound 6 300
+	PlayEffect Red
+	MinimapIcon 0 Red Star
+	Continue
+
 Show #T4
 	Class == "Stackable Currency"
-	BaseType == "Divine Orb" "Greater Jeweller's Orb" "Orb of Annulment" "Perfect Jeweller's Orb"
+	BaseType == "Greater Jeweller's Orb"
 	SetFontSize 35
-	SetTextColor 0 0 0 255
-	SetBorderColor 0 0 0 255
+	SetTextColor 255 255 255 255
+	SetBorderColor 255 255 255 255
 	SetBackgroundColor 240 90 35 178
-	PlayAlertSoundPositional 6 300
-	PlayEffect Yellow
-	MinimapIcon 1 Yellow Circle
+	PlayAlertSound 1 300
+	PlayEffect Red
+	MinimapIcon 0 Red Circle
 	Continue
 
 Show #T3
