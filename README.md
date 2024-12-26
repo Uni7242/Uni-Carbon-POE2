@@ -1,7 +1,7 @@
 This is an in-progress filter for Path of Exile 2.
 
 
-MAIN FEATURES:
+##**MAIN FEATURES:**
 
 -All Currencies tiered
 
@@ -12,7 +12,7 @@ MAIN FEATURES:
 -BaseTypes tiered and hidden
 
 
-UPCOMING FEATURES:
+##**UPCOMING FEATURES:**
 
 -Soul core tiering
 
