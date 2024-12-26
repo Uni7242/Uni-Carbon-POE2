@@ -246,26 +246,35 @@ Show #Scrolls
 	SetBackgroundColor 20 20 0 200
 
 #---Essence---
-Show #Essence
+Show #Essence T3
+	Class == "Stackable Currency"
+	BaseType = "Greater Essence of Electricity" "Greater Essence of Sorcery" "Greater Essence of Torment" "Greater Essence of Haste"
+	SetFontSize 35
+	SetTextColor 255 0 195
+	SetBorderColor 255 0 195
+	SetBackgroundColor 255 255 255 255
+	PlayEffect Pink
+	MinimapIcon 1 Pink Moon
+	PlayAlertSoundPositional 5 300
+
+Show #Essence T2
+	Class == "Stackable Currency"
+	BaseType = "Greater Essence of the Body" "Greater Essence of Flames" "Greater Essence of Battle" "Greater Essence of Enhancement" "Greater Essence of Ice" "Greater Essence of the Infinite" "Greater Essence of the Mind" "Greater Essence of Ruin"
+	SetFontSize 32
+	SetTextColor 255 0 195
+	SetBorderColor 255 0 195
+	PlayEffect Pink Temp
+	MinimapIcon 1 Pink Moon
+	PlayAlertSoundPositional 5 200
+
+Show #Essence T1
 	Class == "Stackable Currency"
 	BaseType = "Essence of"
-	SetTextColor 196 93 255
-	PlayEffect Purple Temp
-	MinimapIcon 1 Purple Moon
+	SetFontSize 30
+	SetTextColor 255 0 195
+	MinimapIcon 1 Pink Moon
 
 #---Breach---
-Show #Splinter
-	Class == "Stackable Currency"
-	BaseType = "Splinter"
-	StackSize > 4
-	SetFontSize 32
-	SetTextColor 0 0 0 255
-	SetBorderColor 0 0 0 255
-	SetBackgroundColor 249 150 25 178
-	PlayAlertSoundPositional 2 300
-	PlayEffect White
-	MinimapIcon 2 White Kite
-
 Show #Breachstone
 	Class == "Breachstones"
 	SetFontSize 35
@@ -279,21 +288,40 @@ Show #Breachstone
 Show #Splinter
 	Class == "Stackable Currency"
 	BaseType = "Splinter"
-	SetTextColor 0 0 0 255
-	SetBorderColor 0 0 0 255
-	SetBackgroundColor 249 150 25 178	
-	MinimapIcon 2 White Kite
-
-Show #Catalyst
-	Class == "Stackable Currency"
-	BaseType = "Catalyst"
+	StackSize > 4
 	SetFontSize 32
-	SetTextColor 0 0 0 255
-	SetBorderColor 0 0 0 255
-	SetBackgroundColor 213 159 0 255
+	SetTextColor 162 0 255 255
+	SetBorderColor 162 0 255 255
+	SetBackgroundColor 200 200 200 178
 	PlayAlertSoundPositional 2 300
 	PlayEffect White
-	MinimapIcon 2 White Circle
+	MinimapIcon 2 White Kite
+
+Show #Splinter 
+	Class == "Stackable Currency"
+	BaseType = "Splinter"
+	SetFontSize 32
+	SetTextColor 162 0 255 255
+	SetBorderColor 162 0 255 255
+	SetBackgroundColor 0 0 0 178	
+	MinimapIcon 2 Purple Kite
+
+Show #Catalyst T2
+	Class == "Stackable Currency"
+	BaseType == "Neural Catalyst" "Adaptive Catalyst"
+	SetFontSize 32
+	SetTextColor 255 0 195
+	SetBorderColor 255 0 195
+	PlayEffect Pink Temp
+	MinimapIcon 1 Pink Moon
+	PlayAlertSoundPositional 14 200
+
+Show #Catalyst T1
+	Class == "Stackable Currency"
+	BaseType = "Catalyst"
+	SetFontSize 30
+	SetTextColor 255 0 195
+	MinimapIcon 1 Pink Moon
 
 #---Expedition---
 Show #Expedition
@@ -303,7 +331,7 @@ Show #Expedition
 	SetTextColor 0 0 0 255
 	SetBorderColor 0 0 0 255
 	SetBackgroundColor 240 90 35 178
-	PlayAlertSoundPositional 2 300
+	PlayAlertSoundPositional 13 300
 	PlayEffect Yellow
 	MinimapIcon 1 Yellow Circle
 
@@ -319,16 +347,33 @@ Show #Expedition
 	MinimapIcon 1 Yellow Circle
  
 #---Distilled---
-Show #Distilled
+Show #Distilled T3
+	Class == "Stackable Currency"
+	BaseType = "Distilled Suffering" "Distilled Isolation"
+	SetFontSize 35
+	SetTextColor 255 0 195
+	SetBorderColor 255 0 195
+	SetBackgroundColor 255 255 255 255
+	PlayEffect Pink
+	MinimapIcon 1 Pink Moon
+	PlayAlertSoundPositional 15 300
+
+Show #Distilled T2
+	Class == "Stackable Currency"
+	BaseType = "Distilled Disgust" "Distilled Despair" "Distilled Fear"
+	SetFontSize 32
+	SetTextColor 255 0 195
+	SetBorderColor 255 0 195
+	PlayEffect Pink Temp
+	MinimapIcon 1 Pink Moon
+	PlayAlertSoundPositional 14 200
+
+Show #Distilled T1
 	Class == "Stackable Currency"
 	BaseType = "Distilled"
-	SetFontSize 35
-	SetTextColor 0 0 0 255
-	SetBorderColor 0 0 0 255
-	SetBackgroundColor 249 150 25 255
-	PlayAlertSoundPositional 2 300
-	PlayEffect White
-	MinimapIcon 2 White Circle
+	SetFontSize 30
+	SetTextColor 255 0 195
+	MinimapIcon 1 Pink Moon
 
 #---Omen---
 Show #Omen T3
