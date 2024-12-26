@@ -2,7 +2,7 @@
 
 #---Initial
 Show 
-	SetBackgroundColor 0 0 0 180
+	SetBackgroundColor 0 0 0 200
 	Continue
 
 ###CURRENCY###
