@@ -1,5 +1,6 @@
 This is an in-progress filter for Path of Exile 2.
 
+
 MAIN FEATURES:
 
 -All Currencies tiered
@@ -9,6 +10,7 @@ MAIN FEATURES:
 -Waystones tiered and hidden
 
 -BaseTypes tiered and hidden
+
 
 UPCOMING FEATURES:
 
