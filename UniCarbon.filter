@@ -316,26 +316,14 @@ Show #Omen T1
 	MinimapIcon 2 Red UpsideDownHouse
 
 #---Runes
-Show #Runes T1
+Show #Runes
 	Class == "Socketable"
 	BaseType "Rune"
 	SetFontSize 30
 	SetTextColor 255 0 70 255
-	SetBorderColor 255 0 70 255
 	SetBackgroundColor 0 20 40 255
 	PlayAlertSoundPositional 16 100
-	PlayEffect Red
-	MinimapIcon 2 Red UpsideDownHouse
-
-Show #Runes T2
-	Class == "Socketable"
-	BaseType "Rune"
-	SetFontSize 30
-	SetTextColor 255 0 70 255
-	SetBorderColor 255 0 70 255
-	SetBackgroundColor 0 20 40 255
-	PlayAlertSoundPositional 16 100
-	PlayEffect Red
+	PlayEffect Red Temp
 	MinimapIcon 2 Red UpsideDownHouse
 
 #---Soul Cores
