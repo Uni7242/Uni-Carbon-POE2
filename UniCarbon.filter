@@ -14,7 +14,7 @@ Show #Mirror of Kalandra
 
 Show #T5
 	Class == "Stackable Currency"
-	BaseType == "Divine Orb" "Orb of Annulment" "Perfect Jeweller's Orb"
+	BaseType == "Divine Orb" "Perfect Jeweller's Orb"
 	SetFontSize 35
 	SetTextColor 255 0 0 255
 	SetBorderColor 255 0 0 255
@@ -26,7 +26,7 @@ Show #T5
 
 Show #T4
 	Class == "Stackable Currency"
-	BaseType == "Greater Jeweller's Orb"
+	BaseType == "Greater Jeweller's Orb" "Orb of Annulment" "Arcanist's Etcher" "Gemcutter's Prism" 
 	SetFontSize 35
 	SetTextColor 255 255 255 255
 	SetBorderColor 255 255 255 255
@@ -38,7 +38,7 @@ Show #T4
 
 Show #T3
 	Class == "Stackable Currency"
-	BaseType == "Orb of Alteration" "Glassblower's Bauble" "Chaos Orb" "Vaal Orb" "Artificer's Orb" "Arcanist's Etcher" "Exalted Orb" "Regal Orb" "Gemcutter's Prism" "Orb of Chance" "Armourer's Scrap"
+	BaseType == "Orb of Alteration" "Glassblower's Bauble" "Chaos Orb" "Vaal Orb" "Artificer's Orb" "Exalted Orb" "Regal Orb" "Orb of Chance" "Armourer's Scrap"
 	SetFontSize 32
 	SetTextColor 0 0 0 255
 	SetBorderColor 0 0 0 255
