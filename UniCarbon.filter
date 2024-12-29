@@ -516,11 +516,15 @@ Show #Keys
 	MinimapIcon 1 Green Pentagon
 
 ###MAPS###
+Show #Waystone Preset
+	Class = "Waystones"
+	SetBorderColor 200 200 200 255
+	Continue
 
 Show #T15 - T0
 	Rarity < Unique
 	WaystoneTier >= 15
-	Class "Waystones"
+	Class == "Waystones"
 	SetFontSize 35
 	SetTextColor 100 0 122 255
 	SetBorderColor 200 0 0 255
@@ -533,7 +537,7 @@ Show #T14 - T1
 	Rarity < Unique
 	WaystoneTier == 14
 	AreaLevel <= 80
-	Class "Waystones"
+	Class == "Waystones"
 	SetFontSize 35
 	SetTextColor 0 0 0 255
 	SetBackgroundColor 235 235 235 255
@@ -545,7 +549,7 @@ Show #T14 - T2
 	Rarity < Unique
 	WaystoneTier == 14
 	AreaLevel > 80
-	Class "Waystones"
+	Class == "Waystones"
 	SetFontSize 35
 	SetBorderColor 200 200 200 255
 	SetTextColor 200 200 200 255
@@ -558,7 +562,7 @@ Show #T13 - T1
 	Rarity < Unique
 	WaystoneTier == 13
 	AreaLevel <= 79
-	Class "Waystones"
+	Class == "Waystones"
 	SetFontSize 35
 	SetTextColor 0 0 0 255
 	SetBackgroundColor 235 235 235 255
@@ -570,7 +574,7 @@ Show #T13 - T2
 	Rarity < Unique
 	WaystoneTier == 13
 	AreaLevel > 79
-	Class "Waystones"
+	Class == "Waystones"
 	SetFontSize 35
 	SetBorderColor 200 200 200 255
 	SetTextColor 200 200 200 255
@@ -583,7 +587,7 @@ Show #T12 - T1
 	Rarity < Unique
 	WaystoneTier == 12
 	AreaLevel <= 78
-	Class "Waystones"
+	Class == "Waystones"
 	SetFontSize 35
 	SetTextColor 0 0 0 255
 	SetBackgroundColor 235 235 235 255
@@ -595,7 +599,7 @@ Show #T12 - T2
 	Rarity < Unique
 	WaystoneTier == 12
 	AreaLevel > 78
-	Class "Waystones"
+	Class == "Waystones"
 	SetFontSize 35
 	SetBorderColor 200 200 200 255
 	SetTextColor 200 200 200 255
@@ -608,7 +612,7 @@ Show #T11 - T1
 	Rarity < Unique
 	WaystoneTier == 11
 	AreaLevel <= 77
-	Class "Waystones"
+	Class == "Waystones"
 	SetFontSize 35
 	SetTextColor 0 0 0 255
 	SetBackgroundColor 235 235 235 255
@@ -620,7 +624,7 @@ Show #T11 - T2
 	Rarity < Unique
 	WaystoneTier == 11
 	AreaLevel > 77
-	Class "Waystones"
+	Class == "Waystones"
 	SetFontSize 35
 	SetBorderColor 200 200 200 255
 	SetTextColor 200 200 200 255
@@ -633,7 +637,7 @@ Show #T10 - T2
 	Rarity < Unique
 	WaystoneTier == 10
 	AreaLevel <= 76
-	Class "Waystones"
+	Class == "Waystones"
 	SetFontSize 35
 	SetBorderColor 200 200 200 255
 	SetTextColor 200 200 200 255
@@ -647,12 +651,11 @@ Show #T10 - T3
 	WaystoneTier == 10
 	AreaLevel > 76
 	AreaLevel <= 81
-	Class "Waystones"
-	SetFontSize 35
+	Class == "Waystones"
+	SetFontSize 30
 	SetTextColor 255 255 255 255
 	SetBackgroundColor 0 0 0 255
 	PlayAlertSound 2 100
-	PlayEffect White Temp
 	MinimapIcon 2 White Square
 
 Hide #T10 - T4
@@ -664,7 +667,7 @@ Show #T9 - T2
 	Rarity < Unique
 	WaystoneTier == 9
 	AreaLevel <= 75
-	Class "Waystones"
+	Class == "Waystones"
 	SetFontSize 35
 	SetBorderColor 200 200 200 255
 	SetTextColor 200 200 200 255
@@ -678,12 +681,11 @@ Show #T9 - T3
 	WaystoneTier == 9
 	AreaLevel > 75
 	AreaLevel <= 80
-	Class "Waystones"
-	SetFontSize 35
+	Class == "Waystones"
+	SetFontSize 30
 	SetTextColor 255 255 255 255
 	SetBackgroundColor 0 0 0 255
 	PlayAlertSound 2 100
-	PlayEffect White Temp
 	MinimapIcon 2 White Square
 
 Hide #T9 - T4
@@ -695,7 +697,7 @@ Show #T8 - T2
 	Rarity < Unique
 	WaystoneTier == 8
 	AreaLevel <= 74
-	Class "Waystones"
+	Class == "Waystones"
 	SetFontSize 35
 	SetBorderColor 200 200 200 255
 	SetTextColor 200 200 200 255
@@ -709,12 +711,11 @@ Show #T8 - T3
 	WaystoneTier == 8
 	AreaLevel > 74
 	AreaLevel <= 79
-	Class "Waystones"
-	SetFontSize 35
+	Class == "Waystones"
+	SetFontSize 30
 	SetTextColor 255 255 255 255
 	SetBackgroundColor 0 0 0 255
 	PlayAlertSound 2 100
-	PlayEffect White Temp
 	MinimapIcon 2 White Square
 
 Hide #T8 - T4
@@ -726,7 +727,7 @@ Show #T7 - T2
 	Rarity < Unique
 	WaystoneTier == 7
 	AreaLevel <= 73
-	Class "Waystones"
+	Class == "Waystones"
 	SetFontSize 35
 	SetBorderColor 200 200 200 255
 	SetTextColor 200 200 200 255
@@ -740,12 +741,11 @@ Show #T7 - T3
 	WaystoneTier == 7
 	AreaLevel > 73
 	AreaLevel <= 78
-	Class "Waystones"
-	SetFontSize 35
+	Class == "Waystones"
+	SetFontSize 30
 	SetTextColor 255 255 255 255
 	SetBackgroundColor 0 0 0 255
 	PlayAlertSound 2 100
-	PlayEffect White Temp
 	MinimapIcon 2 White Square
 
 Hide #T7 - T4
@@ -757,7 +757,7 @@ Show #T6 - T2
 	Rarity < Unique
 	WaystoneTier == 6
 	AreaLevel <= 72
-	Class "Waystones"
+	Class == "Waystones"
 	SetFontSize 35
 	SetBorderColor 200 200 200 255
 	SetTextColor 200 200 200 255
@@ -771,12 +771,11 @@ Show #T6 - T3
 	WaystoneTier == 6
 	AreaLevel > 72
 	AreaLevel <= 77
-	Class "Waystones"
-	SetFontSize 35
+	Class == "Waystones"
+	SetFontSize 30
 	SetTextColor 255 255 255 255
 	SetBackgroundColor 0 0 0 255
 	PlayAlertSound 2 100
-	PlayEffect White Temp
 	MinimapIcon 2 White Square
 
 Hide #T6 - T4
@@ -788,7 +787,7 @@ Show #T5 - T2
 	Rarity < Unique
 	WaystoneTier == 5
 	AreaLevel <= 71
-	Class "Waystones"
+	Class == "Waystones"
 	SetFontSize 35
 	SetBorderColor 200 200 200 255
 	SetTextColor 200 200 200 255
@@ -802,12 +801,11 @@ Show #T5 - T3
 	WaystoneTier == 5
 	AreaLevel > 71
 	AreaLevel <= 76
-	Class "Waystones"
-	SetFontSize 35
+	Class == "Waystones"
+	SetFontSize 30
 	SetTextColor 255 255 255 255
 	SetBackgroundColor 0 0 0 255
 	PlayAlertSound 2 100
-	PlayEffect White Temp
 	MinimapIcon 2 White Square
 
 Hide #T5 - T4
@@ -819,7 +817,7 @@ Show #T4 - T2
 	Rarity < Unique
 	WaystoneTier == 4
 	AreaLevel <= 70
-	Class "Waystones"
+	Class == "Waystones"
 	SetFontSize 35
 	SetBorderColor 200 200 200 255
 	SetTextColor 200 200 200 255
@@ -833,12 +831,11 @@ Show #T4 - T3
 	WaystoneTier == 4
 	AreaLevel > 70
 	AreaLevel <= 75
-	Class "Waystones"
-	SetFontSize 35
+	Class == "Waystones"
+	SetFontSize 30
 	SetTextColor 255 255 255 255
 	SetBackgroundColor 0 0 0 255
 	PlayAlertSound 2 100
-	PlayEffect White Temp
 	MinimapIcon 2 White Square
 
 Hide #T4 - T4
@@ -850,7 +847,7 @@ Show #T3 - T2
 	Rarity < Unique
 	WaystoneTier == 3
 	AreaLevel <= 69
-	Class "Waystones"
+	Class == "Waystones"
 	SetFontSize 35
 	SetBorderColor 200 200 200 255
 	SetTextColor 200 200 200 255
@@ -864,12 +861,11 @@ Show #T3 - T3
 	WaystoneTier == 3
 	AreaLevel > 69
 	AreaLevel <= 74
-	Class "Waystones"
-	SetFontSize 35
+	Class == "Waystones"
+	SetFontSize 30
 	SetTextColor 255 255 255 255
 	SetBackgroundColor 0 0 0 255
 	PlayAlertSound 2 100
-	PlayEffect White Temp
 	MinimapIcon 2 White Square
 
 Hide #T3 - T4
@@ -881,27 +877,26 @@ Show #T2 - T2
 	Rarity < Unique
 	WaystoneTier == 2
 	AreaLevel <= 68
-	Class "Waystones"
+	Class == "Waystones"
 	SetFontSize 35
 	SetBorderColor 200 200 200 255
 	SetTextColor 200 200 200 255
 	SetBackgroundColor 0 0 0 255
 	PlayAlertSound 11 300
 	PlayEffect White
-	MinimapIcon 2 White Square
+	MinimapIcon 2 White Star
 
 Show #T2 - T3
 	Rarity < Unique
 	WaystoneTier == 2
 	AreaLevel > 68
 	AreaLevel <= 73
-	Class "Waystones"
-	SetFontSize 35
+	Class == "Waystones"
+	SetFontSize 30
 	SetTextColor 255 255 255 255
 	SetBackgroundColor 0 0 0 255
 	PlayAlertSound 2 100
-	PlayEffect White Temp
-	MinimapIcon 2 White Square
+	MinimapIcon 2 White Star
 
 Hide #T2 - T4
 	Rarity < Unique
@@ -912,7 +907,7 @@ Show #T1 - T2
 	Rarity < Unique
 	WaystoneTier == 1
 	AreaLevel <= 67
-	Class "Waystones"
+	Class == "Waystones"
 	SetFontSize 35
 	SetBorderColor 200 200 200 255
 	SetTextColor 200 200 200 255
@@ -926,12 +921,11 @@ Show #T1 - T3
 	WaystoneTier == 1
 	AreaLevel > 67
 	AreaLevel <= 72
-	Class "Waystones"
+	Class == "Waystones"
 	SetFontSize 35
 	SetTextColor 200 200 200 255
 	SetBackgroundColor 0 0 0 255
 	PlayAlertSound 2 100
-	PlayEffect White Temp
 	MinimapIcon 2 White Square
 
 Hide #T1 - T4
