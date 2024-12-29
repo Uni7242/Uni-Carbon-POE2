@@ -1057,6 +1057,8 @@ Show #Unique T1
 Show #Unique
     Rarity == Unique
     PlayAlertSoundPositional 13 100
+	SetBorderColor 179 107 41 255
+	SetTextColor 179 107 41 255
     MinimapIcon 1 Brown Star
     PlayEffect Brown
 
@@ -1266,6 +1268,13 @@ Show #Relics
 Hide #Flasks
 	Class "Mana Flask" "Life Flask"
 	AreaLevel > 75
+	SetFontSize 20
+	SetBorderColor 0 133 255
+
+Hide #Flasks
+	Class "Mana Flask" "Life Flask"
+	Rarity == Normal
+	AreaLevel > 65
 	SetFontSize 20
 	SetBorderColor 0 133 255
 
