@@ -406,14 +406,24 @@ Show #Ultimatum Fates
 	PlayEffect Orange
 	MinimapIcon 1 Orange Diamond
 
-Show #Tablets
+Show #Tablets T2
 	Class == "Tablet"
+	BaseType = "Breach" "Delirium" "Expedition" "Ritual"
 	SetFontSize 38
 	SetTextColor 235 129 0 255
 	SetBorderColor 235 129 0 255
 	SetBackgroundColor 40 40 0 220
 	PlayAlertSoundPositional 4 300
 	PlayEffect Orange
+	MinimapIcon 1 Orange Diamond
+
+Show #Tablets T1
+	Class == "Tablet"
+	SetFontSize 33
+	SetTextColor 235 129 0 255
+	SetBorderColor 235 129 0 255
+	SetBackgroundColor 40 40 0 220
+	PlayAlertSoundPositional 4 300
 	MinimapIcon 1 Orange Diamond
 
 ###KEYS###
