@@ -1160,29 +1160,29 @@ Show #Gear size Set
 	SetFontSize 30
 	Continue
 
-Show #I80+ Normal
-	Class == "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "One Hand Maces" "Two Hand Maces" "One Hand Axes" "Two Hand Axes" "One Hand Swords" "Two Hand Swords" "Crossbows" "Claws" "Daggers" "Traps" "Flails" "Spears" "Quarterstaves" "Foci" "Shields"
-	Rarity == Normal
-	ItemLevel >= 80
-	SetFontSize 33
-	SetBorderColor 204 204 204 255
-	Continue
+# Show #I80+ Normal
+# 	Class == "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "One Hand Maces" "Two Hand Maces" "One Hand Axes" "Two Hand Axes" "One Hand Swords" "Two Hand Swords" "Crossbows" "Claws" "Daggers" "Traps" "Flails" "Spears" "Quarterstaves" "Foci" "Shields"
+# 	Rarity == Normal
+# 	ItemLevel >= 80
+# 	SetFontSize 33
+# 	SetBorderColor 204 204 204 255
+# 	Continue
 
-Show #I80+ Magic
-	Class == "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "One Hand Maces" "Two Hand Maces" "One Hand Axes" "Two Hand Axes" "One Hand Swords" "Two Hand Swords" "Crossbows" "Claws" "Daggers" "Traps" "Flails" "Spears" "Quarterstaves" "Foci" "Shields"
-	Rarity == Magic
-	ItemLevel >= 80
-	SetFontSize 33
-	SetBorderColor 43 123 226 255
-	Continue
+# Show #I80+ Magic
+# 	Class == "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "One Hand Maces" "Two Hand Maces" "One Hand Axes" "Two Hand Axes" "One Hand Swords" "Two Hand Swords" "Crossbows" "Claws" "Daggers" "Traps" "Flails" "Spears" "Quarterstaves" "Foci" "Shields"
+# 	Rarity == Magic
+# 	ItemLevel >= 80
+# 	SetFontSize 33
+# 	SetBorderColor 43 123 226 255
+# 	Continue
 
-Show #I80+ Rare
-	Class == "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "One Hand Maces" "Two Hand Maces" "One Hand Axes" "Two Hand Axes" "One Hand Swords" "Two Hand Swords" "Crossbows" "Claws" "Daggers" "Traps" "Flails" "Spears" "Quarterstaves" "Foci" "Shields"
-	Rarity == Rare
-	ItemLevel >= 80
-	SetFontSize 33
-	SetBorderColor 233 206 14 255
-	Continue
+# Show #I80+ Rare
+# 	Class == "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "One Hand Maces" "Two Hand Maces" "One Hand Axes" "Two Hand Axes" "One Hand Swords" "Two Hand Swords" "Crossbows" "Claws" "Daggers" "Traps" "Flails" "Spears" "Quarterstaves" "Foci" "Shields"
+# 	Rarity == Rare
+# 	ItemLevel >= 80
+# 	SetFontSize 33
+# 	SetBorderColor 233 206 14 255
+# 	Continue
 
 Show #Untierable Normal
 	Class == "Wands" "Staves" "Jewels" "Amulets" "Rings" "Belts" "Quivers" "Sceptres"
@@ -1273,7 +1273,7 @@ Hide #T6
 	Rarity ! Unique
 	SetFontSize 15
 	AreaLevel > 75
-    BaseType == "Heavy Bow" "Expert Composite Bow" "Grand Mitts" "Engraved Bracers" "Adorned Gloves" "Ornate Gauntlets" "Signet Cuffs" "Utility Wraps" "Grand Manchettes" "Expert Riveted Mitts" "Expert Bolstered Mitts" "Expert Firm Bracers" "Expert Sectioned Bracers" "Expert Sombre Gloves" "Expert Jewelled Gloves" "Expert Ringmail Gauntlets" "Expert Layered Gauntlets" "Expert Rope Cuffs" "Expert Aged Cuffs" "Expert Gauze Wraps" "Expert Linen Wraps" "Totemic Greaves" "Embroidered Boots" "Elaborate Sandals" "Bold Sabatons" "Pious Leggings" "Bladed Shoes" "Grand Cuisses" "Expert Iron Greaves" "Expert Trimmed Greaves" "Expert Laced Boots" "Expert Steeltoe Boots" "Expert Wrapped Sandals" "Expert Silk Slippers" "Expert Mail Sabatons" "Expert Braced Sabatons" "Expert Padded Leggings" "Expert Secured Leggings" "Expert Frayed Shoes" "Expert Threaded Shoes" "Glorious Plate" "Conqueror Plate" "Exquisite Vest" "Mail Coat" "Havoc Raiment" "Enlightened Robe" "Heroic Armour" "Tournament Mail" "Tournament Mail" "Tournament Mail" "Revered Vestments" "Corvus Mantle" "Torment Jacket" "Devout Garb" "Grand Regalia" "Expert Iron Cuirass" "Expert Steel Plate" "Expert Pathfinder Coat" "Expert Studded Vest" "Expert Hexer's Robe" "Expert Keth Raiment" "Expert Pelt Mantle" "Expert Shaman Mantle" "Expert Waxed Jacket" "Expert Wayfarer Jacket" "Guardian Greathelm" "Armoured Cap" "Magus Tiara" "Gallant Helm" "Templar Crown" "Death Mask" "Grand Visage" "Expert Soldier Greathelm" "Expert Spired Greathelm" "Expert Felt Cap" "Expert Swathed Cap" "Expert Wicker Tiara" "Expert Chain Tiara" "Expert Guarded Helm" "Expert Cowled Helm" "Expert Horned Crown" "Expert Martyr Crown" "Expert Face Mask" "Expert Veiled Mask" "Giant Maul" "Expert Forge Maul" "Expert Temple Maul" "Wyrm Quarterstaff" "Expert Gothic Quarterstaff" "Expert Crescent Quarterstaff" "Esoteric Crossbow" "Expert Sturdy Crossbow" "Expert Varnished Crossbow" "Torment Club" "Expert Slim Mace" "Expert Plated Mace" "Blacksteel Tower Shield" "Grand Targe" "Deified Crest Shield" "Aegis Buckler" "Expert Braced Tower Shield" "Expert Rampart Tower Shield" "Expert Pelage Targe" "Expert Crescent Targe" "Expert Sigil Crest Shield" "Expert Jingling Crest Shield" "Expert Plated Buckler" "Expert Spiked Buckler" "Expert Antler Focus" "Expert Crystal Focus"
+    BaseType == "Heavy Bow" "Expert Composite Bow" "Grand Mitts" "Engraved Bracers" "Adorned Gloves" "Ornate Gauntlets" "Signet Cuffs" "Utility Wraps" "Grand Manchettes" "Expert Riveted Mitts" "Expert Bolstered Mitts" "Expert Firm Bracers" "Expert Sectioned Bracers" "Expert Sombre Gloves" "Expert Jewelled Gloves" "Expert Ringmail Gauntlets" "Expert Layered Gauntlets" "Expert Rope Cuffs" "Expert Aged Cuffs" "Expert Gauze Wraps" "Expert Linen Wraps" "Totemic Greaves" "Embroidered Boots" "Elaborate Sandals" "Bold Sabatons" "Pious Leggings" "Bladed Shoes" "Grand Cuisses" "Expert Iron Greaves" "Expert Trimmed Greaves" "Expert Laced Boots" "Expert Steeltoe Boots" "Expert Wrapped Sandals" "Expert Silk Slippers" "Expert Mail Sabatons" "Expert Braced Sabatons" "Expert Padded Leggings" "Expert Secured Leggings" "Expert Frayed Shoes" "Expert Threaded Shoes" "Glorious Plate" "Conqueror Plate" "Exquisite Vest" "Mail Coat" "Havoc Raiment" "Enlightened Robe" "Heroic Armour" "Tournament Mail" "Tournament Mail" "Tournament Mail" "Revered Vestments" "Corvus Mantle" "Torment Jacket" "Devout Garb" "Grand Regalia" "Expert Iron Cuirass" "Expert Steel Plate" "Expert Pathfinder Coat" "Expert Studded Vest" "Expert Hexer's Robe" "Expert Keth Raiment" "Expert Rogue Armour" "Expert Cloaked Mail" "Expert Pelt Mantle" "Expert Shaman Mantle" "Expert Waxed Jacket" "Expert Wayfarer Jacket" "Guardian Greathelm" "Armoured Cap" "Magus Tiara" "Gallant Helm" "Templar Crown" "Death Mask" "Grand Visage" "Expert Soldier Greathelm" "Expert Spired Greathelm" "Expert Felt Cap" "Expert Swathed Cap" "Expert Wicker Tiara" "Expert Chain Tiara" "Expert Guarded Helm" "Expert Cowled Helm" "Expert Horned Crown" "Expert Martyr Crown" "Expert Face Mask" "Expert Veiled Mask" "Giant Maul" "Expert Forge Maul" "Expert Temple Maul" "Wyrm Quarterstaff" "Expert Gothic Quarterstaff" "Expert Crescent Quarterstaff" "Esoteric Crossbow" "Expert Sturdy Crossbow" "Expert Varnished Crossbow" "Torment Club" "Expert Slim Mace" "Expert Plated Mace" "Blacksteel Tower Shield" "Grand Targe" "Deified Crest Shield" "Aegis Buckler" "Expert Braced Tower Shield" "Expert Rampart Tower Shield" "Expert Pelage Targe" "Expert Crescent Targe" "Expert Sigil Crest Shield" "Expert Jingling Crest Shield" "Expert Plated Buckler" "Expert Spiked Buckler" "Expert Antler Focus" "Expert Crystal Focus"
 
 #---Relics
 Show #Relics
